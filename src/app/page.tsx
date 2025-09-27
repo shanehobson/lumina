@@ -108,7 +108,17 @@ export default function Home() {
 
         {/* Scrolling October 22nd Banner */}
         <div className="bg-lumina-dark py-3 overflow-hidden">
-          <div className="animate-scroll whitespace-nowrap">
+          <div className="animate-scroll whitespace-nowrap inline-flex">
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl mx-8">OCTOBER 22nd</span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl mx-8">OCTOBER 22nd</span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl mx-8">OCTOBER 22nd</span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl mx-8">OCTOBER 22nd</span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl mx-8">OCTOBER 22nd</span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl mx-8">OCTOBER 22nd</span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl mx-8">OCTOBER 22nd</span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl mx-8">OCTOBER 22nd</span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl mx-8">OCTOBER 22nd</span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl mx-8">OCTOBER 22nd</span>
             <span className="text-[#ff9045] font-gelasio font-bold text-xl mx-8">OCTOBER 22nd</span>
             <span className="text-[#ff9045] font-gelasio font-bold text-xl mx-8">OCTOBER 22nd</span>
             <span className="text-[#ff9045] font-gelasio font-bold text-xl mx-8">OCTOBER 22nd</span>
