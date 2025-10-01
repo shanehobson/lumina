@@ -14,7 +14,7 @@ export default function Home() {
               width={800}
               height={200}
               className="w-1/2 h-1/2 object-cover"
-            style={{ transform: 'translate(200px, 30px) scale(1.2)' }}
+              style={{ transform: "translate(200px, 30px) scale(1.2)" }}
             />
           </div>
           <h1 className="font-gelasio font-normal text-[31.32px] leading-none tracking-normal mb-2">
@@ -100,18 +100,19 @@ export default function Home() {
               {/* Right side text */}
               <div className="flex-1 pt-14 max-w-xs">
                 <ul className="space-y-2 text-[13px] font-readex font-normal">
-                  <li className="flex gap-8">
+                  <li className="flex gap-4 sm:gap-8">
                     <span>Runway</span>
                     <span>Photoposing</span>
                   </li>
-                  <li className="flex gap-8">
+                  <li className="flex gap-4 sm:gap-8 flex-wrap">
                     <span>Choreography</span>
-                    <span className="whitespace-nowrap">
-                      Model&nbsp;Etiquette
-                    </span>
+                    <span>Model Etiquette</span>
                   </li>
                   <li>Makeup</li>
-                  <li className="font-semibold pt-2 text-xs border border-white px-2 py-1 inline-block">
+                  <li
+                    className="font-semibold text-xs border border-white px-2 py-1 inline-block"
+                    style={{ transform: "translateY(10px)" }}
+                  >
                     OFFICIAL CERTIFICATE OF COMPLETION
                   </li>
                 </ul>
@@ -128,7 +129,7 @@ export default function Home() {
               {/* Orange squiggles background */}
               <div
                 className="absolute -top-48 -bottom-72 -left-64 right-0 -z-10"
-                style={{ transform: "translateX(0px)" }}
+                style={{ transform: "translateY(-10px)" }}
               >
                 <Image
                   src="/assets/orange_squiggles.svg"
@@ -214,166 +215,380 @@ export default function Home() {
           </div>
         </div>
 
+        {/* Lumina Academy Section */}
+        <section className="px-5 pt-6 pb-10">
+          <div className="p-2.5">
+            <h2 className="font-gelasio font-semibold text-lg leading-none mb-4">
+              Lumina Academy
+            </h2>
+
+            <p className="font-gelasio font-normal text-sm leading-none mb-4">
+              A premier modeling school for children and teens, guiding them to
+              become confident, professional models. Our expert-designed program
+              includes:
+            </p>
+
+            <ul className="font-gelasio font-normal text-sm leading-none space-y-2 mb-4">
+              <li>
+                • Runway walk, choreography, posing, etiquette, and stage
+                presence
+              </li>
+              <li>• Master classes with industry professionals</li>
+              <li>• Participation in fashion shows and beauty contests</li>
+              <li>• Professional portfolio and certificate upon graduation</li>
+            </ul>
+
+            <p className="font-gelasio font-normal text-sm leading-none mb-4">
+              Students gain real-world experience, confidence, and skills to
+              pursue modeling—or shine in any path they choose.
+            </p>
+
+            <p className="font-gelasio font-bold italic text-sm leading-none">
+              Where talent meets opportunity, and dreams take the runway.
+            </p>
+          </div>
+        </section>
+
         {/* Our Founders Section */}
-        <section className="px-5 py-12">
-          <h2 className="text-2xl font-serif text-center mb-12">
-            OUR FOUNDERS
-          </h2>
+        <section className="px-5 pt-2 pb-12">
+          <div className="text-center mb-8">
+            <h2 className="text-2xl font-serif border border-white px-4 py-2 inline-block">
+              OUR FOUNDERS
+            </h2>
+          </div>
 
           {/* Nadezda Poltashkova */}
           <div className="mb-12">
-            <p className="text-xs text-lumina-gray mb-6">
-              Originally from Minsk, Belarus and now based in Naples, Florida,
-              Nadezda's journey from a small-town girl to an international model
-              is inspiring, photographers and brands who are all captured by her
-              undeniable presence. Each chapter has brought its own milestones,
-              accomplishments...
-            </p>
-            <h3 className="text-xl font-serif tracking-wider mb-2">
-              NADEZDA POLTASHKOVA
-            </h3>
-            <p className="text-sm text-lumina-gray mb-4">
-              Demi Finalist
-              <br />
-              Supermodel Belarus
-              <br />
-              Modeling Teacher
-            </p>
+            <div className="flex gap-4">
+              {/* Left side - Image and name */}
+              <div className="flex-shrink-0 mt-[50px]">
+                <div className="relative w-[120px] h-[150px] mb-2">
+                  <div className="absolute inset-0 overflow-hidden">
+                    <Image
+                      src="/assets/7e5a3f8cd13208fbc2d6eb8605b3bb05e3245940.jpg"
+                      alt="Nadezda Poltashkova, founder and modeling teacher"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <div
+                    className="absolute left-0 bottom-0 w-full h-full border border-[#ff9045] pointer-events-none"
+                    style={{
+                      transform: "rotate(-5deg)",
+                      transformOrigin: "center",
+                    }}
+                  ></div>
+                </div>
+                <h3 className="text-sm font-serif tracking-wider mb-1">
+                  NADEZDA
+                  <br />
+                  POLTASHKOVA
+                </h3>
+                <p className="text-xs text-lumina-gray">
+                  Demi Finalist
+                  <br />
+                  Supermodel Belarus
+                  <br />
+                  Modeling Teacher
+                </p>
+              </div>
 
-            <div className="relative w-full h-[400px] mb-4 overflow-hidden rounded-lg">
-              <Image
-                src="/assets/founder-nadezda.jpg"
-                alt="Nadezda Poltashkova, founder and modeling teacher"
-                fill
-                className="object-cover"
-              />
+              {/* Right side - Text content */}
+              <div className="flex-1">
+                <p className="font-readex font-medium text-[10px] leading-[150%] mb-4">
+                  Originally from Minsk, Belarus and now based in Naples,
+                  Florida, Nadzeya Palitskavaya is an accomplished ballet
+                  dancer, choreographer, and model with over 20 years of
+                  experience in performing arts, fashion, film, and academia.
+                </p>
+
+                <ul className="font-readex font-medium text-[10px] leading-[150%] space-y-1 mb-4">
+                  <li>
+                    • Graduate of the Belarusian State University of Culture and
+                    Arts
+                  </li>
+                  <li>
+                    • Former Ballet Dancer at the Belarusian State Academic
+                    Musical Theater
+                  </li>
+                  <li>
+                    • Ballet Master & Choreography Teacher with 21 years of
+                    experience
+                  </li>
+                  <li>• PhD in Art History</li>
+                  <li>• Actress in films and artistic productions</li>
+                  <li>• Former national TV sports host</li>
+                  <li>• 25 years of international modeling experience</li>
+                  <li>
+                    • Featured in fashion shows and commercial campaigns across
+                    Europe & the U.S.
+                  </li>
+                </ul>
+
+                <p className="font-readex font-medium text-[10px] leading-[150%]">
+                  <strong>Mission</strong>
+                  <br />
+                  Nadzeya combines artistry, scholarship, and professional
+                  experience to mentor the next generation of artists and
+                  models—helping them unlock creativity, master their craft, and
+                  shine on stage, on camera, and in life.
+                </p>
+              </div>
             </div>
-
-            <ul className="text-xs text-lumina-gray space-y-1 mb-6">
-              <li>★ the F.D.</li>
-              <li>★</li>
-              <li>★ Naples</li>
-            </ul>
-
-            <p className="text-xs text-lumina-gray">
-              Nadezda's journey unfolds intriguingly marked by authenticity,
-              dedication, self-empowerment and continuous evolution is true
-              representation of the next generation of models and fashion
-              modeling. When you're wearing the dress, the world is on the
-              cutting edge of fashion...
-            </p>
           </div>
-
-          <div className="border-t border-lumina-dark"></div>
 
           {/* Julia Grace */}
           <div className="mt-12">
-            <p className="text-xs text-lumina-gray mb-6">
-              Originally from Italy, Grazia and now based in Naples, Julia's
-              story is one of resilience and determination. Starting her career
-              when she broke the standard mold of fashion in Italy at the time.
-              Only 5 foot 6 inches tall, the was determined to prove that beauty
-              and talent come in all forms...
-            </p>
-            <h3 className="text-xl font-serif tracking-wider mb-2">
-              JULIA GRACE
-            </h3>
-            <p className="text-sm text-lumina-gray mb-4">
-              Founder
-              <br />
-              Model
-              <br />
-              Community Leader
-            </p>
+            <div className="flex gap-4">
+              {/* Left side - Image and name */}
+              <div className="flex-shrink-0 mt-[50px]">
+                <div className="relative w-[120px] h-[150px] mb-2">
+                  <div className="absolute inset-0 overflow-hidden">
+                    <Image
+                      src="/assets/3ce74d2eee6b7ac2e10398b452885e82cffcb23a.jpg"
+                      alt="Julia Grace, fashion innovator and mentor"
+                      fill
+                      className="object-cover grayscale"
+                    />
+                  </div>
+                  <div
+                    className="absolute left-0 bottom-0 w-full h-full border border-[#ff9045] pointer-events-none"
+                    style={{
+                      transform: "rotate(-5deg)",
+                      transformOrigin: "center",
+                    }}
+                  ></div>
+                </div>
+                <h3 className="text-sm font-serif tracking-wider mb-1">
+                  JULIA GRACE
+                </h3>
+                <p className="text-xs text-lumina-gray">
+                  Fashion Innovator
+                  <br />
+                  Mentor
+                  <br />
+                  Community Leader
+                </p>
+              </div>
 
-            <div className="relative w-full h-[400px] mb-4 overflow-hidden rounded-lg">
-              <Image
-                src="/assets/founder-julia.jpg"
-                alt="Julia Grace, founder and community leader"
-                fill
-                className="object-cover"
-              />
+              {/* Right side - Text content */}
+              <div className="flex-1">
+                <p className="font-readex font-medium text-[10px] leading-[150%] mb-4">
+                  Originally from Kyiv, Ukraine and now based in Naples,
+                  Florida, Julia Grace is an international fashion designer
+                  whose couture collections have appeared on runways in New
+                  York, Paris, Milan, Dubai, and Miami. She is also Regional
+                  Director for Smart Swimsuits, a leader in innovative,
+                  sustainable swimwear.
+                </p>
+
+                <p className="font-readex font-medium text-[10px] leading-[150%] mb-4">
+                  As a Casting Director for Miss Earth USA, Julia empowers young
+                  women to step into confidence, discover their strengths, and
+                  use their voices with purpose.
+                </p>
+
+                <p className="font-readex font-medium text-[10px] leading-[150%] mb-4">
+                  For modeling students, Julia is a trusted guide—teaching
+                  casting prep, runway skills, professionalism, and personal
+                  branding. Her daughter, Valeria, an international model and
+                  pageant titleholder at just 11, reflects Julia's belief that
+                  passion and discipline know no age limits.
+                </p>
+
+                <p className="font-readex font-medium text-[10px] leading-[150%]">
+                  <strong>Mission</strong>
+                  <br />
+                  Julia's mission is simple: to help others step into their
+                  power, walk with confidence, and shine on every stage of life.
+                </p>
+              </div>
             </div>
-
-            <p className="text-xs text-lumina-gray">
-              Julia believes in modern, is not just about modeling, but about
-              the is the development of your and unique voice. Julia's approach
-              has always been holistic - she focuses on helping young models
-              build not just their portfolios, but their confidence and
-              self-worth...
-            </p>
-
-            <ul className="text-xs text-lumina-gray space-y-1 mt-4">
-              <li>• Naples</li>
-              <li>• Milan • Venice Lifestyle in Aisle Adders</li>
-              <li>• This Is Why We Need Child Model Beauty</li>
-              <li>• Etc</li>
-            </ul>
           </div>
         </section>
 
-        <div className="border-t border-lumina-dark mx-5"></div>
+        {/* Scrolling October 22nd Banner */}
+        <div className="bg-lumina-dark py-1.5 overflow-hidden">
+          <div className="animate-scroll whitespace-nowrap inline-flex">
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl mx-8">
+              OCTOBER 22nd
+            </span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl mx-8">
+              OCTOBER 22nd
+            </span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl mx-8">
+              OCTOBER 22nd
+            </span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl mx-8">
+              OCTOBER 22nd
+            </span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl mx-8">
+              OCTOBER 22nd
+            </span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl mx-8">
+              OCTOBER 22nd
+            </span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl mx-8">
+              OCTOBER 22nd
+            </span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl mx-8">
+              OCTOBER 22nd
+            </span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl mx-8">
+              OCTOBER 22nd
+            </span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl mx-8">
+              OCTOBER 22nd
+            </span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl mx-8">
+              OCTOBER 22nd
+            </span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl mx-8">
+              OCTOBER 22nd
+            </span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl mx-8">
+              OCTOBER 22nd
+            </span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl mx-8">
+              OCTOBER 22nd
+            </span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl mx-8">
+              OCTOBER 22nd
+            </span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl mx-8">
+              OCTOBER 22nd
+            </span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl mx-8">
+              OCTOBER 22nd
+            </span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl mx-8">
+              OCTOBER 22nd
+            </span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl mx-8">
+              OCTOBER 22nd
+            </span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl mx-8">
+              OCTOBER 22nd
+            </span>
+          </div>
+        </div>
 
         {/* Naples Section */}
         <section className="px-5 py-12">
-          <h2 className="text-6xl font-serif tracking-wider text-center mb-12">
-            NAPLES
-          </h2>
+          {/* Overlapping images collage */}
+          <div className="relative h-[600px] mb-8 z-[2]">
+            {/* Top left image - moved down */}
+            <div className="absolute top-[35px] left-0 w-[110px] h-[140px] overflow-hidden z-[5]">
+              <Image
+                src="/assets/f8dda8fbc43efbacd643a90300fda8c4d067dce1.jpg"
+                alt="Model portrait 1"
+                fill
+                className="object-cover"
+              />
+            </div>
 
-          <div className="grid grid-cols-2 gap-3">
-            <div className="relative h-48 overflow-hidden rounded-lg">
+            {/* Naples text with orange squiggles background */}
+            <div className="absolute top-[30px] left-[140px]">
+              {/* Orange squiggles background */}
+              <div
+                className="absolute -top-48 -bottom-60 -left-64 right-0 z-[1]"
+                style={{ transform: "translateX(0px)" }}
+              >
+                <Image
+                  src="/assets/orange_squiggles.svg"
+                  alt=""
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              {/* Naples text */}
+              <div className="relative z-10 border border-white px-6 py-3">
+                <h2 className="font-readex font-semibold text-[32px] leading-[94%]">
+                  NAPLES
+                </h2>
+              </div>
+            </div>
+
+            {/* Second image - moved left with z-index between first and third */}
+            <div className="absolute top-[120px] right-[130px] w-[140px] h-[180px] overflow-hidden z-[15]">
               <Image
-                src="/assets/naples-1.jpg"
-                alt="Model in Naples location shoot"
+                src="/assets/3e5d93c5d36628709ac63a0a9ad919a1f4cba5c0.jpg"
+                alt="Model portrait 2"
                 fill
                 className="object-cover"
               />
             </div>
-            <div className="relative h-48 overflow-hidden rounded-lg col-span-1 row-span-2">
+
+            {/* Third image (was left middle) */}
+            <div className="absolute top-[275px] left-0 w-[120px] h-[140px] overflow-hidden z-20">
               <Image
-                src="/assets/naples-2.jpg"
-                alt="Fashion shoot in Naples streets"
+                src="/assets/893c5ce8c741400650fafef713b441ac02119527.jpg"
+                alt="Model portrait 3"
                 fill
                 className="object-cover"
               />
             </div>
-            <div className="relative h-32 overflow-hidden rounded-lg">
+
+            {/* Right studio image (black and white) - made skinnier and taller */}
+            <div className="absolute top-[335px] right-0 w-[110px] h-[150px] overflow-hidden z-10">
               <Image
-                src="/assets/naples-3.jpg"
-                alt="Black and white architectural shot"
+                src="/assets/cd5358401bb7dbdc13c3574b403166f057edf3cf.jpg"
+                alt="Studio equipment"
+                fill
+                className="object-cover grayscale"
+              />
+            </div>
+
+            {/* Bottom center image - moved down 25px more and right 60px */}
+            <div className="absolute bottom-[35px] left-[140px] w-[120px] h-[140px] overflow-hidden z-[25]">
+              <Image
+                src="/assets/cba1061db087e28bcec2d3212ce7cac7c93623d7.jpg"
+                alt="Model portrait 4"
                 fill
                 className="object-cover"
               />
             </div>
-            <div className="relative h-48 overflow-hidden rounded-lg col-span-2">
+
+            {/* Bottom right image - moved down 30px more and right 40px */}
+            <div className="absolute bottom-[-45px] right-0 w-[110px] h-[130px] overflow-hidden z-[30]">
               <Image
-                src="/assets/naples-4.jpg"
-                alt="Model portfolio shot in Naples"
+                src="/assets/2e903d3b27c832f8fdbb7848f80df8f7b93731f3.jpg"
+                alt="Model portrait 5"
                 fill
                 className="object-cover"
               />
+            </div>
+
+            {/* October 22nd text overlay with orange squiggles */}
+            <div className="absolute bottom-[-45px] left-[-5px] z-35">
+              {/* Orange squiggles background */}
+              <div
+                className="absolute -top-24 -bottom-24 -left-32 -right-32 z-[1]"
+                style={{ transform: "translateX(0px)" }}
+              >
+                <Image
+                  src="/assets/orange_squiggles.svg"
+                  alt=""
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              {/* October text */}
+              <div className="relative z-10 border border-white px-3 py-3">
+                <p className="text-sm font-semibold">OCTOBER 22ND 4:30pm</p>
+              </div>
             </div>
           </div>
 
-          <p className="text-sm text-center mt-8 mb-4">OCTOBER 22nd 4:30pm</p>
-
-          {/* CTA Button */}
-          <div className="mt-8 mb-6">
-            <button className="w-full bg-lumina-coral text-white py-4 px-6 rounded-full text-sm font-medium tracking-wider">
-              SIGN UP FOR CASTING TEXT OR CALL
-            </button>
-          </div>
-
-          <div className="text-center space-y-1">
-            <p className="text-sm">(239) 378-3487</p>
-            <p className="text-sm">(601) 860-9657</p>
-          </div>
         </section>
 
-        {/* Footer */}
-        <footer className="bg-lumina-dark text-lumina-cream px-5 py-4 text-center">
-          <p className="text-xs tracking-wider">
-            OCTOBER 22nd - OCTOBER 22nd - OCTOBER 22nd 4:30
+        {/* Orange Footer */}
+        <footer className="bg-[#ff9045] text-white py-6 px-5 text-center">
+          <p className="font-readex font-semibold text-[15px] leading-[150%] mb-2">
+            SIGN UP FOR CASTING : TEXT OR CALL
+          </p>
+          <p className="font-readex font-semibold text-[15px] leading-[150%]">
+            (239) 378-8887 &nbsp;&nbsp; (801) 560-9637
           </p>
         </footer>
       </main>
