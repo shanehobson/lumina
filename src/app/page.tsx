@@ -34,7 +34,7 @@ export default function Home() {
         <section className="px-5 pt-4 pb-8">
           <div className="relative">
             {/* Model 1 - Top Left */}
-            <div className="relative w-[42%] h-[165px]">
+            <div className="relative w-[42%] aspect-[158/165]">
               <div className="absolute inset-0 overflow-hidden">
                 <Image
                   src="/assets/544df825c9e42ab22331a9c76bd700462f45384d.jpg"
@@ -44,10 +44,15 @@ export default function Home() {
                 />
               </div>
               <div className="absolute -top-[8px] -left-[8px] w-full h-full border border-[#ff9045] pointer-events-none"></div>
+              
+              {/* Children & Teenagers text - anchored to this image */}
+              <p className="absolute left-0 xs:left-[7px] top-[calc(100%+35px)] xs:top-[calc(100%+15px)] font-readex font-normal text-[15px] xs:text-lg sm:text-xl leading-none text-lumina-dark whitespace-nowrap">
+                CHILDREN&nbsp;&amp;&nbsp;TEENAGERS
+              </p>
             </div>
 
             {/* Model 2 - Bottom Right */}
-            <div className="absolute right-0 top-[65px] w-[37%] h-[165px]">
+            <div className="absolute right-0 top-[65px] w-[37%] aspect-[139/165]">
               <div className="absolute inset-0 overflow-hidden">
                 <Image
                   src="/assets/7fac15c95cf92e71d7ac4ecef5ebf32db1a9f9dc.jpg"
@@ -71,18 +76,14 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Children & Teenagers text - positioned separately */}
-            <p className="absolute left-0 top-[180px] font-readex font-normal text-[15px] leading-none text-lumina-dark">
-              CHILDREN & TEENAGERS
-            </p>
           </div>
 
           {/* We Provide Section */}
           <div className="mt-20 relative">
             <div className="flex items-start gap-6">
               {/* Left Image with border */}
-              <div className="relative w-[40%] min-w-[150px]">
-                <div className="relative h-[170px] overflow-hidden">
+              <div className="relative w-[40%] min-w-[150px] aspect-[150/170]">
+                <div className="absolute inset-0 overflow-hidden">
                   <Image
                     src="/assets/9ec7bb2f03d7b306c00e807cba726828cff54d1c.jpg"
                     alt="Model doing backbend in white studio"
@@ -408,7 +409,7 @@ export default function Home() {
         </section>
 
         {/* Scrolling October 22nd Banner */}
-        <div className="bg-lumina-dark py-1.5 overflow-hidden">
+        <div className="bg-lumina-dark py-1.5 overflow-hidden relative z-50">
           <div className="animate-scroll whitespace-nowrap inline-flex">
             <span className="text-[#ff9045] font-gelasio font-bold text-xl mx-8">
               OCTOBER 22nd
@@ -476,7 +477,8 @@ export default function Home() {
         {/* Naples Section */}
         <section className="px-5 py-12">
           {/* Overlapping images collage */}
-          <div className="relative h-[600px] mb-8 z-[2]">
+          <div className="flex justify-center">
+            <div className="relative w-[375px] h-[600px] mb-8 z-[2]">
             {/* Top left image - moved down */}
             <div className="absolute top-[35px] left-0 w-[110px] h-[140px] overflow-hidden z-[5]">
               <Image
@@ -488,7 +490,7 @@ export default function Home() {
             </div>
 
             {/* Naples text with orange squiggles background */}
-            <div className="absolute top-[30px] left-[140px]">
+            <div className="absolute top-[30px] left-[205px]">
               {/* Orange squiggles background */}
               <div
                 className="absolute -top-48 -bottom-60 -left-64 right-0 z-[1]"
@@ -510,7 +512,7 @@ export default function Home() {
             </div>
 
             {/* Second image - moved left with z-index between first and third */}
-            <div className="absolute top-[120px] right-[130px] w-[140px] h-[180px] overflow-hidden z-[15]">
+            <div className="absolute top-[120px] left-[75px] w-[140px] h-[180px] overflow-hidden z-[15]">
               <Image
                 src="/assets/3e5d93c5d36628709ac63a0a9ad919a1f4cba5c0.jpg"
                 alt="Model portrait 2"
@@ -530,7 +532,7 @@ export default function Home() {
             </div>
 
             {/* Right studio image (black and white) - made skinnier and taller */}
-            <div className="absolute top-[335px] right-0 w-[110px] h-[150px] overflow-hidden z-10">
+            <div className="absolute top-[335px] left-[265px] w-[110px] h-[150px] overflow-hidden z-10">
               <Image
                 src="/assets/cd5358401bb7dbdc13c3574b403166f057edf3cf.jpg"
                 alt="Studio equipment"
@@ -540,7 +542,7 @@ export default function Home() {
             </div>
 
             {/* Bottom center image - moved down 25px more and right 60px */}
-            <div className="absolute bottom-[35px] left-[140px] w-[120px] h-[140px] overflow-hidden z-[25]">
+            <div className="absolute bottom-[35px] left-[180px] w-[120px] h-[140px] overflow-hidden z-[25]">
               <Image
                 src="/assets/cba1061db087e28bcec2d3212ce7cac7c93623d7.jpg"
                 alt="Model portrait 4"
@@ -550,7 +552,7 @@ export default function Home() {
             </div>
 
             {/* Bottom right image - moved down 30px more and right 40px */}
-            <div className="absolute bottom-[-45px] right-0 w-[110px] h-[130px] overflow-hidden z-[30]">
+            <div className="absolute bottom-[-45px] left-[265px] w-[110px] h-[130px] overflow-hidden z-[30]">
               <Image
                 src="/assets/2e903d3b27c832f8fdbb7848f80df8f7b93731f3.jpg"
                 alt="Model portrait 5"
@@ -577,6 +579,7 @@ export default function Home() {
               <div className="relative z-10 border border-white px-3 py-3">
                 <p className="text-sm font-semibold">OCTOBER 22ND 4:30pm</p>
               </div>
+            </div>
             </div>
           </div>
 
