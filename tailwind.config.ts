@@ -10,6 +10,8 @@ const config: Config = {
     extend: {
       screens: {
         'xs': '480px',
+        'desktop': '900px',
+        'lg-container': '1000px',
       },
       colors: {
         lumina: {

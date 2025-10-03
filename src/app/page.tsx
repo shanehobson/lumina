@@ -5,84 +5,134 @@ export default function Home() {
     <>
       {/* Header */}
       <header className="bg-lumina-cream pt-8 pb-6 relative overflow-hidden">
-        <div className="text-center relative z-20">
-          {/* White squiggles background */}
-          <div className="absolute -top-8 -bottom-8 -left-16 -right-16 -z-10">
-            <Image
-              src="/assets/white_squiggles.svg"
-              alt=""
-              width={800}
-              height={200}
-              className="w-1/2 h-1/2 object-cover"
-              style={{ transform: "translate(200px, 30px) scale(1.2)" }}
-            />
-          </div>
-          <h1 className="font-gelasio font-normal text-[31.32px] min-[600px]:text-[33px] leading-none tracking-normal mb-2">
-            LUMINA
-          </h1>
-          <div className="relative flex items-center justify-center">
-            <span className="absolute left-0 right-0 top-1/2 h-px border-t border-dotted border-lumina-dark"></span>
-            <span className="relative bg-lumina-cream px-4 font-readex font-normal text-[10.44px] min-[600px]:text-[12px] leading-none tracking-[0.13em]">
-              MODEL ACADEMY
-            </span>
+        <div className="lg-container:max-w-[1000px] lg-container:mx-auto">
+          <div className="text-center relative z-20">
+            <div className="relative inline-block">
+              {/* White squiggles background - positioned relative to text */}
+              <div className="absolute -top-8 -bottom-8 -left-16 -right-16 -z-10 flex items-center justify-center">
+                <Image
+                  src="/assets/white_squiggles.svg"
+                  alt=""
+                  width={800}
+                  height={200}
+                  className="w-[400px] h-[200px] desktop:w-[800px] desktop:h-[400px] object-contain"
+                />
+              </div>
+              <h1 className="font-gelasio font-normal text-[31.32px] min-[600px]:text-[33px] desktop:text-[42px] leading-none tracking-normal mb-2">
+                LUMINA
+              </h1>
+              <div className="relative flex items-center justify-center">
+                <span className="absolute left-[-50vw] right-[-50vw] top-1/2 desktop:top-[25%] h-px border-t border-dotted border-lumina-dark"></span>
+                <span className="relative bg-lumina-cream px-4 font-readex font-normal text-[10.44px] min-[600px]:text-[12px] desktop:text-[16px] leading-none tracking-[0.13em]">
+                  MODEL ACADEMY
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </header>
 
       <main>
         {/* Hero Section */}
-        <section className="px-5 pt-4 pb-8">
+        <section className="lg-container:max-w-[1000px] lg-container:mx-auto px-5 pt-4 pb-8 desktop:px-8 desktop:pt-6 desktop:pb-12">
           <div className="relative">
-            {/* Model 1 - Top Left */}
-            <div className="relative w-[42%] aspect-[158/165]">
-              <div className="absolute inset-0 overflow-hidden">
-                <Image
-                  src="/assets/544df825c9e42ab22331a9c76bd700462f45384d.jpg"
-                  alt="Young model with freckles and green hair streaks"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="absolute -top-[8px] -left-[8px] w-full h-full border border-[#ff9045] pointer-events-none"></div>
-              
-              {/* Children & Teenagers text - anchored to this image */}
-              <p className="absolute left-0 min-[470px]:left-[7px] xs:left-[-10px] top-[calc(100%+35px)] min-[470px]:top-[calc(100%+15px)] font-readex font-normal text-[15px] min-[470px]:text-[20px] xs:text-[22px] min-[600px]:text-2xl sm:text-[26px] leading-none text-lumina-dark whitespace-nowrap">
-                CHILDREN&nbsp;&amp;&nbsp;TEENAGERS
-              </p>
-            </div>
+            {/* Mobile/Tablet Layout (under 900px) */}
+            <div className="desktop:hidden">
+              {/* Model 1 - Top Left */}
+              <div className="relative w-[42%] aspect-[158/165]">
+                <div className="absolute inset-0 overflow-hidden">
+                  <Image
+                    src="/assets/544df825c9e42ab22331a9c76bd700462f45384d.jpg"
+                    alt="Young model with freckles and green hair streaks"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="absolute -top-[8px] -left-[8px] desktop:-top-[16px] desktop:-left-[16px] w-full h-full border border-[#ff9045] pointer-events-none"></div>
 
-            {/* Model 2 - Bottom Right */}
-            <div className="absolute right-0 top-[65px] w-[37%] aspect-[139/165]">
-              <div className="absolute inset-0 overflow-hidden">
-                <Image
-                  src="/assets/7fac15c95cf92e71d7ac4ecef5ebf32db1a9f9dc.jpg"
-                  alt="Teen model in denim outfit smiling"
-                  fill
-                  className="object-cover"
-                  quality={100}
-                  priority
-                  style={{ imageRendering: "-webkit-optimize-contrast" }}
-                />
+                {/* Children & Teenagers text - anchored to this image */}
+                <p className="absolute left-0 min-[470px]:left-[7px] xs:left-[-10px] top-[calc(100%+35px)] min-[470px]:top-[calc(100%+15px)] font-readex font-normal text-[15px] min-[470px]:text-[20px] xs:text-[22px] min-[600px]:text-2xl sm:text-[26px] leading-none text-lumina-dark whitespace-nowrap">
+                  CHILDREN&nbsp;&amp;&nbsp;TEENAGERS
+                </p>
               </div>
-              <div className="absolute -top-[8px] -right-[8px] w-full h-full border border-[#ff9045] pointer-events-none"></div>
-            </div>
 
-            {/* Overlay Text with Background */}
-            <div className="absolute left-0 right-0 top-[120px] min-[470px]:top-[140px] min-[520px]:top-[160px] min-[690px]:top-[210px] z-10">
-              <div className="bg-black/10 backdrop-blur-sm py-2">
-                <h2 className="text-center font-gelasio font-semibold text-[30px] min-[470px]:text-[34px] min-[600px]:text-[36px] min-[690px]:text-[40px] leading-none text-white">
-                  MODEL SCHOOL FOR
-                </h2>
+              {/* Model 2 - Bottom Right */}
+              <div className="absolute right-0 top-[65px] w-[37%] aspect-[139/165]">
+                <div className="absolute inset-0 overflow-hidden">
+                  <Image
+                    src="/assets/7fac15c95cf92e71d7ac4ecef5ebf32db1a9f9dc.jpg"
+                    alt="Teen model in denim outfit smiling"
+                    fill
+                    className="object-cover"
+                    quality={100}
+                    priority
+                    style={{ imageRendering: "-webkit-optimize-contrast" }}
+                  />
+                </div>
+                <div className="absolute -top-[8px] -right-[8px] desktop:-top-[16px] desktop:-right-[16px] w-full h-full border border-[#ff9045] pointer-events-none"></div>
               </div>
             </div>
 
+            {/* Desktop Layout (900px+) */}
+            <div className="hidden desktop:block">
+              {/* Centered container for images */}
+              <div className="relative mx-auto w-fit">
+                {/* Images container with exact dimensions */}
+                <div className="relative w-[780px] h-[500px]">
+                  {/* Model 1 - Top Left */}
+                  <div className="absolute left-0 top-0 w-[300px] h-[350px]">
+                    <div className="absolute inset-0 overflow-hidden">
+                      <Image
+                        src="/assets/544df825c9e42ab22331a9c76bd700462f45384d.jpg"
+                        alt="Young model with freckles and green hair streaks"
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                    <div className="absolute -top-[8px] -left-[8px] desktop:-top-[16px] desktop:-left-[16px] w-full h-full border border-[#ff9045] pointer-events-none"></div>
+                  </div>
+
+                  {/* Model 2 - Bottom Right - further apart on desktop */}
+                  <div className="absolute left-[450px] top-[120px] w-[280px] h-[320px]">
+                    <div className="absolute inset-0 overflow-hidden">
+                      <Image
+                        src="/assets/7fac15c95cf92e71d7ac4ecef5ebf32db1a9f9dc.jpg"
+                        alt="Teen model in denim outfit smiling"
+                        fill
+                        className="object-cover"
+                        quality={100}
+                        priority
+                        style={{ imageRendering: "-webkit-optimize-contrast" }}
+                      />
+                    </div>
+                    <div className="absolute -top-[8px] -right-[8px] desktop:-top-[16px] desktop:-right-[16px] w-full h-full border border-[#ff9045] pointer-events-none"></div>
+                  </div>
+
+                  {/* Children & Teenagers text - positioned relative to first image */}
+                  <p className="absolute left-[60px] top-[380px] font-readex font-normal text-[28px] leading-none text-lumina-dark whitespace-nowrap">
+                    CHILDREN&nbsp;&amp;&nbsp;TEENAGERS
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Overlay Text with Background - works for both layouts */}
+            <div className="absolute left-0 right-0 top-[120px] min-[470px]:top-[140px] min-[520px]:top-[160px] min-[690px]:top-[210px] desktop:left-[-50px] desktop:top-[280px] z-10">
+              <div className="desktop:max-w-[800px] desktop:mx-auto">
+                <div className="bg-black/10 backdrop-blur-sm py-2 -mx-5 desktop:mx-0">
+                  <h2 className="text-center font-gelasio font-semibold text-[30px] min-[470px]:text-[34px] min-[600px]:text-[36px] min-[690px]:text-[40px] desktop:text-[64px] leading-none text-white whitespace-nowrap">
+                    MODEL SCHOOL FOR
+                  </h2>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* We Provide Section */}
-          <div className="mt-20 relative">
-            <div className="flex items-start gap-6">
+          <div className="mt-20 desktop:mt-0 relative">
+            <div className="flex items-start gap-6 desktop:gap-32 desktop:justify-center desktop:max-w-fit desktop:mx-auto ">
               {/* Left Image with border */}
-              <div className="relative w-[40%] min-w-[150px] aspect-[150/170]">
+              <div className="relative w-[40%] min-w-[150px] desktop:min-w-[250px] desktop:h-[380px]">
                 <div className="absolute inset-0 overflow-hidden">
                   <Image
                     src="/assets/9ec7bb2f03d7b306c00e807cba726828cff54d1c.jpg"
@@ -91,27 +141,29 @@ export default function Home() {
                     className="object-cover"
                   />
                 </div>
-                <div className="absolute bottom-[-8px] left-[-8px] w-full h-full border border-[#ff9045] pointer-events-none"></div>
+                <div className="absolute bottom-[-8px] left-[-8px] desktop:bottom-[-16px] desktop:left-[-16px] w-full h-full border border-[#ff9045] pointer-events-none"></div>
                 {/* We provide text overlay */}
-                <h3 className="absolute top-4 -right-16 text-2xl min-[600px]:text-[26px] font-serif">
+                <h3 className="absolute top-4 desktop:top-[36px] -right-16 desktop:right-[-140px] text-2xl min-[600px]:text-[26px] desktop:text-[64px] font-serif desktop:whitespace-nowrap">
                   We provide :
                 </h3>
               </div>
 
               {/* Right side text */}
-              <div className="flex-1 pt-14 max-w-xs">
-                <ul className="space-y-2 text-[13px] min-[600px]:text-[15px] font-readex font-normal">
+              <div className="flex-1 pt-14 desktop:pt-[116px] max-w-xs desktop:max-w-none">
+                <ul className="space-y-2 text-[13px] min-[600px]:text-[15px] desktop:text-[22px] font-readex font-normal">
                   <li className="flex gap-4 sm:gap-8">
                     <span>Runway</span>
                     <span>Photoposing</span>
                   </li>
-                  <li className="flex gap-4 sm:gap-8 flex-wrap">
+                  <li className="flex gap-4 sm:gap-8 flex-wrap desktop:flex-nowrap">
                     <span>Choreography</span>
-                    <span>Model Etiquette</span>
+                    <span className="desktop:ml-0 desktop:whitespace-nowrap">
+                      Model Etiquette
+                    </span>
                   </li>
-                  <li>Makeup</li>
+                  <li className="desktop:text-[22px]">Makeup</li>
                   <li
-                    className="font-semibold text-xs min-[600px]:text-sm border border-white px-2 py-1 inline-block"
+                    className="font-semibold text-xs min-[600px]:text-sm desktop:text-lg border border-white px-2 py-1 inline-block desktop:whitespace-nowrap"
                     style={{ transform: "translateY(10px)" }}
                   >
                     OFFICIAL CERTIFICATE OF COMPLETION
@@ -123,9 +175,9 @@ export default function Home() {
         </section>
 
         {/* Naples text and October 22nd Banner container */}
-        <div className="relative pt-1">
+        <div className="lg-container:max-w-[1000px] lg-container:mx-auto relative pt-1">
           {/* Naples text with squiggles background */}
-          <div className="absolute bottom-[70px] right-0">
+          <div className="absolute bottom-[70px] desktop:bottom-[30px] right-0">
             <div className="relative mr-5">
               {/* Orange squiggles background */}
               <div
@@ -140,7 +192,7 @@ export default function Home() {
                 />
               </div>
               {/* Naples text */}
-              <p className="relative z-10 font-gelasio font-semibold text-[24px] min-[600px]:text-[26px] leading-none border border-white px-4 py-2 text-lumina-dark">
+              <p className="relative z-10 font-gelasio font-semibold text-[24px] min-[600px]:text-[26px] desktop:text-[36px] leading-none border border-white px-4 py-2 text-lumina-dark">
                 Naples
               </p>
             </div>
@@ -148,76 +200,76 @@ export default function Home() {
 
           {/* Spacer before scrolling banner */}
           <div className="h-[70px]"></div>
+        </div>
 
-          {/* Scrolling October 22nd Banner */}
-          <div className="bg-lumina-dark py-1.5 overflow-hidden">
-            <div className="animate-scroll whitespace-nowrap inline-flex">
-              <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-                OCTOBER 22nd
-              </span>
-              <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-                OCTOBER 22nd
-              </span>
-              <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-                OCTOBER 22nd
-              </span>
-              <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-                OCTOBER 22nd
-              </span>
-              <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-                OCTOBER 22nd
-              </span>
-              <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-                OCTOBER 22nd
-              </span>
-              <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-                OCTOBER 22nd
-              </span>
-              <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-                OCTOBER 22nd
-              </span>
-              <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-                OCTOBER 22nd
-              </span>
-              <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-                OCTOBER 22nd
-              </span>
-              <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-                OCTOBER 22nd
-              </span>
-              <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-                OCTOBER 22nd
-              </span>
-              <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-                OCTOBER 22nd
-              </span>
-              <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-                OCTOBER 22nd
-              </span>
-              <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-                OCTOBER 22nd
-              </span>
-              <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-                OCTOBER 22nd
-              </span>
-              <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-                OCTOBER 22nd
-              </span>
-              <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-                OCTOBER 22nd
-              </span>
-              <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-                OCTOBER 22nd
-              </span>
-              <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-                OCTOBER 22nd
-              </span>
-            </div>
+        {/* Scrolling October 22nd Banner */}
+        <div className="bg-lumina-dark py-1.5 overflow-hidden">
+          <div className="animate-scroll whitespace-nowrap inline-flex">
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
+              OCTOBER 22nd
+            </span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
+              OCTOBER 22nd
+            </span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
+              OCTOBER 22nd
+            </span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
+              OCTOBER 22nd
+            </span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
+              OCTOBER 22nd
+            </span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
+              OCTOBER 22nd
+            </span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
+              OCTOBER 22nd
+            </span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
+              OCTOBER 22nd
+            </span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
+              OCTOBER 22nd
+            </span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
+              OCTOBER 22nd
+            </span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
+              OCTOBER 22nd
+            </span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
+              OCTOBER 22nd
+            </span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
+              OCTOBER 22nd
+            </span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
+              OCTOBER 22nd
+            </span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
+              OCTOBER 22nd
+            </span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
+              OCTOBER 22nd
+            </span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
+              OCTOBER 22nd
+            </span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
+              OCTOBER 22nd
+            </span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
+              OCTOBER 22nd
+            </span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
+              OCTOBER 22nd
+            </span>
           </div>
         </div>
 
         {/* Lumina Academy Section */}
-        <section className="px-5 pt-6 pb-10">
+        <section className="lg-container:max-w-[1000px] lg-container:mx-auto px-5 pt-6 pb-10">
           <div className="p-2.5">
             <h2 className="font-gelasio font-semibold text-lg min-[600px]:text-xl leading-none mb-4">
               Lumina Academy
@@ -251,7 +303,7 @@ export default function Home() {
         </section>
 
         {/* Our Founders Section */}
-        <section className="px-5 pt-2 pb-12">
+        <section className="lg-container:max-w-[1000px] lg-container:mx-auto px-5 pt-2 pb-12">
           <div className="text-center mb-8">
             <h2 className="text-2xl min-[600px]:text-[26px] font-serif border border-white px-4 py-2 inline-block">
               OUR FOUNDERS
@@ -260,7 +312,7 @@ export default function Home() {
 
           {/* Nadezda Poltashkova */}
           <div className="mb-12">
-            <div className="flex gap-6 min-[600px]:gap-8 lg:gap-10">
+            <div className="flex gap-6 min-[600px]:gap-8 desktop:gap-10">
               {/* Left side - Image and name */}
               <div className="w-1/3 flex-shrink-0 mt-[50px] min-[500px]:mt-0">
                 <div className="relative w-full aspect-[120/150] mb-2">
@@ -351,7 +403,7 @@ export default function Home() {
 
           {/* Julia Grace */}
           <div className="mt-12">
-            <div className="flex gap-6 min-[600px]:gap-8 lg:gap-10">
+            <div className="flex gap-6 min-[600px]:gap-8 desktop:gap-10">
               {/* Left side - Image and name */}
               <div className="w-1/3 flex-shrink-0 mt-[50px] min-[500px]:mt-0">
                 <div className="relative w-full aspect-[120/150] mb-2">
@@ -497,184 +549,187 @@ export default function Home() {
         </div>
 
         {/* Naples Section */}
-        <section className="px-5 py-12 min-[600px]:pb-24 min-[700px]:pb-40">
+        <section className="lg-container:max-w-[1000px] lg-container:mx-auto px-5 py-12 min-[600px]:pb-24 min-[700px]:pb-40">
           {/* Overlapping images collage */}
           <div className="flex justify-center">
             <div className="relative w-[375px] min-[600px]:w-[450px] min-[700px]:w-[525px] h-[600px] mb-8 z-[2]">
-            {/* Top left image - moved down */}
-            <div className="absolute top-[35px] left-0 w-[110px] min-[600px]:w-[132px] min-[700px]:w-[149px] h-[140px] min-[600px]:h-[168px] min-[700px]:h-[189px] overflow-hidden z-[5]">
-              <picture>
-                <source
-                  media="(max-width: 600px)"
-                  srcSet="/assets/f8dda8fbc43efbacd643a90300fda8c4d067dce1-sm.jpg"
-                />
-                <source
-                  media="(max-width: 1000px)"
-                  srcSet="/assets/f8dda8fbc43efbacd643a90300fda8c4d067dce1-md.jpg"
-                />
-                <Image
-                  src="/assets/f8dda8fbc43efbacd643a90300fda8c4d067dce1.jpg"
-                  alt="Model portrait 1"
-                  fill
-                  className="object-cover"
-                />
-              </picture>
-            </div>
-
-            {/* Naples text with orange squiggles background */}
-            <div className="absolute top-[30px] left-[205px] min-[600px]:left-[250px] min-[700px]:left-[300px]">
-              {/* Orange squiggles background */}
-              <div
-                className="absolute -top-48 -bottom-60 -left-64 right-0 z-[1]"
-                style={{ transform: "translateX(0px)" }}
-              >
-                <Image
-                  src="/assets/orange_squiggles.svg"
-                  alt=""
-                  fill
-                  className="object-contain"
-                />
+              {/* Top left image - moved down */}
+              <div className="absolute top-[35px] left-0 w-[110px] min-[600px]:w-[132px] min-[700px]:w-[149px] h-[140px] min-[600px]:h-[168px] min-[700px]:h-[189px] overflow-hidden z-[5]">
+                <picture>
+                  <source
+                    media="(max-width: 600px)"
+                    srcSet="/assets/f8dda8fbc43efbacd643a90300fda8c4d067dce1-sm.jpg"
+                  />
+                  <source
+                    media="(max-width: 1000px)"
+                    srcSet="/assets/f8dda8fbc43efbacd643a90300fda8c4d067dce1-md.jpg"
+                  />
+                  <Image
+                    src="/assets/f8dda8fbc43efbacd643a90300fda8c4d067dce1.jpg"
+                    alt="Model portrait 1"
+                    fill
+                    className="object-cover"
+                  />
+                </picture>
               </div>
-              {/* Naples text */}
-              <div className="relative z-10 border border-white px-6 py-3">
-                <h2 className="font-readex font-semibold text-[32px] min-[600px]:text-[34px] leading-[94%]">
-                  NAPLES
-                </h2>
+
+              {/* Naples text with orange squiggles background */}
+              <div className="absolute top-[30px] left-[205px] min-[600px]:left-[250px] min-[700px]:left-[300px]">
+                {/* Orange squiggles background */}
+                <div
+                  className="absolute -top-48 -bottom-60 -left-64 right-0 z-[1]"
+                  style={{ transform: "translateX(0px)" }}
+                >
+                  <Image
+                    src="/assets/orange_squiggles.svg"
+                    alt=""
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+                {/* Naples text */}
+                <div className="relative z-10 border border-white px-6 py-3">
+                  <h2 className="font-readex font-semibold text-[32px] min-[600px]:text-[34px] leading-[94%]">
+                    NAPLES
+                  </h2>
+                </div>
               </div>
-            </div>
 
-            {/* Second image - moved left with z-index between first and third */}
-            <div className="absolute top-[120px] left-[75px] w-[140px] min-[600px]:w-[168px] min-[700px]:w-[189px] h-[180px] min-[600px]:h-[216px] min-[700px]:h-[243px] overflow-hidden z-[15]">
-              <picture>
-                <source
-                  media="(max-width: 600px)"
-                  srcSet="/assets/3e5d93c5d36628709ac63a0a9ad919a1f4cba5c0-sm.jpg"
-                />
-                <source
-                  media="(max-width: 1000px)"
-                  srcSet="/assets/3e5d93c5d36628709ac63a0a9ad919a1f4cba5c0-md.jpg"
-                />
-                <Image
-                  src="/assets/3e5d93c5d36628709ac63a0a9ad919a1f4cba5c0.jpg"
-                  alt="Model portrait 2"
-                  fill
-                  className="object-cover"
-                />
-              </picture>
-            </div>
-
-            {/* Third image (was left middle) */}
-            <div className="absolute top-[275px] left-0 w-[120px] min-[600px]:w-[144px] min-[700px]:w-[162px] h-[140px] min-[600px]:h-[168px] min-[700px]:h-[189px] overflow-hidden z-20">
-              <picture>
-                <source
-                  media="(max-width: 600px)"
-                  srcSet="/assets/893c5ce8c741400650fafef713b441ac02119527-sm.jpg"
-                />
-                <source
-                  media="(max-width: 1000px)"
-                  srcSet="/assets/893c5ce8c741400650fafef713b441ac02119527-md.jpg"
-                />
-                <Image
-                  src="/assets/893c5ce8c741400650fafef713b441ac02119527.jpg"
-                  alt="Model portrait 3"
-                  fill
-                  className="object-cover"
-                />
-              </picture>
-            </div>
-
-            {/* Right studio image (black and white) - made skinnier and taller */}
-            <div className="absolute top-[335px] left-[265px] min-[600px]:left-[320px] min-[700px]:left-[380px] w-[110px] min-[600px]:w-[132px] min-[700px]:w-[149px] h-[150px] min-[600px]:h-[180px] min-[700px]:h-[203px] overflow-hidden z-10">
-              <picture>
-                <source
-                  media="(max-width: 600px)"
-                  srcSet="/assets/cd5358401bb7dbdc13c3574b403166f057edf3cf-sm.jpg"
-                />
-                <source
-                  media="(max-width: 1000px)"
-                  srcSet="/assets/cd5358401bb7dbdc13c3574b403166f057edf3cf-md.jpg"
-                />
-                <Image
-                  src="/assets/cd5358401bb7dbdc13c3574b403166f057edf3cf.jpg"
-                  alt="Studio equipment"
-                  fill
-                  className="object-cover grayscale"
-                />
-              </picture>
-            </div>
-
-            {/* Bottom center image - moved down 25px more and right 60px */}
-            <div className="absolute bottom-[35px] min-[700px]:bottom-[-15px] left-[180px] min-[600px]:left-[210px] min-[700px]:left-[240px] w-[120px] min-[600px]:w-[144px] min-[700px]:w-[162px] h-[140px] min-[600px]:h-[168px] min-[700px]:h-[189px] overflow-hidden z-[25]">
-              <picture>
-                <source
-                  media="(max-width: 600px)"
-                  srcSet="/assets/cba1061db087e28bcec2d3212ce7cac7c93623d7-sm.jpg"
-                />
-                <source
-                  media="(max-width: 1000px)"
-                  srcSet="/assets/cba1061db087e28bcec2d3212ce7cac7c93623d7-md.jpg"
-                />
-                <Image
-                  src="/assets/cba1061db087e28bcec2d3212ce7cac7c93623d7.jpg"
-                  alt="Model portrait 4"
-                  fill
-                  className="object-cover"
-                />
-              </picture>
-            </div>
-
-            {/* Bottom right image - moved down 30px more and right 40px */}
-            <div className="absolute bottom-[-45px] min-[600px]:bottom-[-105px] min-[700px]:bottom-[-155px] left-[265px] min-[600px]:left-[320px] min-[700px]:left-[380px] w-[110px] min-[600px]:w-[132px] min-[700px]:w-[149px] h-[130px] min-[600px]:h-[156px] min-[700px]:h-[176px] overflow-hidden z-[30]">
-              <picture>
-                <source
-                  media="(max-width: 600px)"
-                  srcSet="/assets/2e903d3b27c832f8fdbb7848f80df8f7b93731f3-sm.jpg"
-                />
-                <source
-                  media="(max-width: 1000px)"
-                  srcSet="/assets/2e903d3b27c832f8fdbb7848f80df8f7b93731f3-md.jpg"
-                />
-                <Image
-                  src="/assets/2e903d3b27c832f8fdbb7848f80df8f7b93731f3.jpg"
-                  alt="Model portrait 5"
-                  fill
-                  className="object-cover"
-                />
-              </picture>
-            </div>
-
-            {/* October 22nd text overlay with orange squiggles */}
-            <div className="absolute bottom-[-45px] left-[-5px] z-35">
-              {/* Orange squiggles background */}
-              <div
-                className="absolute -top-24 -bottom-24 -left-32 -right-32 z-[1]"
-                style={{ transform: "translateX(0px)" }}
-              >
-                <Image
-                  src="/assets/orange_squiggles.svg"
-                  alt=""
-                  fill
-                  className="object-contain"
-                />
+              {/* Second image - moved left with z-index between first and third */}
+              <div className="absolute top-[120px] left-[75px] w-[140px] min-[600px]:w-[168px] min-[700px]:w-[189px] h-[180px] min-[600px]:h-[216px] min-[700px]:h-[243px] overflow-hidden z-[15]">
+                <picture>
+                  <source
+                    media="(max-width: 600px)"
+                    srcSet="/assets/3e5d93c5d36628709ac63a0a9ad919a1f4cba5c0-sm.jpg"
+                  />
+                  <source
+                    media="(max-width: 1000px)"
+                    srcSet="/assets/3e5d93c5d36628709ac63a0a9ad919a1f4cba5c0-md.jpg"
+                  />
+                  <Image
+                    src="/assets/3e5d93c5d36628709ac63a0a9ad919a1f4cba5c0.jpg"
+                    alt="Model portrait 2"
+                    fill
+                    className="object-cover"
+                  />
+                </picture>
               </div>
-              {/* October text */}
-              <div className="relative z-10 border border-white px-3 py-3">
-                <p className="text-sm min-[600px]:text-lg font-semibold">OCTOBER 22ND 4:30pm</p>
+
+              {/* Third image (was left middle) */}
+              <div className="absolute top-[275px] left-0 w-[120px] min-[600px]:w-[144px] min-[700px]:w-[162px] h-[140px] min-[600px]:h-[168px] min-[700px]:h-[189px] overflow-hidden z-20">
+                <picture>
+                  <source
+                    media="(max-width: 600px)"
+                    srcSet="/assets/893c5ce8c741400650fafef713b441ac02119527-sm.jpg"
+                  />
+                  <source
+                    media="(max-width: 1000px)"
+                    srcSet="/assets/893c5ce8c741400650fafef713b441ac02119527-md.jpg"
+                  />
+                  <Image
+                    src="/assets/893c5ce8c741400650fafef713b441ac02119527.jpg"
+                    alt="Model portrait 3"
+                    fill
+                    className="object-cover"
+                  />
+                </picture>
               </div>
-            </div>
+
+              {/* Right studio image (black and white) - made skinnier and taller */}
+              <div className="absolute top-[335px] left-[265px] min-[600px]:left-[320px] min-[700px]:left-[380px] w-[110px] min-[600px]:w-[132px] min-[700px]:w-[149px] h-[150px] min-[600px]:h-[180px] min-[700px]:h-[203px] overflow-hidden z-10">
+                <picture>
+                  <source
+                    media="(max-width: 600px)"
+                    srcSet="/assets/cd5358401bb7dbdc13c3574b403166f057edf3cf-sm.jpg"
+                  />
+                  <source
+                    media="(max-width: 1000px)"
+                    srcSet="/assets/cd5358401bb7dbdc13c3574b403166f057edf3cf-md.jpg"
+                  />
+                  <Image
+                    src="/assets/cd5358401bb7dbdc13c3574b403166f057edf3cf.jpg"
+                    alt="Studio equipment"
+                    fill
+                    className="object-cover grayscale"
+                  />
+                </picture>
+              </div>
+
+              {/* Bottom center image - moved down 25px more and right 60px */}
+              <div className="absolute bottom-[35px] min-[700px]:bottom-[-15px] left-[180px] min-[600px]:left-[210px] min-[700px]:left-[240px] w-[120px] min-[600px]:w-[144px] min-[700px]:w-[162px] h-[140px] min-[600px]:h-[168px] min-[700px]:h-[189px] overflow-hidden z-[25]">
+                <picture>
+                  <source
+                    media="(max-width: 600px)"
+                    srcSet="/assets/cba1061db087e28bcec2d3212ce7cac7c93623d7-sm.jpg"
+                  />
+                  <source
+                    media="(max-width: 1000px)"
+                    srcSet="/assets/cba1061db087e28bcec2d3212ce7cac7c93623d7-md.jpg"
+                  />
+                  <Image
+                    src="/assets/cba1061db087e28bcec2d3212ce7cac7c93623d7.jpg"
+                    alt="Model portrait 4"
+                    fill
+                    className="object-cover"
+                  />
+                </picture>
+              </div>
+
+              {/* Bottom right image - moved down 30px more and right 40px */}
+              <div className="absolute bottom-[-45px] min-[600px]:bottom-[-105px] min-[700px]:bottom-[-155px] left-[265px] min-[600px]:left-[320px] min-[700px]:left-[380px] w-[110px] min-[600px]:w-[132px] min-[700px]:w-[149px] h-[130px] min-[600px]:h-[156px] min-[700px]:h-[176px] overflow-hidden z-[30]">
+                <picture>
+                  <source
+                    media="(max-width: 600px)"
+                    srcSet="/assets/2e903d3b27c832f8fdbb7848f80df8f7b93731f3-sm.jpg"
+                  />
+                  <source
+                    media="(max-width: 1000px)"
+                    srcSet="/assets/2e903d3b27c832f8fdbb7848f80df8f7b93731f3-md.jpg"
+                  />
+                  <Image
+                    src="/assets/2e903d3b27c832f8fdbb7848f80df8f7b93731f3.jpg"
+                    alt="Model portrait 5"
+                    fill
+                    className="object-cover"
+                  />
+                </picture>
+              </div>
+
+              {/* October 22nd text overlay with orange squiggles */}
+              <div className="absolute bottom-[-45px] left-[-5px] z-35">
+                {/* Orange squiggles background */}
+                <div
+                  className="absolute -top-24 -bottom-24 -left-32 -right-32 z-[1]"
+                  style={{ transform: "translateX(0px)" }}
+                >
+                  <Image
+                    src="/assets/orange_squiggles.svg"
+                    alt=""
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+                {/* October text */}
+                <div className="relative z-10 border border-white px-3 py-3">
+                  <p className="text-sm min-[600px]:text-lg font-semibold">
+                    OCTOBER 22ND 4:30pm
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-
         </section>
 
         {/* Orange Footer */}
-        <footer className="bg-[#ff9045] text-white py-6 px-5 text-center">
-          <p className="font-readex font-semibold text-[15px] leading-[150%] mb-2">
-            SIGN UP FOR CASTING : TEXT OR CALL
-          </p>
-          <p className="font-readex font-semibold text-[15px] leading-[150%]">
-            (239) 378-8887 &nbsp;&nbsp; (801) 560-9637
-          </p>
+        <footer className="bg-[#ff9045] text-white py-6 text-center">
+          <div className="lg-container:max-w-[1000px] lg-container:mx-auto px-5">
+            <p className="font-readex font-semibold text-[15px] leading-[150%] mb-2">
+              SIGN UP FOR CASTING : TEXT OR CALL
+            </p>
+            <p className="font-readex font-semibold text-[15px] leading-[150%]">
+              (239) 378-8887 &nbsp;&nbsp; (801) 560-9637
+            </p>
+          </div>
         </footer>
       </main>
     </>
