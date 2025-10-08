@@ -78,9 +78,9 @@ export default function Home() {
               {/* Centered container for images */}
               <div className="relative mx-auto w-fit">
                 {/* Images container with exact dimensions */}
-                <div className="relative w-[780px] h-[500px]">
+                <div className="relative w-[760px] h-[430px]">
                   {/* Model 1 - Top Left */}
-                  <div className="absolute left-0 top-0 w-[300px] h-[350px]">
+                  <div className="absolute left-0 top-0 w-[290px] h-[330px]">
                     <div className="absolute inset-0 overflow-hidden">
                       <Image
                         src="/assets/544df825c9e42ab22331a9c76bd700462f45384d.jpg"
@@ -93,7 +93,7 @@ export default function Home() {
                   </div>
 
                   {/* Model 2 - Bottom Right - further apart on desktop */}
-                  <div className="absolute left-[450px] top-[120px] w-[280px] h-[320px]">
+                  <div className="absolute left-[470px] top-[80px] w-[270px] h-[310px]">
                     <div className="absolute inset-0 overflow-hidden">
                       <Image
                         src="/assets/7fac15c95cf92e71d7ac4ecef5ebf32db1a9f9dc.jpg"
@@ -109,7 +109,7 @@ export default function Home() {
                   </div>
 
                   {/* Children & Teenagers text - positioned relative to first image */}
-                  <p className="absolute left-[60px] top-[380px] font-readex font-normal text-[28px] leading-none text-lumina-dark whitespace-nowrap">
+                  <p className="absolute left-[70px] top-[360px] font-readex font-normal text-[28px] leading-none text-lumina-dark whitespace-nowrap">
                     CHILDREN&nbsp;&amp;&nbsp;TEENAGERS
                   </p>
                 </div>
@@ -117,10 +117,10 @@ export default function Home() {
             </div>
 
             {/* Overlay Text with Background - works for both layouts */}
-            <div className="absolute left-0 right-0 top-[120px] min-[470px]:top-[140px] min-[520px]:top-[160px] min-[690px]:top-[210px] desktop:left-[-50px] desktop:top-[280px] z-10">
-              <div className="desktop:max-w-[800px] desktop:mx-auto">
-                <div className="bg-black/10 backdrop-blur-sm py-2 -mx-5 desktop:mx-0">
-                  <h2 className="text-center font-gelasio font-semibold text-[30px] min-[470px]:text-[34px] min-[600px]:text-[36px] min-[690px]:text-[40px] desktop:text-[64px] leading-none text-white whitespace-nowrap">
+            <div className="absolute left-0 right-0 top-[120px] min-[470px]:top-[140px] min-[520px]:top-[160px] min-[690px]:top-[210px] desktop:left-[-118px] desktop:right-[-100px] desktop:top-[253px] z-10">
+              <div className="desktop:max-w-[774px] desktop:mx-auto">
+                <div className="bg-black/10 backdrop-blur-sm py-2 -mx-5 desktop:mx-0 desktop:px-8">
+                  <h2 className="text-center font-gelasio font-semibold text-[30px] min-[470px]:text-[34px] min-[600px]:text-[36px] min-[690px]:text-[40px] desktop:text-[62px] desktop:font-[600] leading-none text-white whitespace-nowrap">
                     MODEL SCHOOL FOR
                   </h2>
                 </div>
@@ -129,10 +129,10 @@ export default function Home() {
           </div>
 
           {/* We Provide Section */}
-          <div className="mt-20 desktop:mt-0 relative">
+          <div className="mt-20 desktop:mt-[20px] relative">
             <div className="flex items-start gap-6 desktop:gap-32 desktop:justify-center desktop:max-w-fit desktop:mx-auto ">
               {/* Left Image with border */}
-              <div className="relative w-[40%] min-w-[150px] desktop:min-w-[250px] desktop:h-[380px]">
+              <div className="relative w-[40%] min-w-[150px] desktop:min-w-[220px] desktop:h-[300px]">
                 <div className="absolute inset-0 overflow-hidden">
                   <Image
                     src="/assets/9ec7bb2f03d7b306c00e807cba726828cff54d1c.jpg"
@@ -143,27 +143,27 @@ export default function Home() {
                 </div>
                 <div className="absolute bottom-[-8px] left-[-8px] desktop:bottom-[-16px] desktop:left-[-16px] w-full h-full border border-[#ff9045] pointer-events-none"></div>
                 {/* We provide text overlay */}
-                <h3 className="absolute top-4 desktop:top-[36px] -right-16 desktop:right-[-140px] text-2xl min-[600px]:text-[26px] desktop:text-[64px] font-serif desktop:whitespace-nowrap">
+                <h3 className="absolute top-4 desktop:top-[41px] -right-16 desktop:right-[-95px] text-2xl min-[600px]:text-[26px] desktop:text-[60px] font-serif desktop:whitespace-nowrap">
                   We provide :
                 </h3>
               </div>
 
               {/* Right side text */}
-              <div className="flex-1 pt-14 desktop:pt-[116px] max-w-xs desktop:max-w-none">
-                <ul className="space-y-2 text-[13px] min-[600px]:text-[15px] desktop:text-[22px] font-readex font-normal">
-                  <li className="flex gap-4 sm:gap-8">
+              <div className="flex-1 pt-14 desktop:pt-[85px] max-w-xs desktop:max-w-none">
+                <ul className="space-y-2 desktop:space-y-8 text-[13px] min-[600px]:text-[15px] desktop:text-[22px] desktop:leading-[100%] font-readex font-normal desktop:font-[200]">
+                  <li className="flex gap-4 sm:gap-8 desktop:gap-16">
                     <span>Runway</span>
                     <span>Photoposing</span>
                   </li>
-                  <li className="flex gap-4 sm:gap-8 flex-wrap desktop:flex-nowrap">
+                  <li className="flex gap-4 sm:gap-8 desktop:gap-16 flex-wrap desktop:flex-nowrap">
                     <span>Choreography</span>
                     <span className="desktop:ml-0 desktop:whitespace-nowrap">
                       Model Etiquette
                     </span>
                   </li>
-                  <li className="desktop:text-[22px]">Makeup</li>
+                  <li>Makeup</li>
                   <li
-                    className="font-semibold text-xs min-[600px]:text-sm desktop:text-lg border border-white px-2 py-1 inline-block desktop:whitespace-nowrap"
+                    className="font-semibold text-xs min-[600px]:text-sm desktop:text-2xl border border-white px-2 py-1 inline-block desktop:whitespace-nowrap"
                     style={{ transform: "translateY(10px)" }}
                   >
                     OFFICIAL CERTIFICATE OF COMPLETION
@@ -181,7 +181,7 @@ export default function Home() {
             <div className="relative mr-5">
               {/* Orange squiggles background */}
               <div
-                className="absolute -top-48 -bottom-72 -left-64 right-0 -z-10"
+                className="absolute -top-40 -bottom-60 -left-52 right-8 -z-10"
                 style={{ transform: "translateY(-10px)" }}
               >
                 <Image
@@ -271,17 +271,17 @@ export default function Home() {
         {/* Lumina Academy Section */}
         <section className="lg-container:max-w-[1000px] lg-container:mx-auto px-5 pt-6 pb-10">
           <div className="p-2.5">
-            <h2 className="font-gelasio font-semibold text-lg min-[600px]:text-xl leading-none mb-4">
+            <h2 className="font-gelasio font-semibold text-lg min-[600px]:text-xl desktop:text-[26px] leading-none mb-4">
               Lumina Academy
             </h2>
 
-            <p className="font-gelasio font-normal text-sm min-[600px]:text-base leading-none mb-4">
+            <p className="font-gelasio font-normal text-sm min-[600px]:text-base desktop:text-[18px] leading-none mb-4">
               A premier modeling school for children and teens, guiding them to
               become confident, professional models. Our expert-designed program
               includes:
             </p>
 
-            <ul className="font-gelasio font-normal text-sm min-[600px]:text-base leading-none space-y-2 mb-4">
+            <ul className="font-gelasio font-normal text-sm min-[600px]:text-base desktop:text-[18px] leading-none space-y-2 mb-4">
               <li>
                 • Runway walk, choreography, posing, etiquette, and stage
                 presence
@@ -291,12 +291,12 @@ export default function Home() {
               <li>• Professional portfolio and certificate upon graduation</li>
             </ul>
 
-            <p className="font-gelasio font-normal text-sm min-[600px]:text-base leading-none mb-4">
+            <p className="font-gelasio font-normal text-sm min-[600px]:text-base desktop:text-[18px] leading-none mb-4">
               Students gain real-world experience, confidence, and skills to
               pursue modeling—or shine in any path they choose.
             </p>
 
-            <p className="font-gelasio font-bold italic text-sm min-[600px]:text-base leading-none">
+            <p className="font-gelasio font-bold italic text-sm min-[600px]:text-base desktop:text-[18px] leading-none">
               Where talent meets opportunity, and dreams take the runway.
             </p>
           </div>
@@ -359,14 +359,14 @@ export default function Home() {
 
               {/* Right side - Text content */}
               <div className="flex-1 w-2/3">
-                <p className="font-readex font-medium text-[10px] min-[600px]:text-xs leading-[150%] mb-4">
+                <p className="font-readex font-medium text-[10px] min-[600px]:text-xs desktop:text-[16px] leading-[150%] mb-4">
                   Originally from Minsk, Belarus and now based in Naples,
                   Florida, Nadzeya Palitskavaya is an accomplished ballet
                   dancer, choreographer, and model with over 20 years of
                   experience in performing arts, fashion, film, and academia.
                 </p>
 
-                <ul className="font-readex font-medium text-[10px] min-[600px]:text-xs leading-[150%] space-y-1 mb-4">
+                <ul className="font-readex font-medium text-[10px] min-[600px]:text-xs desktop:text-[16px] leading-[150%] space-y-1 mb-4">
                   <li>
                     • Graduate of the Belarusian State University of Culture and
                     Arts
@@ -389,7 +389,7 @@ export default function Home() {
                   </li>
                 </ul>
 
-                <p className="font-readex font-medium text-[10px] min-[600px]:text-xs leading-[150%]">
+                <p className="font-readex font-medium text-[10px] min-[600px]:text-xs desktop:text-[16px] leading-[150%]">
                   <strong>Mission</strong>
                   <br />
                   Nadzeya combines artistry, scholarship, and professional
@@ -448,7 +448,7 @@ export default function Home() {
 
               {/* Right side - Text content */}
               <div className="flex-1 w-2/3">
-                <p className="font-readex font-medium text-[10px] min-[600px]:text-xs leading-[150%] mb-4">
+                <p className="font-readex font-medium text-[10px] min-[600px]:text-xs desktop:text-[16px] leading-[150%] mb-4">
                   Originally from Kyiv, Ukraine and now based in Naples,
                   Florida, Julia Grace is an international fashion designer
                   whose couture collections have appeared on runways in New
@@ -457,13 +457,13 @@ export default function Home() {
                   sustainable swimwear.
                 </p>
 
-                <p className="font-readex font-medium text-[10px] min-[600px]:text-xs leading-[150%] mb-4">
+                <p className="font-readex font-medium text-[10px] min-[600px]:text-xs desktop:text-[16px] leading-[150%] mb-4">
                   As a Casting Director for Miss Earth USA, Julia empowers young
                   women to step into confidence, discover their strengths, and
                   use their voices with purpose.
                 </p>
 
-                <p className="font-readex font-medium text-[10px] min-[600px]:text-xs leading-[150%] mb-4">
+                <p className="font-readex font-medium text-[10px] min-[600px]:text-xs desktop:text-[16px] leading-[150%] mb-4">
                   For modeling students, Julia is a trusted guide—teaching
                   casting prep, runway skills, professionalism, and personal
                   branding. Her daughter, Valeria, an international model and
@@ -471,7 +471,7 @@ export default function Home() {
                   passion and discipline know no age limits.
                 </p>
 
-                <p className="font-readex font-medium text-[10px] min-[600px]:text-xs leading-[150%]">
+                <p className="font-readex font-medium text-[10px] min-[600px]:text-xs desktop:text-[16px] leading-[150%]">
                   <strong>Mission</strong>
                   <br />
                   Julia's mission is simple: to help others step into their
@@ -555,22 +555,14 @@ export default function Home() {
             <div className="relative w-[375px] min-[600px]:w-[450px] min-[700px]:w-[525px] h-[600px] mb-8 z-[2]">
               {/* Top left image - moved down */}
               <div className="absolute top-[35px] left-0 w-[110px] min-[600px]:w-[132px] min-[700px]:w-[149px] h-[140px] min-[600px]:h-[168px] min-[700px]:h-[189px] overflow-hidden z-[5]">
-                <picture>
-                  <source
-                    media="(max-width: 600px)"
-                    srcSet="/assets/f8dda8fbc43efbacd643a90300fda8c4d067dce1-sm.jpg"
-                  />
-                  <source
-                    media="(max-width: 1000px)"
-                    srcSet="/assets/f8dda8fbc43efbacd643a90300fda8c4d067dce1-md.jpg"
-                  />
-                  <Image
-                    src="/assets/f8dda8fbc43efbacd643a90300fda8c4d067dce1.jpg"
-                    alt="Model portrait 1"
-                    fill
-                    className="object-cover"
-                  />
-                </picture>
+                <Image
+                  src="/assets/f8dda8fbc43efbacd643a90300fda8c4d067dce1-md.jpg"
+                  alt="Model portrait 1"
+                  fill
+                  className="object-cover"
+                  quality={100}
+                  unoptimized
+                />
               </div>
 
               {/* Naples text with orange squiggles background */}
@@ -597,102 +589,62 @@ export default function Home() {
 
               {/* Second image - moved left with z-index between first and third */}
               <div className="absolute top-[120px] left-[75px] w-[140px] min-[600px]:w-[168px] min-[700px]:w-[189px] h-[180px] min-[600px]:h-[216px] min-[700px]:h-[243px] overflow-hidden z-[15]">
-                <picture>
-                  <source
-                    media="(max-width: 600px)"
-                    srcSet="/assets/3e5d93c5d36628709ac63a0a9ad919a1f4cba5c0-sm.jpg"
-                  />
-                  <source
-                    media="(max-width: 1000px)"
-                    srcSet="/assets/3e5d93c5d36628709ac63a0a9ad919a1f4cba5c0-md.jpg"
-                  />
-                  <Image
-                    src="/assets/3e5d93c5d36628709ac63a0a9ad919a1f4cba5c0.jpg"
-                    alt="Model portrait 2"
-                    fill
-                    className="object-cover"
-                  />
-                </picture>
+                <Image
+                  src="/assets/3e5d93c5d36628709ac63a0a9ad919a1f4cba5c0-md.jpg"
+                  alt="Model portrait 2"
+                  fill
+                  className="object-cover"
+                  quality={100}
+                  unoptimized
+                />
               </div>
 
               {/* Third image (was left middle) */}
               <div className="absolute top-[275px] left-0 w-[120px] min-[600px]:w-[144px] min-[700px]:w-[162px] h-[140px] min-[600px]:h-[168px] min-[700px]:h-[189px] overflow-hidden z-20">
-                <picture>
-                  <source
-                    media="(max-width: 600px)"
-                    srcSet="/assets/893c5ce8c741400650fafef713b441ac02119527-sm.jpg"
-                  />
-                  <source
-                    media="(max-width: 1000px)"
-                    srcSet="/assets/893c5ce8c741400650fafef713b441ac02119527-md.jpg"
-                  />
-                  <Image
-                    src="/assets/893c5ce8c741400650fafef713b441ac02119527.jpg"
-                    alt="Model portrait 3"
-                    fill
-                    className="object-cover"
-                  />
-                </picture>
+                <Image
+                  src="/assets/893c5ce8c741400650fafef713b441ac02119527-md.jpg"
+                  alt="Model portrait 3"
+                  fill
+                  className="object-cover"
+                  quality={100}
+                  unoptimized
+                />
               </div>
 
               {/* Right studio image (black and white) - made skinnier and taller */}
               <div className="absolute top-[335px] left-[265px] min-[600px]:left-[320px] min-[700px]:left-[380px] w-[110px] min-[600px]:w-[132px] min-[700px]:w-[149px] h-[150px] min-[600px]:h-[180px] min-[700px]:h-[203px] overflow-hidden z-10">
-                <picture>
-                  <source
-                    media="(max-width: 600px)"
-                    srcSet="/assets/cd5358401bb7dbdc13c3574b403166f057edf3cf-sm.jpg"
-                  />
-                  <source
-                    media="(max-width: 1000px)"
-                    srcSet="/assets/cd5358401bb7dbdc13c3574b403166f057edf3cf-md.jpg"
-                  />
-                  <Image
-                    src="/assets/cd5358401bb7dbdc13c3574b403166f057edf3cf.jpg"
-                    alt="Studio equipment"
-                    fill
-                    className="object-cover grayscale"
-                  />
-                </picture>
+                <Image
+                  src="/assets/cd5358401bb7dbdc13c3574b403166f057edf3cf-md.jpg"
+                  alt="Studio equipment"
+                  fill
+                  className="object-cover grayscale"
+                  quality={100}
+                  unoptimized
+                />
               </div>
 
               {/* Bottom center image - moved down 25px more and right 60px */}
               <div className="absolute bottom-[35px] min-[700px]:bottom-[-15px] left-[180px] min-[600px]:left-[210px] min-[700px]:left-[240px] w-[120px] min-[600px]:w-[144px] min-[700px]:w-[162px] h-[140px] min-[600px]:h-[168px] min-[700px]:h-[189px] overflow-hidden z-[25]">
-                <picture>
-                  <source
-                    media="(max-width: 600px)"
-                    srcSet="/assets/cba1061db087e28bcec2d3212ce7cac7c93623d7-sm.jpg"
-                  />
-                  <source
-                    media="(max-width: 1000px)"
-                    srcSet="/assets/cba1061db087e28bcec2d3212ce7cac7c93623d7-md.jpg"
-                  />
-                  <Image
-                    src="/assets/cba1061db087e28bcec2d3212ce7cac7c93623d7.jpg"
-                    alt="Model portrait 4"
-                    fill
-                    className="object-cover"
-                  />
-                </picture>
+                <Image
+                  src="/assets/cba1061db087e28bcec2d3212ce7cac7c93623d7-md.jpg"
+                  alt="Model portrait 4"
+                  fill
+                  className="object-cover"
+                  quality={100}
+                  unoptimized
+                />
               </div>
 
               {/* Bottom right image - moved down 30px more and right 40px */}
               <div className="absolute bottom-[-45px] min-[600px]:bottom-[-105px] min-[700px]:bottom-[-155px] left-[265px] min-[600px]:left-[320px] min-[700px]:left-[380px] w-[110px] min-[600px]:w-[132px] min-[700px]:w-[149px] h-[130px] min-[600px]:h-[156px] min-[700px]:h-[176px] overflow-hidden z-[30]">
-                <picture>
-                  <source
-                    media="(max-width: 600px)"
-                    srcSet="/assets/2e903d3b27c832f8fdbb7848f80df8f7b93731f3-sm.jpg"
-                  />
-                  <source
-                    media="(max-width: 1000px)"
-                    srcSet="/assets/2e903d3b27c832f8fdbb7848f80df8f7b93731f3-md.jpg"
-                  />
-                  <Image
-                    src="/assets/2e903d3b27c832f8fdbb7848f80df8f7b93731f3.jpg"
-                    alt="Model portrait 5"
-                    fill
-                    className="object-cover"
-                  />
-                </picture>
+                <Image
+                  src="/assets/2e903d3b27c832f8fdbb7848f80df8f7b93731f3-md.jpg"
+                  alt="Model portrait 5"
+                  fill
+                  className="object-cover"
+                  quality={100}
+                  unoptimized
+                />
               </div>
 
               {/* October 22nd text overlay with orange squiggles */}
