@@ -132,7 +132,7 @@ export default function Home() {
           <div className="mt-20 desktop:mt-[20px] relative">
             <div className="flex items-start gap-6 desktop:gap-32 desktop:justify-center desktop:max-w-fit desktop:mx-auto ">
               {/* Left Image with border */}
-              <div className="relative w-[40%] min-w-[150px] desktop:min-w-[220px] desktop:h-[300px]">
+              <div className="relative w-[40%] min-w-[150px] aspect-[4/5] desktop:min-w-[220px] desktop:h-[300px] desktop:aspect-auto">
                 <div className="absolute inset-0 overflow-hidden">
                   <Image
                     src="/assets/9ec7bb2f03d7b306c00e807cba726828cff54d1c.jpg"
@@ -143,13 +143,13 @@ export default function Home() {
                 </div>
                 <div className="absolute bottom-[-8px] left-[-8px] desktop:bottom-[-16px] desktop:left-[-16px] w-full h-full border border-[#ff9045] pointer-events-none"></div>
                 {/* We provide text overlay */}
-                <h3 className="absolute top-4 desktop:top-[41px] -right-16 desktop:right-[-95px] text-2xl min-[600px]:text-[26px] desktop:text-[60px] font-serif desktop:whitespace-nowrap">
+                <h3 className="absolute top-4 desktop:top-[11px] -right-16 desktop:right-[-95px] text-[32px] min-[600px]:text-[36px] desktop:text-[60px] font-serif desktop:whitespace-nowrap">
                   We provide :
                 </h3>
               </div>
 
               {/* Right side text */}
-              <div className="flex-1 pt-14 desktop:pt-[85px] max-w-xs desktop:max-w-none">
+              <div className="flex-1 pt-20 desktop:pt-[105px] max-w-xs desktop:max-w-none">
                 <ul className="space-y-2 desktop:space-y-8 text-[13px] min-[600px]:text-[15px] desktop:text-[22px] desktop:leading-[100%] font-readex font-normal desktop:font-[200]">
                   <li className="flex gap-4 sm:gap-8 desktop:gap-16">
                     <span>Runway</span>
@@ -177,7 +177,7 @@ export default function Home() {
         {/* Naples text and October 22nd Banner container */}
         <div className="lg-container:max-w-[1000px] lg-container:mx-auto relative pt-1">
           {/* Naples text with squiggles background */}
-          <div className="absolute bottom-[70px] desktop:bottom-[30px] right-0">
+          <div className="absolute bottom-[20px] min-[600px]:bottom-[70px] desktop:bottom-[30px] right-0 max-[420px]:right-[80px]">
             <div className="relative mr-5">
               {/* Orange squiggles background */}
               <div
@@ -549,12 +549,12 @@ export default function Home() {
         </div>
 
         {/* Naples Section */}
-        <section className="lg-container:max-w-[1000px] lg-container:mx-auto px-5 py-12 min-[600px]:pb-24 min-[700px]:pb-40">
+        <section className="lg-container:max-w-[1000px] lg-container:mx-auto px-5 py-12 min-[600px]:pb-24 min-[700px]:pb-40 max-[420px]:ml-[-10px]">
           {/* Overlapping images collage */}
           <div className="flex justify-center">
-            <div className="relative w-[375px] min-[600px]:w-[450px] min-[700px]:w-[525px] h-[600px] mb-8 z-[2]">
+            <div className="relative w-[375px] min-[600px]:w-[450px] min-[700px]:w-[525px] h-[600px] mb-8 z-[2] max-[420px]:max-w-[100vw]">
               {/* Top left image - moved down */}
-              <div className="absolute top-[35px] left-0 w-[110px] min-[600px]:w-[132px] min-[700px]:w-[149px] h-[140px] min-[600px]:h-[168px] min-[700px]:h-[189px] overflow-hidden z-[5]">
+              <div className="absolute top-[35px] left-0 max-[420px]:left-[20px] w-[110px] min-[600px]:w-[132px] min-[700px]:w-[149px] h-[140px] min-[600px]:h-[168px] min-[700px]:h-[189px] overflow-hidden z-[5]">
                 <Image
                   src="/assets/f8dda8fbc43efbacd643a90300fda8c4d067dce1-md.jpg"
                   alt="Model portrait 1"
@@ -566,7 +566,7 @@ export default function Home() {
               </div>
 
               {/* Naples text with orange squiggles background */}
-              <div className="absolute top-[30px] left-[205px] min-[600px]:left-[250px] min-[700px]:left-[300px]">
+              <div className="absolute top-[30px] left-[205px] max-[420px]:left-[225px] min-[600px]:left-[250px] min-[700px]:left-[300px]">
                 {/* Orange squiggles background */}
                 <div
                   className="absolute -top-48 -bottom-60 -left-64 right-0 z-[1]"
@@ -580,7 +580,7 @@ export default function Home() {
                   />
                 </div>
                 {/* Naples text */}
-                <div className="relative z-10 border border-white px-6 py-3">
+                <div className="relative z-10 border border-white px-6 py-3 max-[420px]:relative max-[420px]:right-[40px]">
                   <h2 className="font-readex font-semibold text-[32px] min-[600px]:text-[34px] leading-[94%]">
                     NAPLES
                   </h2>
@@ -588,7 +588,7 @@ export default function Home() {
               </div>
 
               {/* Second image - moved left with z-index between first and third */}
-              <div className="absolute top-[120px] left-[75px] w-[140px] min-[600px]:w-[168px] min-[700px]:w-[189px] h-[180px] min-[600px]:h-[216px] min-[700px]:h-[243px] overflow-hidden z-[15]">
+              <div className="absolute top-[120px] left-[75px] max-[420px]:left-[95px] w-[140px] min-[600px]:w-[168px] min-[700px]:w-[189px] h-[180px] min-[600px]:h-[216px] min-[700px]:h-[243px] overflow-hidden z-[15]">
                 <Image
                   src="/assets/3e5d93c5d36628709ac63a0a9ad919a1f4cba5c0-md.jpg"
                   alt="Model portrait 2"
@@ -600,7 +600,7 @@ export default function Home() {
               </div>
 
               {/* Third image (was left middle) */}
-              <div className="absolute top-[275px] left-0 w-[120px] min-[600px]:w-[144px] min-[700px]:w-[162px] h-[140px] min-[600px]:h-[168px] min-[700px]:h-[189px] overflow-hidden z-20">
+              <div className="absolute top-[275px] left-0 max-[420px]:left-[20px] w-[120px] min-[600px]:w-[144px] min-[700px]:w-[162px] h-[140px] min-[600px]:h-[168px] min-[700px]:h-[189px] overflow-hidden z-20">
                 <Image
                   src="/assets/893c5ce8c741400650fafef713b441ac02119527-md.jpg"
                   alt="Model portrait 3"
@@ -612,7 +612,7 @@ export default function Home() {
               </div>
 
               {/* Right studio image (black and white) - made skinnier and taller */}
-              <div className="absolute top-[335px] left-[265px] min-[600px]:left-[320px] min-[700px]:left-[380px] w-[110px] min-[600px]:w-[132px] min-[700px]:w-[149px] h-[150px] min-[600px]:h-[180px] min-[700px]:h-[203px] overflow-hidden z-10">
+              <div className="absolute top-[335px] left-[265px] max-[420px]:left-[245px] min-[600px]:left-[320px] min-[700px]:left-[380px] w-[110px] min-[600px]:w-[132px] min-[700px]:w-[149px] h-[150px] min-[600px]:h-[180px] min-[700px]:h-[203px] overflow-hidden z-10">
                 <Image
                   src="/assets/cd5358401bb7dbdc13c3574b403166f057edf3cf-md.jpg"
                   alt="Studio equipment"
@@ -624,7 +624,7 @@ export default function Home() {
               </div>
 
               {/* Bottom center image - moved down 25px more and right 60px */}
-              <div className="absolute bottom-[35px] min-[700px]:bottom-[-15px] left-[180px] min-[600px]:left-[210px] min-[700px]:left-[240px] w-[120px] min-[600px]:w-[144px] min-[700px]:w-[162px] h-[140px] min-[600px]:h-[168px] min-[700px]:h-[189px] overflow-hidden z-[25]">
+              <div className="absolute bottom-[35px] min-[700px]:bottom-[-15px] left-[180px] max-[420px]:left-[160px] min-[600px]:left-[210px] min-[700px]:left-[240px] w-[120px] min-[600px]:w-[144px] min-[700px]:w-[162px] h-[140px] min-[600px]:h-[168px] min-[700px]:h-[189px] overflow-hidden z-[25]">
                 <Image
                   src="/assets/cba1061db087e28bcec2d3212ce7cac7c93623d7-md.jpg"
                   alt="Model portrait 4"
@@ -636,7 +636,7 @@ export default function Home() {
               </div>
 
               {/* Bottom right image - moved down 30px more and right 40px */}
-              <div className="absolute bottom-[-45px] min-[600px]:bottom-[-105px] min-[700px]:bottom-[-155px] left-[265px] min-[600px]:left-[320px] min-[700px]:left-[380px] w-[110px] min-[600px]:w-[132px] min-[700px]:w-[149px] h-[130px] min-[600px]:h-[156px] min-[700px]:h-[176px] overflow-hidden z-[30]">
+              <div className="absolute bottom-[-45px] min-[600px]:bottom-[-105px] min-[700px]:bottom-[-155px] left-[265px] max-[420px]:left-[245px] min-[600px]:left-[320px] min-[700px]:left-[380px] w-[110px] min-[600px]:w-[132px] min-[700px]:w-[149px] h-[130px] min-[600px]:h-[156px] min-[700px]:h-[176px] overflow-hidden z-[30]">
                 <Image
                   src="/assets/2e903d3b27c832f8fdbb7848f80df8f7b93731f3-md.jpg"
                   alt="Model portrait 5"
@@ -648,7 +648,7 @@ export default function Home() {
               </div>
 
               {/* October 22nd text overlay with orange squiggles */}
-              <div className="absolute bottom-[-45px] left-[-5px] z-35">
+              <div className="absolute bottom-[-45px] left-[-5px] max-[420px]:left-[15px] z-35">
                 {/* Orange squiggles background */}
                 <div
                   className="absolute -top-24 -bottom-24 -left-32 -right-32 z-[1]"
