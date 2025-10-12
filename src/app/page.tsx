@@ -271,7 +271,7 @@ export default function Home() {
         {/* Lumina Academy Section */}
         <section className="lg-container:max-w-[1000px] lg-container:mx-auto px-5 pt-6 pb-10">
           <div className="p-2.5">
-            <h2 className="font-gelasio font-semibold text-lg min-[600px]:text-xl desktop:text-[26px] leading-none mb-4">
+            <h2 className="font-gelasio font-semibold text-lg min-[600px]:text-xl desktop:text-[40px] leading-none mb-4 desktop:mb-12 desktop:mt-12">
               Lumina Academy
             </h2>
 
@@ -304,15 +304,16 @@ export default function Home() {
 
         {/* Our Founders Section */}
         <section className="lg-container:max-w-[1000px] lg-container:mx-auto px-5 pt-2 pb-12">
-          <div className="text-center mb-8">
-            <h2 className="text-2xl min-[600px]:text-[26px] font-serif border border-white px-4 py-2 inline-block">
+          <div className="text-center mb-8 desktop:mb-16 desktop:mt-12">
+            <h2 className="text-2xl min-[600px]:text-[26px] desktop:text-[48px] font-serif border border-white px-4 py-2 desktop:px-6 desktop:py-3 inline-block">
               OUR FOUNDERS
             </h2>
           </div>
 
           {/* Nadezda Poltashkova */}
           <div className="mb-12">
-            <div className="flex gap-6 min-[600px]:gap-8 desktop:gap-10">
+            {/* Mobile/Tablet Layout (under 900px) */}
+            <div className="flex gap-6 min-[600px]:gap-8 desktop:hidden">
               {/* Left side - Image and name */}
               <div className="w-1/3 flex-shrink-0 mt-[50px] min-[500px]:mt-0">
                 <div className="relative w-full aspect-[120/150] mb-2">
@@ -399,11 +400,106 @@ export default function Home() {
                 </p>
               </div>
             </div>
+
+            {/* Desktop Layout (900px and above) */}
+            <div className="hidden desktop:block">
+              {/* Three images in a row */}
+              <div className="grid grid-cols-3 gap-4 mb-8">
+                <div className="relative aspect-[3/4]">
+                  <Image
+                    src="/assets/e44e148af8eb7d92a918181db0fc80f0f568d728.jpg"
+                    alt="Nadezda Poltashkova portrait 1"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="relative aspect-[3/4]">
+                  <Image
+                    src="/assets/7e5a3f8cd13208fbc2d6eb8605b3bb05e3245940.jpg"
+                    alt="Nadezda Poltashkova portrait 2"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="relative aspect-[3/4]">
+                  <Image
+                    src="/assets/2ff58669f716d69a0d736cf6d298647b467d2a26.jpg"
+                    alt="Nadezda Poltashkova portrait 3"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              </div>
+
+              {/* Name and titles */}
+              <div className="text-left mb-6 relative">
+                {/* White squiggles background */}
+                <div className="absolute -top-32 -bottom-32 -left-32 right-32 -z-10">
+                  <Image
+                    src="/assets/white_squiggles.svg"
+                    alt=""
+                    fill
+                    className="object-contain object-left"
+                  />
+                </div>
+                <h3 className="text-2xl font-readex tracking-wider mb-2 text-[#ff9045] relative z-10">
+                  NADZEYA POLTASHKOVA
+                </h3>
+                <p className="text-lg text-lumina-dark font-bold relative z-10">
+                  Ballet Master • Choreographer • Model • Creative Visionary
+                </p>
+              </div>
+
+              {/* Description text */}
+              <div className="text-left">
+                <p className="font-readex text-base leading-relaxed mb-6">
+                  Originally from Minsk, Belarus and now based in Naples,
+                  Florida, Nadzeya Palitskavaya is an accomplished ballet
+                  dancer, choreographer, and model with over 20 years of
+                  experience in performing arts, fashion, film, and academia.
+                </p>
+
+                <ul className="font-readex text-base leading-relaxed space-y-2 mb-6">
+                  <li>
+                    • Graduate of the Belarusian State University of Culture and
+                    Arts
+                  </li>
+                  <li>
+                    • Former Ballet Dancer at the Belarusian State Academic
+                    Musical Theater
+                  </li>
+                  <li>
+                    • Ballet Master & Choreography Teacher with 21 years of
+                    experience
+                  </li>
+                  <li>• PhD in Art History</li>
+                  <li>• Actress in films and artistic productions</li>
+                  <li>• Former national TV sports host</li>
+                  <li>• 25 years of international modeling experience</li>
+                  <li>
+                    • Featured in fashion shows and commercial campaigns across
+                    Europe & the U.S.
+                  </li>
+                </ul>
+
+                <p className="font-readex text-base leading-relaxed">
+                  <strong>
+                    <span className="text-[#ff9045]">★</span> Mission
+                  </strong>
+                  <br />
+                  Nadzeya combines artistry, scholarship, and professional
+                  experience to mentor the next generation of artists and
+                  models—helping them unlock creativity, master their craft, and
+                  shine on stage, on camera, and in life.
+                </p>
+              </div>
+            </div>
           </div>
 
           {/* Julia Grace */}
           <div className="mt-12">
-            <div className="flex gap-6 min-[600px]:gap-8 desktop:gap-10">
+            {/* Mobile/Tablet Layout (under 900px) */}
+            <div className="flex gap-6 min-[600px]:gap-8 desktop:hidden">
               {/* Left side - Image and name */}
               <div className="w-1/3 flex-shrink-0 mt-[50px] min-[500px]:mt-0">
                 <div className="relative w-full aspect-[120/150] mb-2">
@@ -467,12 +563,100 @@ export default function Home() {
                   For modeling students, Julia is a trusted guide—teaching
                   casting prep, runway skills, professionalism, and personal
                   branding. Her daughter, Valeria, an international model and
-                  pageant titleholder at just 11, reflects Julia&apos;s belief that
-                  passion and discipline know no age limits.
+                  pageant titleholder at just 11, reflects Julia&apos;s belief
+                  that passion and discipline know no age limits.
                 </p>
 
                 <p className="font-readex font-medium text-[10px] min-[600px]:text-xs desktop:text-[16px] leading-[150%]">
                   <strong>Mission</strong>
+                  <br />
+                  Julia&apos;s mission is simple: to help others step into their
+                  power, walk with confidence, and shine on every stage of life.
+                </p>
+              </div>
+            </div>
+
+            {/* Desktop Layout (900px and above) */}
+            <div className="hidden desktop:block">
+              {/* Three images in a row */}
+              <div className="grid grid-cols-3 gap-4 mb-8">
+                <div className="relative aspect-[3/4]">
+                  <Image
+                    src="/assets/3ce74d2eee6b7ac2e10398b452885e82cffcb23a.jpg"
+                    alt="Julia Grace portrait 1"
+                    fill
+                    sizes="(max-width: 900px) 100vw, 33vw"
+                    quality={100}
+                    priority
+                    className="object-cover"
+                  />
+                </div>
+                <div className="relative aspect-[3/4]">
+                  <Image
+                    src="/assets/f030e442d74eef1ed6e618fbb67521958d049670.jpg"
+                    alt="Julia Grace portrait 2"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="relative aspect-[3/4]">
+                  <Image
+                    src="/assets/de0db9190bcdf4a514134b18a0687b8d3e5b080e.jpg"
+                    alt="Julia Grace portrait 3"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              </div>
+
+              {/* Name and titles */}
+              <div className="text-left mb-6 relative">
+                {/* White squiggles background */}
+                <div className="absolute -top-32 -bottom-32 -left-32 right-32 -z-10">
+                  <Image
+                    src="/assets/white_squiggles.svg"
+                    alt=""
+                    fill
+                    className="object-contain object-left"
+                  />
+                </div>
+                <h3 className="text-2xl font-readex tracking-wider mb-2 text-[#ff9045] relative z-10">
+                  JULIA GRACE
+                </h3>
+                <p className="text-lg text-lumina-dark font-bold relative z-10">
+                  Fashion Innovator • Mentor • Community Leader
+                </p>
+              </div>
+
+              {/* Description text */}
+              <div className="text-left">
+                <p className="font-readex text-base leading-relaxed mb-6">
+                  Originally from Kyiv, Ukraine and now based in Naples,
+                  Florida, Julia Grace is an international fashion designer
+                  whose couture collections have appeared on runways in New
+                  York, Paris, Milan, Dubai, and Miami. She is also Regional
+                  Director for Smart Swimsuits, a leader in innovative,
+                  sustainable swimwear.
+                </p>
+
+                <p className="font-readex text-base leading-relaxed mb-6">
+                  As a Casting Director for Miss Earth USA, Julia empowers young
+                  women to step into confidence, discover their strengths, and
+                  use their voices with purpose.
+                </p>
+
+                <p className="font-readex text-base leading-relaxed mb-6">
+                  For modeling students, Julia is a trusted guide—teaching
+                  casting prep, runway skills, professionalism, and personal
+                  branding. Her daughter, Valeria, an international model and
+                  pageant titleholder at just 11, reflects Julia&apos;s belief
+                  that passion and discipline know no age limits.
+                </p>
+
+                <p className="font-readex text-base leading-relaxed">
+                  <strong>
+                    <span className="text-[#ff9045]">★</span> Mission
+                  </strong>
                   <br />
                   Julia&apos;s mission is simple: to help others step into their
                   power, walk with confidence, and shine on every stage of life.
@@ -552,9 +736,9 @@ export default function Home() {
         <section className="lg-container:max-w-[1000px] lg-container:mx-auto px-5 py-12 min-[600px]:pb-24 min-[700px]:pb-40 max-[420px]:ml-[-10px]">
           {/* Overlapping images collage */}
           <div className="flex justify-center">
-            <div className="relative w-[375px] min-[600px]:w-[450px] min-[700px]:w-[525px] h-[600px] mb-8 z-[2] max-[420px]:max-w-[100vw]">
+            <div className="relative w-[375px] min-[600px]:w-[450px] min-[700px]:w-[525px] desktop:w-[900px] h-[600px] desktop:h-[1200px] mb-8 desktop:mb-20 z-[2] max-[420px]:max-w-[100vw] desktop:-ml-[50px]">
               {/* Top left image - moved down */}
-              <div className="absolute top-[35px] left-0 max-[420px]:left-[20px] w-[110px] min-[600px]:w-[132px] min-[700px]:w-[149px] h-[140px] min-[600px]:h-[168px] min-[700px]:h-[189px] overflow-hidden z-[5]">
+              <div className="absolute top-[35px] left-0 max-[420px]:left-[20px] desktop:left-[20px] w-[110px] min-[600px]:w-[132px] min-[700px]:w-[149px] desktop:w-[280px] h-[140px] min-[600px]:h-[168px] min-[700px]:h-[189px] desktop:h-[350px] overflow-hidden z-[5]">
                 <Image
                   src="/assets/f8dda8fbc43efbacd643a90300fda8c4d067dce1-md.jpg"
                   alt="Model portrait 1"
@@ -566,10 +750,10 @@ export default function Home() {
               </div>
 
               {/* Naples text with orange squiggles background */}
-              <div className="absolute top-[30px] left-[205px] max-[420px]:left-[225px] min-[600px]:left-[250px] min-[700px]:left-[300px]">
+              <div className="absolute top-[30px] left-[205px] max-[420px]:left-[225px] min-[600px]:left-[250px] min-[700px]:left-[300px] desktop:left-[700px]">
                 {/* Orange squiggles background */}
                 <div
-                  className="absolute -top-48 -bottom-60 -left-64 right-0 z-[1]"
+                  className="absolute -top-48 -bottom-60 -left-64 right-0 z-[1] desktop:translate-x-[200px]"
                   style={{ transform: "translateX(0px)" }}
                 >
                   <Image
@@ -588,7 +772,7 @@ export default function Home() {
               </div>
 
               {/* Second image - moved left with z-index between first and third */}
-              <div className="absolute top-[120px] left-[75px] max-[420px]:left-[95px] w-[140px] min-[600px]:w-[168px] min-[700px]:w-[189px] h-[180px] min-[600px]:h-[216px] min-[700px]:h-[243px] overflow-hidden z-[15]">
+              <div className="absolute top-[120px] left-[75px] max-[420px]:left-[95px] desktop:left-[240px] w-[140px] min-[600px]:w-[168px] min-[700px]:w-[189px] desktop:w-[340px] h-[180px] min-[600px]:h-[216px] min-[700px]:h-[243px] desktop:h-[440px] overflow-hidden z-[15]">
                 <Image
                   src="/assets/3e5d93c5d36628709ac63a0a9ad919a1f4cba5c0-md.jpg"
                   alt="Model portrait 2"
@@ -600,7 +784,7 @@ export default function Home() {
               </div>
 
               {/* Third image (was left middle) */}
-              <div className="absolute top-[275px] left-0 max-[420px]:left-[20px] w-[120px] min-[600px]:w-[144px] min-[700px]:w-[162px] h-[140px] min-[600px]:h-[168px] min-[700px]:h-[189px] overflow-hidden z-20">
+              <div className="absolute top-[275px] desktop:top-[470px] left-0 max-[420px]:left-[20px] desktop:left-[0px] w-[120px] min-[600px]:w-[144px] min-[700px]:w-[162px] desktop:w-[360px] h-[140px] min-[600px]:h-[168px] min-[700px]:h-[189px] desktop:h-[420px] overflow-hidden z-20">
                 <Image
                   src="/assets/893c5ce8c741400650fafef713b441ac02119527-md.jpg"
                   alt="Model portrait 3"
@@ -612,7 +796,7 @@ export default function Home() {
               </div>
 
               {/* Right studio image (black and white) - made skinnier and taller */}
-              <div className="absolute top-[335px] left-[265px] max-[420px]:left-[245px] min-[600px]:left-[320px] min-[700px]:left-[380px] w-[110px] min-[600px]:w-[132px] min-[700px]:w-[149px] h-[150px] min-[600px]:h-[180px] min-[700px]:h-[203px] overflow-hidden z-10">
+              <div className="absolute top-[335px] desktop:top-[451px] left-[265px] max-[420px]:left-[245px] min-[600px]:left-[320px] min-[700px]:left-[380px] desktop:left-[500px] w-[110px] min-[600px]:w-[132px] min-[700px]:w-[149px] desktop:w-[250px] h-[150px] min-[600px]:h-[180px] min-[700px]:h-[203px] desktop:h-[340px] overflow-hidden z-10 desktop:z-[16]">
                 <Image
                   src="/assets/cd5358401bb7dbdc13c3574b403166f057edf3cf-md.jpg"
                   alt="Studio equipment"
@@ -624,7 +808,7 @@ export default function Home() {
               </div>
 
               {/* Bottom center image - moved down 25px more and right 60px */}
-              <div className="absolute bottom-[35px] min-[700px]:bottom-[-15px] left-[180px] max-[420px]:left-[160px] min-[600px]:left-[210px] min-[700px]:left-[240px] w-[120px] min-[600px]:w-[144px] min-[700px]:w-[162px] h-[140px] min-[600px]:h-[168px] min-[700px]:h-[189px] overflow-hidden z-[25]">
+              <div className="absolute bottom-[35px] min-[700px]:bottom-[-15px] desktop:bottom-[-145px] left-[180px] max-[420px]:left-[160px] min-[600px]:left-[210px] min-[700px]:left-[240px] desktop:left-[20px] w-[120px] min-[600px]:w-[144px] min-[700px]:w-[162px] desktop:w-[300px] h-[140px] min-[600px]:h-[168px] min-[700px]:h-[189px] desktop:h-[350px] overflow-hidden z-[25] desktop:z-[31]">
                 <Image
                   src="/assets/cba1061db087e28bcec2d3212ce7cac7c93623d7-md.jpg"
                   alt="Model portrait 4"
@@ -636,7 +820,7 @@ export default function Home() {
               </div>
 
               {/* Bottom right image - moved down 30px more and right 40px */}
-              <div className="absolute bottom-[-45px] min-[600px]:bottom-[-105px] min-[700px]:bottom-[-155px] left-[265px] max-[420px]:left-[245px] min-[600px]:left-[320px] min-[700px]:left-[380px] w-[110px] min-[600px]:w-[132px] min-[700px]:w-[149px] h-[130px] min-[600px]:h-[156px] min-[700px]:h-[176px] overflow-hidden z-[30]">
+              <div className="absolute bottom-[-45px] min-[600px]:bottom-[-105px] min-[700px]:bottom-[-155px] desktop:bottom-[-85px] left-[265px] max-[420px]:left-[245px] min-[600px]:left-[320px] min-[700px]:left-[380px] desktop:left-[285px] w-[110px] min-[600px]:w-[132px] min-[700px]:w-[149px] desktop:w-[380px] h-[130px] min-[600px]:h-[156px] min-[700px]:h-[176px] desktop:h-[450px] overflow-hidden z-[30]">
                 <Image
                   src="/assets/2e903d3b27c832f8fdbb7848f80df8f7b93731f3-md.jpg"
                   alt="Model portrait 5"
@@ -648,7 +832,7 @@ export default function Home() {
               </div>
 
               {/* October 22nd text overlay with orange squiggles */}
-              <div className="absolute bottom-[-45px] left-[-5px] max-[420px]:left-[15px] z-35">
+              <div className="absolute bottom-[-245px] desktop:bottom-[-215px] left-[-5px] max-[420px]:left-[15px] desktop:right-[20px] desktop:left-auto z-35">
                 {/* Orange squiggles background */}
                 <div
                   className="absolute -top-24 -bottom-24 -left-32 -right-32 z-[1]"
