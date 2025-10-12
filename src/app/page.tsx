@@ -467,14 +467,14 @@ export default function Home() {
                   For modeling students, Julia is a trusted guide—teaching
                   casting prep, runway skills, professionalism, and personal
                   branding. Her daughter, Valeria, an international model and
-                  pageant titleholder at just 11, reflects Julia's belief that
+                  pageant titleholder at just 11, reflects Julia&apos;s belief that
                   passion and discipline know no age limits.
                 </p>
 
                 <p className="font-readex font-medium text-[10px] min-[600px]:text-xs desktop:text-[16px] leading-[150%]">
                   <strong>Mission</strong>
                   <br />
-                  Julia's mission is simple: to help others step into their
+                  Julia&apos;s mission is simple: to help others step into their
                   power, walk with confidence, and shine on every stage of life.
                 </p>
               </div>
