@@ -868,7 +868,7 @@ export default function Home() {
                 />
               </div>
 
-              {/* October 22nd text overlay with orange squiggles - Desktop only */}
+              {/* October 22nd text overlay with orange squiggles - Desktop only. */}
               <div className="hidden desktop:block absolute desktop:bottom-[-220px] desktop:right-[10px] desktop:left-auto z-[35]">
                 {/* Orange squiggles background */}
                 <div
