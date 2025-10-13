@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <>
+    <div className="min-h-screen flex flex-col">
       {/* Header */}
       <header className="bg-lumina-cream pt-8 pb-6 relative overflow-hidden">
         <div className="lg-container:max-w-[1000px] lg-container:mx-auto">
@@ -15,7 +15,7 @@ export default function Home() {
                   alt=""
                   width={800}
                   height={200}
-                  className="w-[400px] h-[200px] desktop:w-[800px] desktop:h-[400px] object-contain"
+                  className="w-[400px] h-[200px] desktop:w-[1200px] desktop:h-[600px] object-contain"
                 />
               </div>
               <h1 className="font-gelasio font-normal text-[31.32px] min-[600px]:text-[33px] desktop:text-[42px] leading-none tracking-normal mb-2">
@@ -32,7 +32,7 @@ export default function Home() {
         </div>
       </header>
 
-      <main>
+      <main className="flex-grow">
         {/* Hero Section */}
         <section className="lg-container:max-w-[1000px] lg-container:mx-auto px-5 pt-4 pb-8 desktop:px-8 desktop:pt-6 desktop:pb-12">
           <div className="relative">
@@ -78,9 +78,9 @@ export default function Home() {
               {/* Centered container for images */}
               <div className="relative mx-auto w-fit">
                 {/* Images container with exact dimensions */}
-                <div className="relative w-[760px] h-[430px]">
+                <div className="relative w-[1000px] h-[430px]">
                   {/* Model 1 - Top Left */}
-                  <div className="absolute left-0 top-0 w-[290px] h-[330px]">
+                  <div className="absolute left-0 top-0 w-[410px] h-[380px]">
                     <div className="absolute inset-0 overflow-hidden">
                       <Image
                         src="/assets/544df825c9e42ab22331a9c76bd700462f45384d.jpg"
@@ -93,7 +93,7 @@ export default function Home() {
                   </div>
 
                   {/* Model 2 - Bottom Right - further apart on desktop */}
-                  <div className="absolute left-[470px] top-[80px] w-[270px] h-[310px]">
+                  <div className="absolute left-[470px] top-[80px] w-[420px] h-[450px]">
                     <div className="absolute inset-0 overflow-hidden">
                       <Image
                         src="/assets/7fac15c95cf92e71d7ac4ecef5ebf32db1a9f9dc.jpg"
@@ -109,7 +109,7 @@ export default function Home() {
                   </div>
 
                   {/* Children & Teenagers text - positioned relative to first image */}
-                  <p className="absolute left-[70px] top-[360px] font-readex font-normal text-[28px] leading-none text-lumina-dark whitespace-nowrap">
+                  <p className="absolute left-[70px] top-[420px] font-readex font-normal text-[28px] leading-none text-lumina-dark whitespace-nowrap">
                     CHILDREN&nbsp;&amp;&nbsp;TEENAGERS
                   </p>
                 </div>
@@ -117,8 +117,8 @@ export default function Home() {
             </div>
 
             {/* Overlay Text with Background - works for both layouts */}
-            <div className="absolute left-0 right-0 top-[120px] min-[470px]:top-[140px] min-[520px]:top-[160px] min-[690px]:top-[210px] desktop:left-[-118px] desktop:right-[-100px] desktop:top-[253px] z-10">
-              <div className="desktop:max-w-[774px] desktop:mx-auto">
+            <div className="absolute left-0 right-0 top-[120px] min-[470px]:top-[140px] min-[520px]:top-[160px] min-[690px]:top-[210px] desktop:left-[-144px] desktop:right-[-100px] desktop:top-[302px] z-10">
+              <div className="desktop:max-w-[890px] desktop:mx-auto">
                 <div className="bg-black/10 backdrop-blur-sm py-2 -mx-5 desktop:mx-0 desktop:px-8">
                   <h2 className="text-center font-gelasio font-semibold text-[30px] min-[470px]:text-[34px] min-[600px]:text-[36px] min-[690px]:text-[40px] desktop:text-[62px] desktop:font-[600] leading-none text-white whitespace-nowrap">
                     MODEL SCHOOL FOR
@@ -129,10 +129,10 @@ export default function Home() {
           </div>
 
           {/* We Provide Section */}
-          <div className="mt-20 desktop:mt-[20px] relative">
+          <div className="mt-20 desktop:mt-[110px] relative">
             <div className="flex items-start gap-6 desktop:gap-32 desktop:justify-center desktop:max-w-fit desktop:mx-auto ">
               {/* Left Image with border */}
-              <div className="relative w-[40%] min-w-[150px] aspect-[4/5] desktop:min-w-[220px] desktop:h-[300px] desktop:aspect-auto">
+              <div className="relative w-[40%] min-w-[150px] aspect-[4/5] desktop:min-w-[280px] desktop:h-[380px] desktop:aspect-auto">
                 <div className="absolute inset-0 overflow-hidden">
                   <Image
                     src="/assets/9ec7bb2f03d7b306c00e807cba726828cff54d1c.jpg"
@@ -149,7 +149,7 @@ export default function Home() {
               </div>
 
               {/* Right side text */}
-              <div className="flex-1 pt-20 desktop:pt-[105px] max-w-xs desktop:max-w-none">
+              <div className="flex-1 pt-20 desktop:pt-[115px] max-w-xs desktop:max-w-none">
                 <ul className="space-y-2 desktop:space-y-8 text-[13px] min-[600px]:text-[15px] desktop:text-[22px] desktop:leading-[100%] font-readex font-normal desktop:font-[200]">
                   <li className="flex gap-4 sm:gap-8 desktop:gap-16">
                     <span>Runway</span>
@@ -175,13 +175,13 @@ export default function Home() {
         </section>
 
         {/* Naples text and October 22nd Banner container */}
-        <div className="lg-container:max-w-[1000px] lg-container:mx-auto relative pt-1">
+        <div className="lg-container:max-w-[1000px] lg-container:mx-auto relative pt-1 desktop:pt-12">
           {/* Naples text with squiggles background */}
           <div className="absolute bottom-[20px] min-[600px]:bottom-[70px] desktop:bottom-[30px] right-0 max-[420px]:right-[80px]">
             <div className="relative mr-5">
               {/* Orange squiggles background */}
               <div
-                className="absolute -top-40 -bottom-60 -left-52 right-8 -z-10"
+                className="absolute -top-40 -bottom-60 -left-52 right-8 desktop:-top-60 desktop:-bottom-80 desktop:-left-80 desktop:-right-20 -z-10"
                 style={{ transform: "translateY(-10px)" }}
               >
                 <Image
@@ -271,8 +271,19 @@ export default function Home() {
         {/* Lumina Academy Section */}
         <section className="lg-container:max-w-[1000px] lg-container:mx-auto px-5 pt-6 pb-10">
           <div className="p-2.5">
-            <h2 className="font-gelasio font-semibold text-lg min-[600px]:text-xl desktop:text-[40px] leading-none mb-4 desktop:mb-12 desktop:mt-12">
-              Lumina Academy
+            <h2 className="font-gelasio font-semibold text-lg min-[600px]:text-xl desktop:text-[40px] leading-none mb-4 desktop:mb-16 desktop:mt-12 desktop:relative desktop:w-fit">
+              {/* Oval gradient background - desktop only */}
+              <div
+                className="hidden desktop:block desktop:absolute desktop:inset-0 desktop:-inset-x-28 desktop:-inset-y-10 desktop:rounded-full"
+                style={{
+                  background:
+                    "radial-gradient(ellipse at center, rgba(255, 144, 69, 0.3) 0%, rgba(255, 144, 69, 0.15) 50%, transparent 100%)",
+                  filter: "blur(16px)",
+                }}
+              ></div>
+              <span className="desktop:relative desktop:z-10">
+                Lumina Academy
+              </span>
             </h2>
 
             <p className="font-gelasio font-normal text-sm min-[600px]:text-base desktop:text-[18px] leading-none mb-4">
@@ -733,10 +744,10 @@ export default function Home() {
         </div>
 
         {/* Naples Section */}
-        <section className="lg-container:max-w-[1000px] lg-container:mx-auto px-5 py-12 min-[600px]:pb-24 min-[700px]:pb-40 max-[420px]:ml-[-10px]">
+        <section className="lg-container:max-w-[1000px] lg-container:mx-auto px-5 py-12 min-[600px]:pb-24 min-[700px]:pb-40 max-[420px]:ml-[-10px] overflow-visible">
           {/* Overlapping images collage */}
           <div className="flex justify-center">
-            <div className="relative w-[375px] min-[600px]:w-[450px] min-[700px]:w-[525px] desktop:w-[900px] h-[600px] desktop:h-[1200px] mb-8 desktop:mb-20 z-[2] max-[420px]:max-w-[100vw] desktop:-ml-[50px]">
+            <div className="relative w-[375px] min-[600px]:w-[450px] min-[700px]:w-[525px] desktop:w-[900px] h-[600px] desktop:h-[1200px] mb-8 desktop:mb-20 z-[2] max-[420px]:max-w-[100vw] desktop:ml-0 overflow-visible">
               {/* Top left image - moved down */}
               <div className="absolute top-[35px] left-0 max-[420px]:left-[20px] desktop:left-[20px] w-[110px] min-[600px]:w-[132px] min-[700px]:w-[149px] desktop:w-[280px] h-[140px] min-[600px]:h-[168px] min-[700px]:h-[189px] desktop:h-[350px] overflow-hidden z-[5]">
                 <Image
@@ -832,10 +843,10 @@ export default function Home() {
               </div>
 
               {/* October 22nd text overlay with orange squiggles */}
-              <div className="absolute bottom-[-245px] desktop:bottom-[-215px] left-[-5px] max-[420px]:left-[15px] desktop:right-[20px] desktop:left-auto z-35">
+              <div className="absolute bottom-[-245px] desktop:bottom-[-200px] left-[-5px] max-[420px]:left-[15px] desktop:right-[20px] desktop:left-auto z-[35]">
                 {/* Orange squiggles background */}
                 <div
-                  className="absolute -top-24 -bottom-24 -left-32 -right-32 z-[1]"
+                  className="absolute -top-24 -bottom-24 -left-32 -right-32 desktop:-top-68 desktop:-left-64 desktop:-right-64 z-[1]"
                   style={{ transform: "translateX(0px)" }}
                 >
                   <Image
@@ -847,7 +858,7 @@ export default function Home() {
                 </div>
                 {/* October text */}
                 <div className="relative z-10 border border-white px-3 py-3">
-                  <p className="text-sm min-[600px]:text-lg font-semibold">
+                  <p className="text-sm min-[600px]:text-lg font-semibold desktop:font-bold">
                     OCTOBER 22ND 4:30pm
                   </p>
                 </div>
@@ -855,19 +866,19 @@ export default function Home() {
             </div>
           </div>
         </section>
-
-        {/* Orange Footer */}
-        <footer className="bg-[#ff9045] text-white py-6 text-center">
-          <div className="lg-container:max-w-[1000px] lg-container:mx-auto px-5">
-            <p className="font-readex font-semibold text-[15px] leading-[150%] mb-2">
-              SIGN UP FOR CASTING : TEXT OR CALL
-            </p>
-            <p className="font-readex font-semibold text-[15px] leading-[150%]">
-              (239) 378-8887 &nbsp;&nbsp; (801) 560-9637
-            </p>
-          </div>
-        </footer>
       </main>
-    </>
+
+      {/* Orange Footer */}
+      <footer className="bg-[#ff9045] text-white py-6 text-center">
+        <div className="lg-container:max-w-[1000px] lg-container:mx-auto px-5">
+          <p className="font-readex font-semibold text-[15px] leading-[150%] mb-2">
+            SIGN UP FOR CASTING : TEXT OR CALL
+          </p>
+          <p className="font-readex font-semibold text-[15px] leading-[150%]">
+            (239) 378-8887 &nbsp;&nbsp; (801) 560-9637
+          </p>
+        </div>
+      </footer>
+    </div>
   );
 }
