@@ -9,7 +9,7 @@ export default function Home() {
           <div className="text-center relative z-20">
             <div className="relative inline-block">
               {/* White squiggles background - positioned relative to text */}
-              <div className="absolute -top-8 -bottom-8 -left-16 -right-16 -z-10 flex items-center justify-center desktop:translate-y-[30px]">
+              <div className="absolute -top-8 -bottom-8 -left-16 -right-16 -z-30 flex items-center justify-center desktop:translate-y-[30px]">
                 <Image
                   src="/assets/white_squiggles.svg"
                   alt=""
@@ -37,7 +37,7 @@ export default function Home() {
 
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="lg-container:max-w-[1050px] lg-container:mx-auto px-5 pt-4 pb-8 desktop:px-8 desktop:pt-6 desktop:pb-12 desktop:ml-[30px]">
+        <section className="lg-container:max-w-[1200px] lg-container:mx-auto px-5 pt-4 pb-8 desktop:px-8 desktop:pt-6 desktop:pb-12 desktop:ml-[30px]">
           <div className="relative">
             {/* Mobile/Tablet Layout (under 1050px) */}
             <div className="desktop:hidden">
@@ -79,11 +79,11 @@ export default function Home() {
             {/* Desktop Layout (1050px+) */}
             <div className="hidden desktop:block">
               {/* Centered container for images */}
-              <div className="relative mx-auto w-fit">
+              <div className="relative mx-auto w-full">
                 {/* Images container with exact dimensions */}
-                <div className="relative w-[1050px] h-[430px]">
+                <div className="relative w-full h-[500px]">
                   {/* Model 1 - Top Left */}
-                  <div className="absolute left-0 top-[-10px] w-[380px] h-[510px]">
+                  <div className="absolute left-0 top-[-10px] w-[500px] h-[560px]">
                     <div className="absolute inset-0 overflow-hidden">
                       <Image
                         src="/assets/544df825c9e42ab22331a9c76bd700462f45384d.jpg"
@@ -96,7 +96,7 @@ export default function Home() {
                   </div>
 
                   {/* Model 2 - Bottom Right - further apart on desktop */}
-                  <div className="absolute right-[65px] top-[40px] w-[380px] h-[530px]">
+                  <div className="absolute right-[0px] top-[30px] w-[500px] h-[580px]">
                     <div className="absolute inset-0 overflow-hidden">
                       <Image
                         src="/assets/7fac15c95cf92e71d7ac4ecef5ebf32db1a9f9dc.jpg"
@@ -112,7 +112,7 @@ export default function Home() {
                   </div>
 
                   {/* Children & Teenagers text - positioned relative to first image */}
-                  <p className="absolute left-[150px] top-[535px] font-readex font-normal text-[28px] leading-none text-lumina-dark whitespace-nowrap">
+                  <p className="absolute left-[240px] top-[575px] font-readex font-normal text-[28px] leading-none text-lumina-dark whitespace-nowrap">
                     CHILDREN&nbsp;&amp;&nbsp;TEENAGERS
                   </p>
                 </div>
@@ -120,7 +120,7 @@ export default function Home() {
             </div>
 
             {/* Overlay Text with Background - works for both layouts */}
-            <div className="absolute left-0 right-0 top-[120px] min-[470px]:top-[140px] min-[520px]:top-[160px] min-[690px]:top-[210px] desktop:left-[-50px] desktop:right-[-50px] desktop:top-[420px] z-10">
+            <div className="absolute left-0 right-0 top-[120px] min-[470px]:top-[140px] min-[520px]:top-[160px] min-[690px]:top-[210px] desktop:left-[-200px] desktop:right-[-200px] desktop:top-[450px] z-10">
               <div className="desktop:max-w-[1033px] desktop:mx-auto">
                 <div className=" backdrop-blur-sm py-2 -mx-5 desktop:mx-0 desktop:px-8">
                   <h2 className="text-center font-gelasio font-semibold text-[30px] min-[470px]:text-[34px] min-[600px]:text-[36px] min-[690px]:text-[40px] desktop:text-[68px] desktop:font-[600] leading-none text-white whitespace-nowrap">
@@ -131,8 +131,95 @@ export default function Home() {
             </div>
           </div>
 
+          {/* Orange squiggles decoration with Naples text - Desktop only */}
+          <div className="hidden desktop:block relative desktop:mt-[50px] desktop:mb-[80px]">
+            <div className="relative flex justify-center">
+              {/* Orange squiggles background */}
+              <div className="relative w-[700px] h-[600px] -translate-x-[100px] -translate-y-[100px] -z-10">
+                <Image
+                  src="/assets/orange_squiggles.svg"
+                  alt=""
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              {/* Naples text positioned over squiggles */}
+              <div className="absolute top-[120px] left-1/2 transform -translate-x-1/2 border-2 border-white px-6 py-3 z-10">
+                <h2 className="font-readex font-semibold text-[48px] leading-[94%]">
+                  NAPLES
+                </h2>
+              </div>
+            </div>
+          </div>
+
+          {/* Scrolling October 22nd Banner */}
+          <div className="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] bg-lumina-dark py-1.5 overflow-hidden -mt-[335px]">
+            <div className="animate-scroll whitespace-nowrap inline-flex">
+              <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
+                OCTOBER 22nd
+              </span>
+              <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
+                OCTOBER 22nd
+              </span>
+              <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
+                OCTOBER 22nd
+              </span>
+              <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
+                OCTOBER 22nd
+              </span>
+              <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
+                OCTOBER 22nd
+              </span>
+              <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
+                OCTOBER 22nd
+              </span>
+              <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
+                OCTOBER 22nd
+              </span>
+              <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
+                OCTOBER 22nd
+              </span>
+              <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
+                OCTOBER 22nd
+              </span>
+              <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
+                OCTOBER 22nd
+              </span>
+              <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
+                OCTOBER 22nd
+              </span>
+              <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
+                OCTOBER 22nd
+              </span>
+              <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
+                OCTOBER 22nd
+              </span>
+              <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
+                OCTOBER 22nd
+              </span>
+              <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
+                OCTOBER 22nd
+              </span>
+              <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
+                OCTOBER 22nd
+              </span>
+              <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
+                OCTOBER 22nd
+              </span>
+              <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
+                OCTOBER 22nd
+              </span>
+              <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
+                OCTOBER 22nd
+              </span>
+              <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
+                OCTOBER 22nd
+              </span>
+            </div>
+          </div>
+
           {/* We Provide Section */}
-          <div className="mt-20 desktop:mt-[200px] relative">
+          <div className="mt-20 desktop:mt-[90px] relative">
             <div className="flex items-start gap-6 desktop:gap-40 desktop:justify-between desktop:max-w-fit desktop:mx-auto ">
               {/* Left Image with border */}
               <div className="relative w-[40%] min-w-[150px] aspect-[4/5] desktop:min-w-[360px] desktop:h-[460px] desktop:aspect-auto">
@@ -179,14 +266,14 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Naples text and October 22nd Banner container */}
-        <div className="lg-container:max-w-[1050px] lg-container:mx-auto relative pt-1 desktop:pt-12">
+        {/* Naples text container */}
+        <div className="lg-container:max-w-[1050px] lg-container:mx-auto relative pt-1 desktop:pt-[-28px] desktop:hidden">
           {/* Naples text with squiggles background */}
           <div className="absolute bottom-[20px] min-[600px]:bottom-[70px] desktop:bottom-[30px] right-0 desktop:right-[0px]">
             <div className="relative mr-5">
               {/* Orange squiggles background */}
               <div
-                className="absolute -top-40 -bottom-60 -left-52 right-8 desktop:-top-60 desktop:-bottom-80 desktop:-left-80 desktop:-right-20 -z-10"
+                className="absolute -top-40 -bottom-60 -left-52 right-8 desktop:-top-60 desktop:-bottom-80 desktop:-left-80 desktop:-right-20 -z-20"
                 style={{ transform: "translateY(-10px)" }}
               >
                 <Image
@@ -203,78 +290,12 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Spacer before scrolling banner */}
+          {/* Spacer */}
           <div className="h-[70px]"></div>
         </div>
 
-        {/* Scrolling October 22nd Banner */}
-        <div className="bg-lumina-dark py-1.5 overflow-hidden">
-          <div className="animate-scroll whitespace-nowrap inline-flex">
-            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-              OCTOBER 22nd
-            </span>
-            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-              OCTOBER 22nd
-            </span>
-            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-              OCTOBER 22nd
-            </span>
-            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-              OCTOBER 22nd
-            </span>
-            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-              OCTOBER 22nd
-            </span>
-            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-              OCTOBER 22nd
-            </span>
-            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-              OCTOBER 22nd
-            </span>
-            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-              OCTOBER 22nd
-            </span>
-            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-              OCTOBER 22nd
-            </span>
-            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-              OCTOBER 22nd
-            </span>
-            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-              OCTOBER 22nd
-            </span>
-            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-              OCTOBER 22nd
-            </span>
-            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-              OCTOBER 22nd
-            </span>
-            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-              OCTOBER 22nd
-            </span>
-            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-              OCTOBER 22nd
-            </span>
-            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-              OCTOBER 22nd
-            </span>
-            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-              OCTOBER 22nd
-            </span>
-            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-              OCTOBER 22nd
-            </span>
-            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-              OCTOBER 22nd
-            </span>
-            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-              OCTOBER 22nd
-            </span>
-          </div>
-        </div>
-
         {/* Lumina Academy Section */}
-        <section className="lg-container:max-w-[1050px] lg-container:mx-auto px-5 pt-6 pb-10">
+        <section className="lg-container:max-w-[1050px] lg-container:mx-auto px-5 pt-6 pb-10 desktop:hidden">
           <div className="p-2.5">
             <h2 className="font-gelasio font-semibold text-lg min-[600px]:text-xl desktop:text-[40px] leading-none mb-4 desktop:mb-16 desktop:mt-12 desktop:relative desktop:w-fit">
               {/* Oval gradient background - desktop only */}
@@ -769,7 +790,7 @@ export default function Home() {
               <div className="absolute top-[30px] left-[205px] max-[420px]:left-[225px] min-[600px]:left-[250px] min-[700px]:left-[300px] desktop:left-[730px]">
                 {/* Orange squiggles background */}
                 <div
-                  className="absolute -top-48 -bottom-60 -left-64 right-0 z-[1] desktop:translate-x-[200px]"
+                  className="absolute -top-48 -bottom-60 -left-64 right-0 -z-10 desktop:translate-x-[200px]"
                   style={{ transform: "translateX(0px)" }}
                 >
                   <Image
@@ -851,7 +872,7 @@ export default function Home() {
               <div className="hidden desktop:block absolute desktop:bottom-[-180px] desktop:right-[10px] desktop:left-auto z-[35]">
                 {/* Orange squiggles background */}
                 <div
-                  className="absolute -top-24 -bottom-24 -left-32 -right-32 desktop:-top-68 desktop:-left-68 desktop:-right-64 z-[1]"
+                  className="absolute -top-24 -bottom-24 -left-32 -right-32 desktop:-top-68 desktop:-left-68 desktop:-right-64 -z-10"
                   style={{ transform: "translateX(-60px)" }}
                 >
                   <Image
@@ -876,7 +897,7 @@ export default function Home() {
         <div className="desktop:hidden relative -mt-6 mb-4 ml-4">
           <div className="relative inline-block">
             {/* Orange squiggles background */}
-            <div className="absolute -inset-x-16 -inset-y-12 z-[1]">
+            <div className="absolute -inset-x-16 -inset-y-12 -z-10">
               <Image
                 src="/assets/orange_squiggles.svg"
                 alt=""
