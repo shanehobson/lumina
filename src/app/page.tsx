@@ -175,7 +175,7 @@ export default function Home() {
         </section>
 
         {/* Naples text and October 22nd Banner container */}
-        <div className="lg-container:max-w-[1000px] lg-container:mx-auto relative pt-1 desktop:pt-12">
+        <div className="lg-container:max-w-[1200px] lg-container:mx-auto relative pt-1 desktop:pt-12">
           {/* Naples text with squiggles background */}
           <div className="absolute bottom-[20px] min-[600px]:bottom-[70px] desktop:bottom-[30px] right-0 desktop:right-[-40px]">
             <div className="relative mr-5">
@@ -192,7 +192,7 @@ export default function Home() {
                 />
               </div>
               {/* Naples text */}
-              <p className="relative z-10 font-gelasio font-semibold text-[24px] min-[600px]:text-[26px] desktop:text-[36px] leading-none border border-white px-4 py-2 text-lumina-dark desktop:ml-[40px]">
+              <p className="relative z-10 font-gelasio font-semibold text-[24px] min-[600px]:text-[26px] desktop:text-[36px] leading-none border border-white px-4 py-2 text-lumina-dark desktop:ml-[120px]">
                 Naples
               </p>
             </div>
@@ -761,7 +761,7 @@ export default function Home() {
               </div>
 
               {/* Naples text with orange squiggles background */}
-              <div className="absolute top-[30px] left-[205px] max-[420px]:left-[225px] min-[600px]:left-[250px] min-[700px]:left-[300px] desktop:left-[700px]">
+              <div className="absolute top-[30px] left-[205px] max-[420px]:left-[225px] min-[600px]:left-[250px] min-[700px]:left-[300px] desktop:left-[800px]">
                 {/* Orange squiggles background */}
                 <div
                   className="absolute -top-48 -bottom-60 -left-64 right-0 z-[1] desktop:translate-x-[200px]"
@@ -843,11 +843,11 @@ export default function Home() {
               </div>
 
               {/* October 22nd text overlay with orange squiggles - Desktop only */}
-              <div className="hidden desktop:block absolute desktop:bottom-[-200px] desktop:right-[20px] desktop:left-auto z-[35]">
+              <div className="hidden desktop:block absolute desktop:bottom-[-200px] desktop:right-[-20px] desktop:left-auto z-[35]">
                 {/* Orange squiggles background */}
                 <div
                   className="absolute -top-24 -bottom-24 -left-32 -right-32 desktop:-top-68 desktop:-left-68 desktop:-right-64 z-[1]"
-                  style={{ transform: "translateX(0px)" }}
+                  style={{ transform: "translateX(-60px)" }}
                 >
                   <Image
                     src="/assets/orange_squiggles.svg"
