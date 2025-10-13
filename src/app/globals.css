@@ -31,4 +31,49 @@
   .animate-scroll {
     animation: scroll 30s linear infinite;
   }
+  
+  /* Media query for screens < 1185px */
+  @media (min-width: 1050px) and (max-width: 1184px) {
+    /* Move children & teenagers text left by 130px and up by 80px */
+    .children-teenagers-text {
+      transform: translateX(-130px);
+      top: 495px !important;
+    }
+    
+    /* Decrease size of top two images by 20% */
+    .hero-image-1 {
+      width: 400px !important;
+      height: 448px !important;
+    }
+    
+    .hero-image-2 {
+      width: 400px !important;
+      height: 464px !important;
+    }
+    
+    /* Top section container max-width */
+    .hero-section-container {
+      max-width: 1000px !important;
+    }
+    
+    /* Move MODEL SCHOOL FOR text up by 100px */
+    .model-school-text {
+      top: 350px !important;
+    }
+    
+    /* Move Naples text in top section up by 60px */
+    .naples-text-top {
+      top: 60px !important;
+    }
+    
+    /* Move orange squiggles behind Naples text up by 60px */
+    .orange-squiggles-top {
+      transform: translate(-100px, -160px) !important;
+    }
+    
+    /* Move certificate text left by 70px */
+    .certificate-text {
+      margin-left: -70px !important;
+    }
+  }
 }

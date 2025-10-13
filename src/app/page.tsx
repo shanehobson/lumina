@@ -37,7 +37,7 @@ export default function Home() {
 
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="lg-container:max-w-[1200px] lg-container:mx-auto px-5 pt-4 pb-8 desktop:px-8 desktop:pt-6 desktop:pb-12 desktop:ml-[30px]">
+        <section className="lg-container:max-w-[1200px] lg-container:mx-auto px-5 pt-4 pb-8 desktop:px-8 desktop:pt-6 desktop:pb-12 desktop:ml-[30px] hero-section-container">
           <div className="relative">
             {/* Mobile/Tablet Layout (under 1050px) */}
             <div className="desktop:hidden">
@@ -83,7 +83,7 @@ export default function Home() {
                 {/* Images container with exact dimensions */}
                 <div className="relative w-full h-[500px]">
                   {/* Model 1 - Top Left */}
-                  <div className="absolute left-0 top-[-10px] w-[500px] h-[560px]">
+                  <div className="absolute left-0 top-[-10px] w-[500px] h-[560px] hero-image-1">
                     <div className="absolute inset-0 overflow-hidden">
                       <Image
                         src="/assets/544df825c9e42ab22331a9c76bd700462f45384d.jpg"
@@ -96,7 +96,7 @@ export default function Home() {
                   </div>
 
                   {/* Model 2 - Bottom Right - further apart on desktop */}
-                  <div className="absolute right-[0px] top-[30px] w-[500px] h-[580px]">
+                  <div className="absolute right-[0px] top-[30px] w-[500px] h-[580px] hero-image-2">
                     <div className="absolute inset-0 overflow-hidden">
                       <Image
                         src="/assets/7fac15c95cf92e71d7ac4ecef5ebf32db1a9f9dc.jpg"
@@ -112,7 +112,7 @@ export default function Home() {
                   </div>
 
                   {/* Children & Teenagers text - positioned relative to first image */}
-                  <p className="absolute left-[240px] top-[575px] font-readex font-normal text-[28px] leading-none text-lumina-dark whitespace-nowrap">
+                  <p className="absolute left-[240px] top-[575px] font-readex font-normal text-[28px] leading-none text-lumina-dark whitespace-nowrap children-teenagers-text">
                     CHILDREN&nbsp;&amp;&nbsp;TEENAGERS
                   </p>
                 </div>
@@ -120,7 +120,7 @@ export default function Home() {
             </div>
 
             {/* Overlay Text with Background - works for both layouts */}
-            <div className="absolute left-0 right-0 top-[120px] min-[470px]:top-[140px] min-[520px]:top-[160px] min-[690px]:top-[210px] desktop:left-[-200px] desktop:right-[-200px] desktop:top-[450px] z-10">
+            <div className="absolute left-0 right-0 top-[120px] min-[470px]:top-[140px] min-[520px]:top-[160px] min-[690px]:top-[210px] desktop:left-[-200px] desktop:right-[-200px] desktop:top-[450px] z-10 model-school-text">
               <div className="desktop:max-w-[1033px] desktop:mx-auto">
                 <div className=" backdrop-blur-sm py-2 -mx-5 desktop:mx-0 desktop:px-8">
                   <h2 className="text-center font-gelasio font-semibold text-[30px] min-[470px]:text-[34px] min-[600px]:text-[36px] min-[690px]:text-[40px] desktop:text-[68px] desktop:font-[600] leading-none text-white whitespace-nowrap">
@@ -135,7 +135,7 @@ export default function Home() {
           <div className="hidden desktop:block relative desktop:mt-[70px] desktop:mb-[80px]">
             <div className="relative flex justify-center">
               {/* Orange squiggles background */}
-              <div className="relative w-[700px] h-[600px] -translate-x-[100px] -translate-y-[100px] -z-10">
+              <div className="relative w-[700px] h-[600px] -translate-x-[100px] -translate-y-[100px] -z-10 orange-squiggles-top">
                 <Image
                   src="/assets/orange_squiggles.svg"
                   alt=""
@@ -144,7 +144,7 @@ export default function Home() {
                 />
               </div>
               {/* Naples text positioned over squiggles */}
-              <div className="absolute top-[120px] left-1/2 transform -translate-x-1/2 border-2 border-white px-6 py-3 z-10">
+              <div className="absolute top-[120px] left-1/2 transform -translate-x-1/2 border-2 border-white px-6 py-3 z-10 naples-text-top">
                 <h2 className="font-readex font-semibold text-[48px] leading-[94%]">
                   NAPLES
                 </h2>
@@ -255,7 +255,7 @@ export default function Home() {
                   </li>
                   <li>Makeup</li>
                   <li
-                    className="font-semibold text-xs min-[600px]:text-sm desktop:text-2xl border-2 border-white px-2 py-1 inline-block desktop:whitespace-nowrap"
+                    className="font-semibold text-xs min-[600px]:text-sm desktop:text-2xl border-2 border-white px-2 py-1 inline-block desktop:whitespace-nowrap certificate-text"
                     style={{ transform: "translateY(10px)" }}
                   >
                     OFFICIAL CERTIFICATE OF COMPLETION

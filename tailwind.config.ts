@@ -12,6 +12,7 @@ const config: Config = {
         'xs': '480px',
         'desktop': '1050px',
         'lg-container': '1050px',
+        'xl-desktop': '1185px',
       },
       colors: {
         lumina: {
