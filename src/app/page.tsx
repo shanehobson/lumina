@@ -132,7 +132,7 @@ export default function Home() {
           </div>
 
           {/* Orange squiggles decoration with Naples text - Desktop only */}
-          <div className="hidden desktop:block relative desktop:mt-[50px] desktop:mb-[80px]">
+          <div className="hidden desktop:block relative desktop:mt-[70px] desktop:mb-[80px]">
             <div className="relative flex justify-center">
               {/* Orange squiggles background */}
               <div className="relative w-[700px] h-[600px] -translate-x-[100px] -translate-y-[100px] -z-10">
@@ -153,7 +153,7 @@ export default function Home() {
           </div>
 
           {/* Scrolling October 22nd Banner */}
-          <div className="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] bg-lumina-dark py-1.5 overflow-hidden -mt-[335px]">
+          <div className="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] bg-lumina-dark py-1.5 overflow-hidden -mt-[340px]">
             <div className="animate-scroll whitespace-nowrap inline-flex">
               <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
                 OCTOBER 22nd
@@ -267,7 +267,7 @@ export default function Home() {
         </section>
 
         {/* Naples text container */}
-        <div className="lg-container:max-w-[1050px] lg-container:mx-auto relative pt-1 desktop:pt-[-28px] desktop:hidden">
+        <div className="lg-container:max-w-[1050px] lg-container:mx-auto relative pt-1 desktop:pt-[-8px] desktop:hidden">
           {/* Naples text with squiggles background */}
           <div className="absolute bottom-[20px] min-[600px]:bottom-[70px] desktop:bottom-[30px] right-0 desktop:right-[0px]">
             <div className="relative mr-5">
@@ -340,7 +340,7 @@ export default function Home() {
         </section>
 
         {/* Our Founders Section */}
-        <section className="lg-container:max-w-[1050px] lg-container:mx-auto px-5 pt-2 pb-12">
+        <section className="lg-container:max-w-[1050px] lg-container:mx-auto px-5 pt-[18px] desktop:pt-2 pb-12">
           <div className="text-center mb-8 desktop:mb-16 desktop:mt-12">
             <h2 className="text-2xl min-[600px]:text-[26px] desktop:text-[48px] font-serif border-2 border-white px-4 py-2 desktop:px-6 desktop:py-3 inline-block">
               OUR FOUNDERS
@@ -869,10 +869,10 @@ export default function Home() {
               </div>
 
               {/* October 22nd text overlay with orange squiggles - Desktop only */}
-              <div className="hidden desktop:block absolute desktop:bottom-[-180px] desktop:right-[10px] desktop:left-auto z-[35]">
+              <div className="hidden desktop:block absolute desktop:bottom-[-220px] desktop:right-[10px] desktop:left-auto z-[35]">
                 {/* Orange squiggles background */}
                 <div
-                  className="absolute -top-24 -bottom-24 -left-32 -right-32 desktop:-top-68 desktop:-left-68 desktop:-right-64 -z-10"
+                  className="absolute -top-52 -bottom-24 -left-32 -right-32 desktop:-top-100 desktop:-left-100 desktop:-right-100 desktop:-bottom-100 -z-10"
                   style={{ transform: "translateX(-60px)" }}
                 >
                   <Image
@@ -883,7 +883,7 @@ export default function Home() {
                   />
                 </div>
                 {/* October text */}
-                <div className="relative z-10 border-2 border-white px-3 py-3">
+                <div className="relative z-10 border-2 border-white px-3 py-3 top-[-50px]">
                   <p className="text-sm min-[600px]:text-lg font-semibold desktop:font-bold">
                     OCTOBER 22ND 4:30pm
                   </p>
