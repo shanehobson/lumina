@@ -34,7 +34,7 @@ export default function Home() {
 
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="lg-container:max-w-[1000px] lg-container:mx-auto px-5 pt-4 pb-8 desktop:px-8 desktop:pt-6 desktop:pb-12">
+        <section className="lg-container:max-w-[1000px] lg-container:mx-auto px-5 pt-4 pb-8 desktop:px-8 desktop:pt-6 desktop:pb-12 desktop:ml-[30px]">
           <div className="relative">
             {/* Mobile/Tablet Layout (under 900px) */}
             <div className="desktop:hidden">
@@ -93,7 +93,7 @@ export default function Home() {
                   </div>
 
                   {/* Model 2 - Bottom Right - further apart on desktop */}
-                  <div className="absolute left-[470px] top-[80px] w-[420px] h-[450px]">
+                  <div className="absolute right-[0px] top-[80px] w-[420px] h-[450px]">
                     <div className="absolute inset-0 overflow-hidden">
                       <Image
                         src="/assets/7fac15c95cf92e71d7ac4ecef5ebf32db1a9f9dc.jpg"
@@ -117,8 +117,8 @@ export default function Home() {
             </div>
 
             {/* Overlay Text with Background - works for both layouts */}
-            <div className="absolute left-0 right-0 top-[120px] min-[470px]:top-[140px] min-[520px]:top-[160px] min-[690px]:top-[210px] desktop:left-[-144px] desktop:right-[-100px] desktop:top-[302px] z-10">
-              <div className="desktop:max-w-[890px] desktop:mx-auto">
+            <div className="absolute left-0 right-0 top-[120px] min-[470px]:top-[140px] min-[520px]:top-[160px] min-[690px]:top-[210px] desktop:left-[-32px] desktop:right-[-97px] desktop:top-[302px] z-10">
+              <div className="desktop:max-w-[1033px] desktop:mx-auto">
                 <div className="bg-black/10 backdrop-blur-sm py-2 -mx-5 desktop:mx-0 desktop:px-8">
                   <h2 className="text-center font-gelasio font-semibold text-[30px] min-[470px]:text-[34px] min-[600px]:text-[36px] min-[690px]:text-[40px] desktop:text-[62px] desktop:font-[600] leading-none text-white whitespace-nowrap">
                     MODEL SCHOOL FOR
@@ -130,7 +130,7 @@ export default function Home() {
 
           {/* We Provide Section */}
           <div className="mt-20 desktop:mt-[110px] relative">
-            <div className="flex items-start gap-6 desktop:gap-32 desktop:justify-center desktop:max-w-fit desktop:mx-auto ">
+            <div className="flex items-start gap-6 desktop:gap-40 desktop:justify-between desktop:max-w-fit desktop:mx-auto ">
               {/* Left Image with border */}
               <div className="relative w-[40%] min-w-[150px] aspect-[4/5] desktop:min-w-[280px] desktop:h-[380px] desktop:aspect-auto">
                 <div className="absolute inset-0 overflow-hidden">
@@ -177,7 +177,7 @@ export default function Home() {
         {/* Naples text and October 22nd Banner container */}
         <div className="lg-container:max-w-[1000px] lg-container:mx-auto relative pt-1 desktop:pt-12">
           {/* Naples text with squiggles background */}
-          <div className="absolute bottom-[20px] min-[600px]:bottom-[70px] desktop:bottom-[30px] right-0">
+          <div className="absolute bottom-[20px] min-[600px]:bottom-[70px] desktop:bottom-[30px] right-0 desktop:right-[-40px]">
             <div className="relative mr-5">
               {/* Orange squiggles background */}
               <div
@@ -192,7 +192,7 @@ export default function Home() {
                 />
               </div>
               {/* Naples text */}
-              <p className="relative z-10 font-gelasio font-semibold text-[24px] min-[600px]:text-[26px] desktop:text-[36px] leading-none border border-white px-4 py-2 text-lumina-dark">
+              <p className="relative z-10 font-gelasio font-semibold text-[24px] min-[600px]:text-[26px] desktop:text-[36px] leading-none border border-white px-4 py-2 text-lumina-dark desktop:ml-[40px]">
                 Naples
               </p>
             </div>
@@ -881,9 +881,7 @@ export default function Home() {
             </div>
             {/* October text */}
             <div className="relative z-10 border border-white px-3 py-3">
-              <p className="text-sm font-bold">
-                OCTOBER 22ND 4:30pm
-              </p>
+              <p className="text-sm font-bold">OCTOBER 22ND 4:30pm</p>
             </div>
           </div>
         </div>
