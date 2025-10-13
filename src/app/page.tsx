@@ -177,7 +177,7 @@ export default function Home() {
         {/* Naples text and October 22nd Banner container */}
         <div className="lg-container:max-w-[1000px] lg-container:mx-auto relative pt-1 desktop:pt-12">
           {/* Naples text with squiggles background */}
-          <div className="absolute bottom-[20px] min-[600px]:bottom-[70px] desktop:bottom-[30px] right-0 max-[420px]:right-[80px]">
+          <div className="absolute bottom-[20px] min-[600px]:bottom-[70px] desktop:bottom-[30px] right-0">
             <div className="relative mr-5">
               {/* Orange squiggles background */}
               <div
@@ -744,7 +744,7 @@ export default function Home() {
         </div>
 
         {/* Naples Section */}
-        <section className="lg-container:max-w-[1000px] lg-container:mx-auto px-5 py-12 min-[600px]:pb-24 min-[700px]:pb-40 max-[420px]:ml-[-10px] overflow-visible">
+        <section className="lg-container:max-w-[1000px] lg-container:mx-auto px-5 pt-12 pb-0 min-[600px]:pb-24 min-[700px]:pb-40 max-[420px]:ml-[-10px] overflow-visible">
           {/* Overlapping images collage */}
           <div className="flex justify-center">
             <div className="relative w-[375px] min-[600px]:w-[450px] min-[700px]:w-[525px] desktop:w-[900px] h-[600px] desktop:h-[1200px] mb-8 desktop:mb-20 z-[2] max-[420px]:max-w-[100vw] desktop:ml-0 overflow-visible">
@@ -842,11 +842,11 @@ export default function Home() {
                 />
               </div>
 
-              {/* October 22nd text overlay with orange squiggles */}
-              <div className="absolute bottom-[-245px] desktop:bottom-[-200px] left-[-5px] max-[420px]:left-[15px] desktop:right-[20px] desktop:left-auto z-[35]">
+              {/* October 22nd text overlay with orange squiggles - Desktop only */}
+              <div className="hidden desktop:block absolute desktop:bottom-[-200px] desktop:right-[20px] desktop:left-auto z-[35]">
                 {/* Orange squiggles background */}
                 <div
-                  className="absolute -top-24 -bottom-24 -left-32 -right-32 desktop:-top-68 desktop:-left-64 desktop:-right-64 z-[1]"
+                  className="absolute -top-24 -bottom-24 -left-32 -right-32 desktop:-top-68 desktop:-left-68 desktop:-right-64 z-[1]"
                   style={{ transform: "translateX(0px)" }}
                 >
                   <Image
@@ -866,6 +866,27 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* October 22nd text overlay with orange squiggles - Mobile only */}
+        <div className="desktop:hidden relative -mt-6 mb-4 ml-4">
+          <div className="relative inline-block">
+            {/* Orange squiggles background */}
+            <div className="absolute -inset-x-16 -inset-y-12 z-[1]">
+              <Image
+                src="/assets/orange_squiggles.svg"
+                alt=""
+                fill
+                className="object-contain"
+              />
+            </div>
+            {/* October text */}
+            <div className="relative z-10 border border-white px-3 py-3">
+              <p className="text-sm font-bold">
+                OCTOBER 22ND 4:30pm
+              </p>
+            </div>
+          </div>
+        </div>
       </main>
 
       {/* Orange Footer */}
