@@ -1,6 +1,6 @@
-# Aspire Modeling School
+# Lumina Model Academy
 
-A single-page brochure website for a modeling school built with Next.js 14, TypeScript, and Tailwind CSS.
+A single-page brochure website for Lumina Model Academy - a premier modeling school for children and teenagers in Naples, Florida. Built with Next.js 14, TypeScript, and Tailwind CSS.
 
 ## Quick Start
 
@@ -59,9 +59,12 @@ src/
 ## Features
 
 - Fully static export
-- Responsive design
-- Accessible markup
-- SEO optimized
-- System font stack
-- Smooth scrolling
-- Focus visible states
+- Responsive design with mobile-first approach
+- Complex responsive breakpoints for optimal viewing on all devices
+- Professional photography showcase
+- Founder profiles with detailed backgrounds
+- Interactive Instagram integration
+- Custom typography using Gelasio and Readex Pro fonts
+- Smooth scrolling animations
+- SEO optimized with meta tags and favicon
+- Accessible markup with focus states
