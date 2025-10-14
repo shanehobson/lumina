@@ -4,6 +4,9 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Lumina Model Academy",
   description: "Elite modeling education for children and teenagers. Professional training in runway, posing, and confidence building.",
+  icons: {
+    icon: "/assets/favicon.png",
+  },
   openGraph: {
     title: "Lumina Model Academy",
     description: "Elite modeling education for children and teenagers. Professional training in runway, posing, and confidence building.",
