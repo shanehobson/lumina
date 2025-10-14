@@ -201,4 +201,134 @@
       margin-top: 155px !important;
     }
   }
+  
+  /* Media query for screens 1171px to 1249px */
+  @media (min-width: 1171px) and (max-width: 1249px) {
+    /* Move MODEL SCHOOL FOR text right 150px */
+    .model-school-text {
+      transform: translateX(150px);
+    }
+  }
+  
+  /* Media query for screens 1050px to 1150px */
+  @media (min-width: 1050px) and (max-width: 1150px) {
+    /* Move MODEL SCHOOL FOR text right 200px */
+    .model-school-text {
+      transform: translateX(200px) !important;
+      top: 340px !important;
+    }
+  }
+  
+  /* Media query for screens 1151px to 1170px */
+  @media (min-width: 1151px) and (max-width: 1170px) {
+    /* Move MODEL SCHOOL FOR text right 50px */
+    .model-school-text {
+      transform: translateX(50px);
+    }
+  }
+  
+  /* Keep MODEL SCHOOL FOR text large between 700px-1050px */
+  @media (min-width: 700px) and (max-width: 1049px) {
+    .model-school-text h2 {
+      font-size: 60px !important;
+    }
+  }
+  
+  /* Medium size for MODEL SCHOOL FOR text between 600px-700px */
+  @media (min-width: 600px) and (max-width: 699px) {
+    .model-school-text h2 {
+      font-size: 50px !important;
+    }
+  }
+  
+  /* Move MODEL SCHOOL FOR text down and right on screens 926px-1050px */
+  @media (min-width: 926px) and (max-width: 1049px) {
+    .model-school-text {
+      transform: translate(50px, 100px) !important;
+    }
+  }
+  
+  /* Move MODEL SCHOOL FOR text less down on screens 850px-925px */
+  @media (min-width: 850px) and (max-width: 925px) {
+    .model-school-text {
+      transform: translate(50px, 50px) !important;
+    }
+  }
+  
+  /* Smooth transition from 690px to 1050px */
+  @media (min-width: 690px) and (max-width: 1049px) {
+    .model-school-text {
+      top: 210px !important;
+    }
+  }
+  
+  /* Fix jumping and position left at 1050px */
+  @media (min-width: 1050px) {
+    .model-school-text {
+      transform: translateX(50px);
+      top: 340px !important;
+    }
+  }
+  
+  /* Move text lower on screens above 1185px */
+  @media (min-width: 1185px) {
+    .model-school-text {
+      top: 420px !important;
+    }
+  }
+  
+  /* Media query for screens < 690px */
+  @media (max-width: 689px) {
+    /* Move MODEL SCHOOL FOR text down 45px and right 20px */
+    .model-school-text {
+      transform: translate(20px, 45px) !important;
+    }
+  }
+  
+  /* Media query for screens < 600px */
+  @media (max-width: 599px) {
+    /* Move MODEL SCHOOL FOR text up and right 20px */
+    .model-school-text {
+      transform: translate(20px, 10px) !important;
+    }
+  }
+  
+  /* Move children & teenagers text on screens 800px-950px */
+  @media (min-width: 800px) and (max-width: 950px) {
+    .children-teenagers-text {
+      transform: translateX(20px) !important;
+    }
+  }
+  
+  /* Make children & teenagers text smaller starting at 600px */
+  @media (max-width: 599px) {
+    .children-teenagers-text {
+      font-size: 24px !important;
+    }
+  }
+  
+  /* Move MODEL SCHOOL FOR text higher between 590px-650px */
+  @media (min-width: 590px) and (max-width: 650px) {
+    .model-school-text {
+      transform: translate(20px, -30px) !important;
+    }
+  }
+  
+  /* Make founder profile text 12px on mobile */
+  @media (max-width: 1049px) {
+    .founder-profile-text p,
+    .founder-profile-text ul,
+    .founder-profile-text li {
+      font-size: 12px !important;
+    }
+    
+    /* At 600px breakpoint, keep it 12px */
+    @media (min-width: 600px) and (max-width: 1049px) {
+      .founder-profile-text p,
+      .founder-profile-text ul,
+      .founder-profile-text li {
+        font-size: 12px !important;
+      }
+    }
+  }
 }
