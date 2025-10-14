@@ -120,7 +120,7 @@ export default function Home() {
             </div>
 
             {/* Overlay Text with Background - works for both layouts */}
-            <div className="absolute left-0 right-0 top-[120px] min-[470px]:top-[140px] min-[520px]:top-[160px] min-[690px]:top-[210px] desktop:left-[-600px] desktop:right-[-200px] desktop:top-[450px] z-10 model-school-text">
+            <div className="absolute left-0 right-0 top-[105px] max-[429px]:top-[105px] min-[470px]:top-[140px] min-[520px]:top-[160px] min-[690px]:top-[210px] desktop:left-[-600px] desktop:right-[-200px] desktop:top-[450px] z-10 model-school-text">
               <div className="desktop:max-w-[1033px] desktop:mx-auto">
                 <div className=" backdrop-blur-sm py-2 -mx-5 desktop:mx-0 desktop:px-8 desktop:w-[min(1400px,100vw)] desktop:mx-auto">
                   <h2 className="text-center font-gelasio font-semibold text-[30px] min-[470px]:text-[34px] min-[600px]:text-[36px] min-[690px]:text-[40px] desktop:text-[68px] desktop:font-[600] leading-none text-gray-200 whitespace-nowrap">
@@ -264,7 +264,7 @@ export default function Home() {
           </div>
 
           {/* We Provide Section - Desktop Only */}
-          <div className="hidden desktop:block mt-20 desktop:-mt-[300px] relative we-provide-section">
+          <div className="hidden desktop:block mt-20 desktop:-mt-[310px] relative we-provide-section">
             <div className="flex items-start gap-6 desktop:gap-40 desktop:justify-between desktop:max-w-fit desktop:mx-auto ">
               {/* Left Image with border */}
               <div className="relative w-[40%] min-w-[150px] aspect-[4/5] desktop:min-w-[360px] desktop:h-[460px] desktop:aspect-auto">
@@ -312,7 +312,7 @@ export default function Home() {
         </section>
 
         {/* October 22nd Scrolling Banner - Desktop Only */}
-        <div className="hidden desktop:block w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] bg-lumina-dark py-1.5 overflow-hidden desktop:mt-[15px]">
+        <div className="hidden desktop:block w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] bg-lumina-dark py-1.5 overflow-hidden desktop:mt-[35px]">
           <div className="animate-scroll whitespace-nowrap inline-flex">
             <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
               OCTOBER 22nd
@@ -406,7 +406,7 @@ export default function Home() {
         </div>
 
         {/* Lumina Academy Section */}
-        <section className="lg-container:max-w-[1050px] lg-container:mx-auto px-5 pt-6 pb-10 lumina-academy-section">
+        <section className="lg-container:max-w-[1050px] lg-container:mx-auto px-5 pt-6 pb-10 desktop:pt-24 lumina-academy-section">
           <div className="p-2.5">
             <h2 className="font-gelasio font-semibold text-lg min-[600px]:text-xl desktop:text-[40px] leading-none mb-4 desktop:mb-16 desktop:mt-12 desktop:relative desktop:w-fit">
               {/* Oval gradient background - desktop only */}
@@ -463,7 +463,7 @@ export default function Home() {
             {/* Mobile/Tablet Layout (under 1050px) */}
             <div className="flex gap-6 min-[600px]:gap-8 desktop:hidden">
               {/* Left side - Image and name */}
-              <div className="w-1/3 flex-shrink-0 mt-[50px] min-[500px]:mt-0">
+              <div className="w-1/3 flex-shrink-0">
                 <div className="relative w-full aspect-[120/150] mb-2">
                   <div className="absolute inset-0 overflow-hidden">
                     <Image
@@ -649,7 +649,7 @@ export default function Home() {
             {/* Mobile/Tablet Layout (under 1050px) */}
             <div className="flex gap-6 min-[600px]:gap-8 desktop:hidden">
               {/* Left side - Image and name */}
-              <div className="w-1/3 flex-shrink-0 mt-[50px] min-[500px]:mt-0">
+              <div className="w-1/3 flex-shrink-0">
                 <div className="relative w-full aspect-[120/150] mb-2">
                   <div className="absolute inset-0 overflow-hidden">
                     <Image
