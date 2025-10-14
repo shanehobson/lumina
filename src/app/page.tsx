@@ -406,7 +406,7 @@ export default function Home() {
         </div>
 
         {/* Lumina Academy Section */}
-        <section className="lg-container:max-w-[1050px] lg-container:mx-auto px-5 pt-6 pb-10 desktop:pt-24 lumina-academy-section">
+        <section className="lg-container:max-w-[1050px] lg-container:mx-auto px-5 pt-6 pb-10 desktop:pt-16 lumina-academy-section">
           <div className="text-center mb-8 desktop:mb-16 desktop:mt-12">
             <h2 className="text-2xl min-[600px]:text-[26px] desktop:text-[48px] font-serif border-2 border-white px-4 py-2 desktop:px-6 desktop:py-3 inline-block">
               LUMINA ACADEMY
@@ -483,7 +483,7 @@ export default function Home() {
                     />
                   </div>
                   <h3 className="text-sm min-[600px]:text-base font-serif tracking-wider mb-1 relative z-10">
-                    NADYEZA
+                    NADZEYA
                     <br />
                     PALITSKAVAYA
                   </h3>
@@ -501,7 +501,7 @@ export default function Home() {
               <div className="flex-1 w-2/3 founder-profile-text">
                 <p className="font-readex font-medium text-[10px] min-[600px]:text-xs desktop:text-[16px] leading-[150%] mb-4">
                   Originally from Minsk, Belarus and now based in Naples,
-                  Florida, Nadyeza Palitskavaya is an accomplished ballet
+                  Florida, Nadzeya Palitskavaya is an accomplished ballet
                   dancer, choreographer, and model with over 20 years of
                   experience in performing arts, fashion, film, and academia.
                 </p>
@@ -530,9 +530,9 @@ export default function Home() {
                 </ul>
 
                 <p className="font-readex font-medium text-[10px] min-[600px]:text-xs desktop:text-[16px] leading-[150%]">
-                  <strong>Mission</strong>
+                  <strong><span className="text-[#ff9045]">★</span> Mission</strong>
                   <br />
-                  Nadyeza combines artistry, scholarship, and professional
+                  Nadzeya combines artistry, scholarship, and professional
                   experience to mentor the next generation of artists and
                   models—helping them unlock creativity, master their craft, and
                   shine on stage, on camera, and in life.
@@ -582,7 +582,7 @@ export default function Home() {
                   />
                 </div>
                 <h3 className="text-2xl font-readex tracking-wider mb-2 text-[#ff9045] relative z-10">
-                  NADYEZA PALITSKAVAYA
+                  NADZEYA PALITSKAVAYA
                 </h3>
                 <p className="text-lg text-lumina-dark font-bold relative z-10">
                   Ballet Master • Choreographer • Model • Creative Visionary
@@ -593,7 +593,7 @@ export default function Home() {
               <div className="text-left">
                 <p className="font-readex text-base leading-relaxed mb-6">
                   Originally from Minsk, Belarus and now based in Naples,
-                  Florida, Nadyeza Palitskavaya is an accomplished ballet
+                  Florida, Nadzeya Palitskavaya is an accomplished ballet
                   dancer, choreographer, and model with over 20 years of
                   experience in performing arts, fashion, film, and academia.
                 </p>
@@ -626,7 +626,7 @@ export default function Home() {
                     <span className="text-[#ff9045]">★</span> Mission
                   </strong>
                   <br />
-                  Nadyeza combines artistry, scholarship, and professional
+                  Nadzeya combines artistry, scholarship, and professional
                   experience to mentor the next generation of artists and
                   models—helping them unlock creativity, master their craft, and
                   shine on stage, on camera, and in life.
@@ -707,7 +707,7 @@ export default function Home() {
                 </p>
 
                 <p className="font-readex font-medium text-[10px] min-[600px]:text-xs desktop:text-[16px] leading-[150%]">
-                  <strong>Mission</strong>
+                  <strong><span className="text-[#ff9045]">★</span> Mission</strong>
                   <br />
                   Julia&apos;s mission is simple: to help others step into their
                   power, walk with confidence, and shine on every stage of life.
@@ -875,9 +875,9 @@ export default function Home() {
         <section className="lg-container:max-w-[1050px] lg-container:mx-auto px-5 pt-12 pb-0 min-[600px]:pb-24 min-[700px]:pb-40 max-[420px]:ml-[-10px] overflow-visible">
           {/* Overlapping images collage */}
           <div className="flex justify-center">
-            <div className="relative w-[375px] min-[600px]:w-[450px] min-[700px]:w-[525px] desktop:w-[1050px] h-[600px] desktop:h-[1630px] mb-8 desktop:mb-20 z-[2] max-[420px]:max-w-[100vw] desktop:ml-[-25px] overflow-visible">
+            <div className="relative w-[375px] min-[600px]:w-[450px] min-[700px]:w-[525px] desktop:w-[1200px] h-[600px] desktop:h-[1630px] mb-8 desktop:mb-20 z-[2] max-[420px]:max-w-[100vw] desktop:ml-[-25px] overflow-visible">
               {/* Top left image - moved down */}
-              <div className="absolute top-[35px] desktop:top-[70px] left-0 max-[420px]:left-[20px] desktop:left-[70px] w-[110px] min-[600px]:w-[132px] min-[700px]:w-[149px] desktop:w-[350px] h-[140px] min-[600px]:h-[168px] min-[700px]:h-[189px] desktop:h-[450px] overflow-hidden z-[5]">
+              <div className="absolute top-[35px] desktop:top-[70px] left-0 max-[420px]:left-[20px] desktop:left-[25px] w-[110px] min-[600px]:w-[132px] min-[700px]:w-[149px] desktop:w-[350px] h-[140px] min-[600px]:h-[168px] min-[700px]:h-[189px] desktop:h-[450px] overflow-hidden z-[5]">
                 <Image
                   src="/assets/f8dda8fbc43efbacd643a90300fda8c4d067dce1-md.jpg"
                   alt="Model portrait 1"
@@ -889,7 +889,7 @@ export default function Home() {
               </div>
 
               {/* Naples text with orange squiggles background */}
-              <div className="absolute top-[30px] left-[205px] max-[420px]:left-[225px] min-[600px]:left-[250px] min-[700px]:left-[300px] desktop:left-[730px]">
+              <div className="absolute top-[30px] left-[205px] max-[420px]:left-[225px] min-[600px]:left-[250px] min-[700px]:left-[300px] desktop:left-[805px]">
                 {/* Orange squiggles background */}
                 <div
                   className="absolute -top-48 -bottom-60 -left-64 right-0 -z-10 desktop:translate-x-[200px]"
@@ -911,7 +911,7 @@ export default function Home() {
               </div>
 
               {/* Second image - moved left with z-index between first and third */}
-              <div className="absolute top-[120px] desktop:top-[195px] left-[75px] max-[420px]:left-[95px] desktop:left-[322px] w-[140px] min-[600px]:w-[168px] min-[700px]:w-[189px] desktop:w-[420px] h-[180px] min-[600px]:h-[216px] min-[700px]:h-[243px] desktop:h-[540px] overflow-hidden z-[15]">
+              <div className="absolute top-[120px] desktop:top-[195px] left-[75px] max-[420px]:left-[95px] desktop:left-[375px] w-[140px] min-[600px]:w-[168px] min-[700px]:w-[189px] desktop:w-[420px] h-[180px] min-[600px]:h-[216px] min-[700px]:h-[243px] desktop:h-[540px] overflow-hidden z-[15]">
                 <Image
                   src="/assets/3e5d93c5d36628709ac63a0a9ad919a1f4cba5c0-md.jpg"
                   alt="Model portrait 2"
@@ -923,7 +923,7 @@ export default function Home() {
               </div>
 
               {/* Third image (was left middle) */}
-              <div className="absolute top-[275px] desktop:top-[585px] left-0 max-[420px]:left-[20px] desktop:left-[50px] w-[120px] min-[600px]:w-[144px] min-[700px]:w-[162px] desktop:w-[450px] h-[140px] min-[600px]:h-[168px] min-[700px]:h-[189px] desktop:h-[520px] overflow-hidden z-20">
+              <div className="absolute top-[275px] desktop:top-[585px] left-0 max-[420px]:left-[20px] desktop:left-[55px] w-[120px] min-[600px]:w-[144px] min-[700px]:w-[162px] desktop:w-[450px] h-[140px] min-[600px]:h-[168px] min-[700px]:h-[189px] desktop:h-[520px] overflow-hidden z-20">
                 <Image
                   src="/assets/893c5ce8c741400650fafef713b441ac02119527-md.jpg"
                   alt="Model portrait 3"
@@ -935,7 +935,7 @@ export default function Home() {
               </div>
 
               {/* Right studio image (black and white) - made skinnier and taller */}
-              <div className="absolute top-[335px] desktop:top-[546px] left-[265px] max-[420px]:left-[245px] min-[600px]:left-[320px] min-[700px]:left-[380px] desktop:left-[550px] w-[110px] min-[600px]:w-[132px] min-[700px]:w-[149px] desktop:w-[320px] h-[150px] min-[600px]:h-[180px] min-[700px]:h-[203px] desktop:h-[430px] overflow-hidden z-10 desktop:z-[16]">
+              <div className="absolute top-[335px] desktop:top-[546px] left-[265px] max-[420px]:left-[245px] min-[600px]:left-[320px] min-[700px]:left-[380px] desktop:left-[670px] w-[110px] min-[600px]:w-[132px] min-[700px]:w-[149px] desktop:w-[320px] h-[150px] min-[600px]:h-[180px] min-[700px]:h-[203px] desktop:h-[430px] overflow-hidden z-10 desktop:z-[16]">
                 <Image
                   src="/assets/cd5358401bb7dbdc13c3574b403166f057edf3cf-md.jpg"
                   alt="Studio equipment"
@@ -947,7 +947,7 @@ export default function Home() {
               </div>
 
               {/* Bottom center image - moved down 25px more and right 60px */}
-              <div className="absolute bottom-[35px] min-[700px]:bottom-[-15px] desktop:bottom-[-75px] left-[180px] max-[420px]:left-[160px] min-[600px]:left-[210px] min-[700px]:left-[240px] desktop:left-[70px] w-[120px] min-[600px]:w-[144px] min-[700px]:w-[162px] desktop:w-[380px] h-[140px] min-[600px]:h-[168px] min-[700px]:h-[189px] desktop:h-[450px] overflow-hidden z-[25] desktop:z-[31]">
+              <div className="absolute bottom-[35px] min-[700px]:bottom-[-15px] desktop:bottom-[-75px] left-[180px] max-[420px]:left-[160px] min-[600px]:left-[210px] min-[700px]:left-[240px] desktop:left-[155px] w-[120px] min-[600px]:w-[144px] min-[700px]:w-[162px] desktop:w-[380px] h-[140px] min-[600px]:h-[168px] min-[700px]:h-[189px] desktop:h-[450px] overflow-hidden z-[25] desktop:z-[31]">
                 <Image
                   src="/assets/cba1061db087e28bcec2d3212ce7cac7c93623d7-md.jpg"
                   alt="Model portrait 4"
@@ -959,7 +959,7 @@ export default function Home() {
               </div>
 
               {/* Bottom right image - moved down 30px more and right 40px */}
-              <div className="absolute bottom-[-45px] min-[600px]:bottom-[-105px] min-[700px]:bottom-[-155px] desktop:bottom-[15px] left-[265px] max-[420px]:left-[245px] min-[600px]:left-[320px] min-[700px]:left-[380px] desktop:left-[360px] w-[110px] min-[600px]:w-[132px] min-[700px]:w-[149px] desktop:w-[460px] h-[130px] min-[600px]:h-[156px] min-[700px]:h-[176px] desktop:h-[550px] overflow-hidden z-[30]">
+              <div className="absolute bottom-[-45px] min-[600px]:bottom-[-105px] min-[700px]:bottom-[-155px] desktop:bottom-[15px] left-[265px] max-[420px]:left-[245px] min-[600px]:left-[320px] min-[700px]:left-[380px] desktop:left-[475px] w-[110px] min-[600px]:w-[132px] min-[700px]:w-[149px] desktop:w-[460px] h-[130px] min-[600px]:h-[156px] min-[700px]:h-[176px] desktop:h-[550px] overflow-hidden z-[30]">
                 <Image
                   src="/assets/2e903d3b27c832f8fdbb7848f80df8f7b93731f3-md.jpg"
                   alt="Model portrait 5"
@@ -986,7 +986,7 @@ export default function Home() {
                 </div>
                 {/* October text */}
                 <div className="relative z-10 border-2 border-white px-3 py-3 top-[-50px]">
-                  <p className="text-sm min-[600px]:text-lg font-semibold desktop:font-bold">
+                  <p className="text-sm min-[600px]:text-lg desktop:text-2xl font-semibold desktop:font-bold">
                     OCTOBER 22ND 4:30pm
                   </p>
                 </div>
