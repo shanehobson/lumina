@@ -76,4 +76,129 @@
       margin-left: -70px !important;
     }
   }
+  
+  /* Media query for screens < 1050px */
+  @media (max-width: 1049px) {
+    /* Move October 22nd banner down more */
+    .october-banner-top {
+      margin-top: 50px !important;
+    }
+    
+    /* Move mobile We provide section down by 60px */
+    .we-provide-mobile {
+      margin-top: 80px !important;
+    }
+    
+    /* Move Naples text container up by 100px */
+    .naples-mobile-container {
+      margin-top: -100px !important;
+    }
+    
+    /* Move Naples text up by 100px */
+    .naples-text-mobile {
+      bottom: 120px !important;
+    }
+    
+    /* Move orange squiggles up by 20px */
+    .orange-squiggles-mobile {
+      transform: translateY(-30px) !important;
+    }
+    
+    /* Remove LUMINA text downward translation on mobile and add space above */
+    .lumina-heading {
+      transform: translateY(0) !important;
+      margin-top: 25px !important;
+    }
+  }
+  
+  /* Media query for screens <= 700px */
+  @media (max-width: 700px) {
+    /* Move Naples text down by 40px */
+    .naples-text-mobile {
+      bottom: 80px !important;
+    }
+    
+    /* Move orange squiggles down slightly */
+    .orange-squiggles-mobile {
+      transform: translateY(-15px) !important;
+    }
+  }
+  
+  /* Media query for screens < 570px */
+  @media (max-width: 569px) {
+    /* Move Naples text down by 20px more */
+    .naples-text-mobile {
+      bottom: 60px !important;
+    }
+  }
+  
+  /* Media query for screens <= 550px */
+  @media (max-width: 550px) {
+    /* Move certificate text left to prevent wrapping */
+    .certificate-text-mobile {
+      margin-left: -10px !important;
+    }
+  }
+  
+  /* Media query for screens <= 520px */
+  @media (max-width: 520px) {
+    /* Make top section taller */
+    .hero-section-container {
+      padding-bottom: 120px !important;
+    }
+    
+    /* Move October 22nd banner up by 40px more (was 175px, now 135px) */
+    .october-banner-top {
+      margin-top: 135px !important;
+    }
+    
+    /* Move Naples text down 40px total (was 205px, now 165px) */
+    .naples-text-mobile {
+      bottom: 165px !important;
+    }
+    
+    /* Move orange squiggles down 25px (was -50px, now -25px) */
+    .orange-squiggles-mobile {
+      transform: translateY(-25px) !important;
+    }
+    
+    /* Move Lumina Academy section up by 60px */
+    .lumina-academy-section {
+      margin-top: -60px !important;
+    }
+  }
+  
+  /* Media query for screens < 470px */
+  @media (max-width: 469px) {
+    /* Make the image under "We provide" smaller */
+    .we-provide-mobile .relative.w-\\[40\\%\\] {
+      width: 32% !important;
+    }
+    
+    /* Move certificate text left and make it 1px smaller */
+    .certificate-text-mobile {
+      margin-left: -20px !important;
+      font-size: 11px !important;
+    }
+  }
+  
+  /* Media query for screens ≤ 440px */
+  @media (max-width: 440px) {
+    /* Move certificate text down 40px and left 66px, make 1px larger */
+    .certificate-text-mobile {
+      margin-left: -86px !important;
+      transform: translateY(50px) !important;
+      font-size: 12px !important;
+    }
+    
+    /* Move Naples text down 10px */
+    .naples-text-mobile {
+      bottom: 155px !important;
+    }
+    
+    /* Move October 22nd banner down 20px */
+    .october-banner-top {
+      margin-top: 155px !important;
+    }
+  }
 }

@@ -19,7 +19,7 @@ export default function Home() {
                 />
               </div>
               <h1
-                className="font-gelasio font-normal text-[31.32px] min-[600px]:text-[33px] desktop:text-[52px] leading-none tracking-normal desktop:mb-0 desktop:pb-6 relative z-10 bg-lumina-cream"
+                className="font-gelasio font-normal text-[31.32px] min-[600px]:text-[33px] desktop:text-[52px] leading-none tracking-normal desktop:mb-0 desktop:pb-6 relative z-10 bg-lumina-cream lumina-heading"
                 style={{ transform: "translateY(26px)" }}
               >
                 LUMINA
@@ -152,8 +152,53 @@ export default function Home() {
             </div>
           </div>
 
+          {/* We Provide Section - Mobile Only (before October banner) */}
+          <div className="desktop:hidden mt-20 relative we-provide-mobile">
+            <div className="flex items-start gap-6">
+              {/* Left Image with border */}
+              <div className="relative w-[40%] min-w-[150px] aspect-[4/5]">
+                <div className="absolute inset-0 overflow-hidden">
+                  <Image
+                    src="/assets/9ec7bb2f03d7b306c00e807cba726828cff54d1c.jpg"
+                    alt="Model doing backbend in white studio"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="absolute bottom-[-8px] left-[-8px] w-full h-full border border-[#ff9045] pointer-events-none"></div>
+                {/* We provide text overlay */}
+                <h3 className="absolute top-4 -right-16 text-[32px] min-[600px]:text-[36px] font-serif">
+                  <span className="backdrop-blur-sm px-0 py-0 inline-block">
+                    We provide :
+                  </span>
+                </h3>
+              </div>
+
+              {/* Right side text */}
+              <div className="flex-1 pt-20 max-w-xs">
+                <ul className="space-y-2 text-[13px] min-[600px]:text-[15px] font-readex font-normal">
+                  <li className="flex gap-4 sm:gap-8">
+                    <span>Runway</span>
+                    <span>Photoposing</span>
+                  </li>
+                  <li className="flex gap-4 sm:gap-8 flex-wrap">
+                    <span>Choreography</span>
+                    <span>Model Etiquette</span>
+                  </li>
+                  <li>Makeup</li>
+                  <li
+                    className="font-semibold text-xs min-[600px]:text-sm border-2 border-white px-2 py-1 inline-block whitespace-nowrap certificate-text-mobile"
+                    style={{ transform: "translateY(10px)" }}
+                  >
+                    OFFICIAL&nbsp;CERTIFICATE&nbsp;OF&nbsp;COMPLETION
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
           {/* Scrolling October 22nd Banner */}
-          <div className="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] bg-lumina-dark py-1.5 overflow-hidden -mt-[340px]">
+          <div className="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] bg-lumina-dark py-1.5 overflow-hidden -mt-[340px] october-banner-top">
             <div className="animate-scroll whitespace-nowrap inline-flex">
               <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
                 OCTOBER 22nd
@@ -218,8 +263,8 @@ export default function Home() {
             </div>
           </div>
 
-          {/* We Provide Section */}
-          <div className="mt-20 desktop:mt-[90px] relative">
+          {/* We Provide Section - Desktop Only */}
+          <div className="hidden desktop:block mt-20 desktop:mt-[90px] relative we-provide-section">
             <div className="flex items-start gap-6 desktop:gap-40 desktop:justify-between desktop:max-w-fit desktop:mx-auto ">
               {/* Left Image with border */}
               <div className="relative w-[40%] min-w-[150px] aspect-[4/5] desktop:min-w-[360px] desktop:h-[460px] desktop:aspect-auto">
@@ -255,10 +300,10 @@ export default function Home() {
                   </li>
                   <li>Makeup</li>
                   <li
-                    className="font-semibold text-xs min-[600px]:text-sm desktop:text-2xl border-2 border-white px-2 py-1 inline-block desktop:whitespace-nowrap certificate-text"
+                    className="font-semibold text-xs min-[600px]:text-sm desktop:text-2xl border-2 border-white px-2 py-1 inline-block whitespace-nowrap certificate-text"
                     style={{ transform: "translateY(10px)" }}
                   >
-                    OFFICIAL CERTIFICATE OF COMPLETION
+                    OFFICIAL&nbsp;CERTIFICATE&nbsp;OF&nbsp;COMPLETION
                   </li>
                 </ul>
               </div>
@@ -267,13 +312,13 @@ export default function Home() {
         </section>
 
         {/* Naples text container */}
-        <div className="lg-container:max-w-[1050px] lg-container:mx-auto relative pt-1 desktop:pt-[-8px] desktop:hidden">
+        <div className="lg-container:max-w-[1050px] lg-container:mx-auto relative pt-1 desktop:pt-[-8px] desktop:hidden naples-mobile-container">
           {/* Naples text with squiggles background */}
-          <div className="absolute bottom-[20px] min-[600px]:bottom-[70px] desktop:bottom-[30px] right-0 desktop:right-[0px]">
+          <div className="absolute bottom-[20px] min-[600px]:bottom-[70px] desktop:bottom-[30px] right-0 desktop:right-[0px] naples-text-mobile">
             <div className="relative mr-5">
               {/* Orange squiggles background */}
               <div
-                className="absolute -top-40 -bottom-60 -left-52 right-8 desktop:-top-60 desktop:-bottom-80 desktop:-left-80 desktop:-right-20 -z-20"
+                className="absolute -top-40 -bottom-60 -left-52 right-8 desktop:-top-60 desktop:-bottom-80 desktop:-left-80 desktop:-right-20 -z-20 orange-squiggles-mobile"
                 style={{ transform: "translateY(-10px)" }}
               >
                 <Image
@@ -295,7 +340,7 @@ export default function Home() {
         </div>
 
         {/* Lumina Academy Section */}
-        <section className="lg-container:max-w-[1050px] lg-container:mx-auto px-5 pt-6 pb-10 desktop:hidden">
+        <section className="lg-container:max-w-[1050px] lg-container:mx-auto px-5 pt-6 pb-10 desktop:hidden lumina-academy-section">
           <div className="p-2.5">
             <h2 className="font-gelasio font-semibold text-lg min-[600px]:text-xl desktop:text-[40px] leading-none mb-4 desktop:mb-16 desktop:mt-12 desktop:relative desktop:w-fit">
               {/* Oval gradient background - desktop only */}
