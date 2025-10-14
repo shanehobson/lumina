@@ -340,7 +340,7 @@ export default function Home() {
         </div>
 
         {/* Lumina Academy Section */}
-        <section className="lg-container:max-w-[1050px] lg-container:mx-auto px-5 pt-6 pb-10 desktop:hidden lumina-academy-section">
+        <section className="lg-container:max-w-[1050px] lg-container:mx-auto px-5 pt-6 pb-10 lumina-academy-section">
           <div className="p-2.5">
             <h2 className="font-gelasio font-semibold text-lg min-[600px]:text-xl desktop:text-[40px] leading-none mb-4 desktop:mb-16 desktop:mt-12 desktop:relative desktop:w-fit">
               {/* Oval gradient background - desktop only */}
