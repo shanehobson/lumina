@@ -120,10 +120,10 @@ export default function Home() {
             </div>
 
             {/* Overlay Text with Background - works for both layouts */}
-            <div className="absolute left-0 right-0 top-[120px] min-[470px]:top-[140px] min-[520px]:top-[160px] min-[690px]:top-[210px] desktop:left-[-200px] desktop:right-[-200px] desktop:top-[450px] z-10 model-school-text">
+            <div className="absolute left-0 right-0 top-[120px] min-[470px]:top-[140px] min-[520px]:top-[160px] min-[690px]:top-[210px] desktop:left-[-600px] desktop:right-[-200px] desktop:top-[450px] z-10 model-school-text">
               <div className="desktop:max-w-[1033px] desktop:mx-auto">
-                <div className=" backdrop-blur-sm py-2 -mx-5 desktop:mx-0 desktop:px-8">
-                  <h2 className="text-center font-gelasio font-semibold text-[30px] min-[470px]:text-[34px] min-[600px]:text-[36px] min-[690px]:text-[40px] desktop:text-[68px] desktop:font-[600] leading-none text-white whitespace-nowrap">
+                <div className=" backdrop-blur-sm py-2 -mx-5 desktop:mx-0 desktop:px-8 desktop:w-[min(1400px,100vw)] desktop:mx-auto">
+                  <h2 className="text-center font-gelasio font-semibold text-[30px] min-[470px]:text-[34px] min-[600px]:text-[36px] min-[690px]:text-[40px] desktop:text-[68px] desktop:font-[600] leading-none text-gray-200 whitespace-nowrap">
                     MODEL SCHOOL FOR
                   </h2>
                 </div>
@@ -198,7 +198,7 @@ export default function Home() {
           </div>
 
           {/* Scrolling October 22nd Banner */}
-          <div className="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] bg-lumina-dark py-1.5 overflow-hidden -mt-[340px] october-banner-top">
+          <div className="desktop:hidden w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] bg-lumina-dark py-1.5 overflow-hidden -mt-[340px] october-banner-top">
             <div className="animate-scroll whitespace-nowrap inline-flex">
               <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
                 OCTOBER 22nd
@@ -264,7 +264,7 @@ export default function Home() {
           </div>
 
           {/* We Provide Section - Desktop Only */}
-          <div className="hidden desktop:block mt-20 desktop:mt-[90px] relative we-provide-section">
+          <div className="hidden desktop:block mt-20 desktop:-mt-[300px] relative we-provide-section">
             <div className="flex items-start gap-6 desktop:gap-40 desktop:justify-between desktop:max-w-fit desktop:mx-auto ">
               {/* Left Image with border */}
               <div className="relative w-[40%] min-w-[150px] aspect-[4/5] desktop:min-w-[360px] desktop:h-[460px] desktop:aspect-auto">
@@ -310,6 +310,72 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* October 22nd Scrolling Banner - Desktop Only */}
+        <div className="hidden desktop:block w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] bg-lumina-dark py-1.5 overflow-hidden desktop:mt-[15px]">
+          <div className="animate-scroll whitespace-nowrap inline-flex">
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
+              OCTOBER 22nd
+            </span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
+              OCTOBER 22nd
+            </span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
+              OCTOBER 22nd
+            </span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
+              OCTOBER 22nd
+            </span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
+              OCTOBER 22nd
+            </span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
+              OCTOBER 22nd
+            </span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
+              OCTOBER 22nd
+            </span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
+              OCTOBER 22nd
+            </span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
+              OCTOBER 22nd
+            </span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
+              OCTOBER 22nd
+            </span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
+              OCTOBER 22nd
+            </span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
+              OCTOBER 22nd
+            </span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
+              OCTOBER 22nd
+            </span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
+              OCTOBER 22nd
+            </span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
+              OCTOBER 22nd
+            </span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
+              OCTOBER 22nd
+            </span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
+              OCTOBER 22nd
+            </span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
+              OCTOBER 22nd
+            </span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
+              OCTOBER 22nd
+            </span>
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
+              OCTOBER 22nd
+            </span>
+          </div>
+        </div>
 
         {/* Naples text container */}
         <div className="lg-container:max-w-[1050px] lg-container:mx-auto relative pt-1 desktop:pt-[-8px] desktop:hidden naples-mobile-container">
@@ -751,64 +817,64 @@ export default function Home() {
         {/* Scrolling October 22nd Banner */}
         <div className="bg-lumina-dark py-1.5 overflow-hidden relative z-50">
           <div className="animate-scroll whitespace-nowrap inline-flex">
-            <span className="text-[#ff9045] font-gelasio font-bold text-xl mx-8">
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
               OCTOBER 22nd
             </span>
-            <span className="text-[#ff9045] font-gelasio font-bold text-xl mx-8">
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
               OCTOBER 22nd
             </span>
-            <span className="text-[#ff9045] font-gelasio font-bold text-xl mx-8">
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
               OCTOBER 22nd
             </span>
-            <span className="text-[#ff9045] font-gelasio font-bold text-xl mx-8">
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
               OCTOBER 22nd
             </span>
-            <span className="text-[#ff9045] font-gelasio font-bold text-xl mx-8">
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
               OCTOBER 22nd
             </span>
-            <span className="text-[#ff9045] font-gelasio font-bold text-xl mx-8">
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
               OCTOBER 22nd
             </span>
-            <span className="text-[#ff9045] font-gelasio font-bold text-xl mx-8">
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
               OCTOBER 22nd
             </span>
-            <span className="text-[#ff9045] font-gelasio font-bold text-xl mx-8">
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
               OCTOBER 22nd
             </span>
-            <span className="text-[#ff9045] font-gelasio font-bold text-xl mx-8">
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
               OCTOBER 22nd
             </span>
-            <span className="text-[#ff9045] font-gelasio font-bold text-xl mx-8">
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
               OCTOBER 22nd
             </span>
-            <span className="text-[#ff9045] font-gelasio font-bold text-xl mx-8">
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
               OCTOBER 22nd
             </span>
-            <span className="text-[#ff9045] font-gelasio font-bold text-xl mx-8">
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
               OCTOBER 22nd
             </span>
-            <span className="text-[#ff9045] font-gelasio font-bold text-xl mx-8">
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
               OCTOBER 22nd
             </span>
-            <span className="text-[#ff9045] font-gelasio font-bold text-xl mx-8">
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
               OCTOBER 22nd
             </span>
-            <span className="text-[#ff9045] font-gelasio font-bold text-xl mx-8">
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
               OCTOBER 22nd
             </span>
-            <span className="text-[#ff9045] font-gelasio font-bold text-xl mx-8">
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
               OCTOBER 22nd
             </span>
-            <span className="text-[#ff9045] font-gelasio font-bold text-xl mx-8">
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
               OCTOBER 22nd
             </span>
-            <span className="text-[#ff9045] font-gelasio font-bold text-xl mx-8">
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
               OCTOBER 22nd
             </span>
-            <span className="text-[#ff9045] font-gelasio font-bold text-xl mx-8">
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
               OCTOBER 22nd
             </span>
-            <span className="text-[#ff9045] font-gelasio font-bold text-xl mx-8">
+            <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
               OCTOBER 22nd
             </span>
           </div>
