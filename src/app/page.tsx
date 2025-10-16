@@ -54,7 +54,7 @@ export default function Home() {
                 <div className="absolute -top-[8px] -left-[8px] desktop:-top-[16px] desktop:-left-[16px] w-full h-full border border-[#ff9045] pointer-events-none"></div>
 
                 {/* Children & Teenagers text - anchored to this image */}
-                <p className="absolute left-0 min-[470px]:left-[7px] xs:left-[-10px] top-[calc(100%+35px)] min-[470px]:top-[calc(100%+15px)] font-readex font-normal text-[15px] min-[470px]:text-[20px] xs:text-[22px] min-[600px]:text-2xl sm:text-[26px] leading-none text-lumina-dark whitespace-nowrap">
+                <p className="absolute left-0 min-[470px]:left-[7px] xs:left-[-10px] top-[calc(100%+25px)] min-[470px]:top-[calc(100%+15px)] font-readex font-normal text-[15px] min-[470px]:text-[20px] xs:text-[22px] min-[600px]:text-2xl sm:text-[26px] leading-none text-lumina-dark whitespace-nowrap">
                   CHILDREN&nbsp;&amp;&nbsp;TEENAGERS
                 </p>
               </div>
@@ -120,9 +120,17 @@ export default function Home() {
             </div>
 
             {/* Overlay Text with Background - works for both layouts */}
-            <div className="absolute left-0 right-0 top-[105px] max-[429px]:top-[105px] min-[470px]:top-[140px] min-[520px]:top-[160px] min-[690px]:top-[210px] desktop:left-[-600px] desktop:right-[-200px] desktop:top-[450px] z-10 model-school-text">
+            <div className="absolute left-0 right-0 top-[105px] max-[429px]:top-[100px] min-[470px]:top-[140px] min-[520px]:top-[160px] min-[690px]:top-[210px] desktop:left-[-600px] desktop:right-[-200px] desktop:top-[450px] z-10 model-school-text">
               <div className="desktop:max-w-[1033px] desktop:mx-auto">
-                <div className=" backdrop-blur-sm py-2 -mx-5 desktop:mx-0 desktop:px-8 desktop:w-[min(1400px,100vw)] desktop:mx-auto">
+                <div
+                  className="
+                   relative backdrop-blur-sm py-2
+                   max-[1049px]:w-screen
+                   max-[1049px]:mx-[calc(50%-50vw)]
+                   max-[1049px]:left-[-35px]
+                   desktop:mx-auto desktop:px-8 desktop:w-[min(1400px,100vw)]
+                 "
+                >
                   <h2 className="text-center font-gelasio font-semibold text-[30px] min-[470px]:text-[34px] min-[600px]:text-[36px] min-[690px]:text-[40px] desktop:text-[68px] desktop:font-[600] leading-none text-gray-200 whitespace-nowrap">
                     MODEL SCHOOL FOR
                   </h2>
@@ -413,7 +421,6 @@ export default function Home() {
             </h2>
           </div>
           <div className="p-2.5">
-
             <p className="font-gelasio font-normal text-sm min-[600px]:text-base desktop:text-[18px] leading-none mb-4">
               A premier modeling school for children and teens, guiding them to
               become confident, professional models. Our expert-designed program
@@ -530,7 +537,9 @@ export default function Home() {
                 </ul>
 
                 <p className="font-readex font-medium text-[10px] min-[600px]:text-xs desktop:text-[16px] leading-[150%]">
-                  <strong><span className="text-[#ff9045]">★</span> Mission</strong>
+                  <strong>
+                    <span className="text-[#ff9045]">★</span> Mission
+                  </strong>
                   <br />
                   Nadzeya combines artistry, scholarship, and professional
                   experience to mentor the next generation of artists and
@@ -707,7 +716,9 @@ export default function Home() {
                 </p>
 
                 <p className="font-readex font-medium text-[10px] min-[600px]:text-xs desktop:text-[16px] leading-[150%]">
-                  <strong><span className="text-[#ff9045]">★</span> Mission</strong>
+                  <strong>
+                    <span className="text-[#ff9045]">★</span> Mission
+                  </strong>
                   <br />
                   Julia&apos;s mission is simple: to help others step into their
                   power, walk with confidence, and shine on every stage of life.
@@ -1025,19 +1036,19 @@ export default function Home() {
             <p className="font-readex font-semibold text-[15px] leading-[150%]">
               (239) 378-8887 &nbsp;&nbsp; (801) 560-9637
             </p>
-            <a 
-              href="https://www.instagram.com/lumina.academy.official/" 
-              target="_blank" 
+            <a
+              href="https://www.instagram.com/lumina.academy.official/"
+              target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center w-8 h-8 rounded-xl bg-gradient-to-br from-purple-600 via-pink-500 to-orange-400 hover:scale-105 transition-transform cursor-pointer relative z-10"
-              style={{ pointerEvents: 'auto' }}
+              style={{ pointerEvents: "auto" }}
             >
-              <svg 
-                className="w-5 h-5 text-white" 
-                fill="currentColor" 
+              <svg
+                className="w-5 h-5 text-white"
+                fill="currentColor"
                 viewBox="0 0 24 24"
               >
-                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
               </svg>
             </a>
           </div>
