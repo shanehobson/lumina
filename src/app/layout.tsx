@@ -3,13 +3,15 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Lumina Model Academy",
-  description: "Elite modeling education for children and teenagers. Professional training in runway, posing, and confidence building.",
+  description:
+    "Elite modeling education for children and teenagers. Professional training in runway, posing, and confidence building.",
   icons: {
-    icon: "/assets/favicon.png",
+    icon: "/assets/favicon.ico",
   },
   openGraph: {
     title: "Lumina Model Academy",
-    description: "Elite modeling education for children and teenagers. Professional training in runway, posing, and confidence building.",
+    description:
+      "Elite modeling education for children and teenagers. Professional training in runway, posing, and confidence building.",
     url: "https://luminaacademy.com",
     siteName: "Lumina Model Academy",
     images: [
@@ -48,8 +50,15 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-        <link href="https://fonts.googleapis.com/css2?family=Gelasio&family=Readex+Pro&display=swap" rel="stylesheet" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin=""
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Gelasio&family=Readex+Pro&display=swap"
+          rel="stylesheet"
+        />
       </head>
       <body>{children}</body>
     </html>

@@ -205,68 +205,68 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Scrolling October 22nd Banner */}
+          {/* Scrolling Wednesdays at 4:30PM Banner */}
           <div className="desktop:hidden w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] bg-lumina-dark py-1.5 overflow-hidden -mt-[340px] october-banner-top">
             <div className="animate-scroll whitespace-nowrap inline-flex">
               <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-                OCTOBER 22nd
+                Wednesdays at 4:30PM
               </span>
               <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-                OCTOBER 22nd
+                Wednesdays at 4:30PM
               </span>
               <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-                OCTOBER 22nd
+                Wednesdays at 4:30PM
               </span>
               <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-                OCTOBER 22nd
+                Wednesdays at 4:30PM
               </span>
               <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-                OCTOBER 22nd
+                Wednesdays at 4:30PM
               </span>
               <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-                OCTOBER 22nd
+                Wednesdays at 4:30PM
               </span>
               <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-                OCTOBER 22nd
+                Wednesdays at 4:30PM
               </span>
               <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-                OCTOBER 22nd
+                Wednesdays at 4:30PM
               </span>
               <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-                OCTOBER 22nd
+                Wednesdays at 4:30PM
               </span>
               <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-                OCTOBER 22nd
+                Wednesdays at 4:30PM
               </span>
               <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-                OCTOBER 22nd
+                Wednesdays at 4:30PM
               </span>
               <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-                OCTOBER 22nd
+                Wednesdays at 4:30PM
               </span>
               <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-                OCTOBER 22nd
+                Wednesdays at 4:30PM
               </span>
               <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-                OCTOBER 22nd
+                Wednesdays at 4:30PM
               </span>
               <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-                OCTOBER 22nd
+                Wednesdays at 4:30PM
               </span>
               <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-                OCTOBER 22nd
+                Wednesdays at 4:30PM
               </span>
               <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-                OCTOBER 22nd
+                Wednesdays at 4:30PM
               </span>
               <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-                OCTOBER 22nd
+                Wednesdays at 4:30PM
               </span>
               <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-                OCTOBER 22nd
+                Wednesdays at 4:30PM
               </span>
               <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-                OCTOBER 22nd
+                Wednesdays at 4:30PM
               </span>
             </div>
           </div>
@@ -319,68 +319,68 @@ export default function Home() {
           </div>
         </section>
 
-        {/* October 22nd Scrolling Banner - Desktop Only */}
+        {/* Wednesdays at 4:30PM Scrolling Banner - Desktop Only */}
         <div className="hidden desktop:block w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] bg-lumina-dark py-1.5 overflow-hidden desktop:mt-[35px]">
           <div className="animate-scroll whitespace-nowrap inline-flex">
             <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-              OCTOBER 22nd
+              Wednesdays at 4:30PM
             </span>
             <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-              OCTOBER 22nd
+              Wednesdays at 4:30PM
             </span>
             <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-              OCTOBER 22nd
+              Wednesdays at 4:30PM
             </span>
             <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-              OCTOBER 22nd
+              Wednesdays at 4:30PM
             </span>
             <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-              OCTOBER 22nd
+              Wednesdays at 4:30PM
             </span>
             <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-              OCTOBER 22nd
+              Wednesdays at 4:30PM
             </span>
             <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-              OCTOBER 22nd
+              Wednesdays at 4:30PM
             </span>
             <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-              OCTOBER 22nd
+              Wednesdays at 4:30PM
             </span>
             <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-              OCTOBER 22nd
+              Wednesdays at 4:30PM
             </span>
             <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-              OCTOBER 22nd
+              Wednesdays at 4:30PM
             </span>
             <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-              OCTOBER 22nd
+              Wednesdays at 4:30PM
             </span>
             <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-              OCTOBER 22nd
+              Wednesdays at 4:30PM
             </span>
             <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-              OCTOBER 22nd
+              Wednesdays at 4:30PM
             </span>
             <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-              OCTOBER 22nd
+              Wednesdays at 4:30PM
             </span>
             <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-              OCTOBER 22nd
+              Wednesdays at 4:30PM
             </span>
             <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-              OCTOBER 22nd
+              Wednesdays at 4:30PM
             </span>
             <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-              OCTOBER 22nd
+              Wednesdays at 4:30PM
             </span>
             <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-              OCTOBER 22nd
+              Wednesdays at 4:30PM
             </span>
             <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-              OCTOBER 22nd
+              Wednesdays at 4:30PM
             </span>
             <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-              OCTOBER 22nd
+              Wednesdays at 4:30PM
             </span>
           </div>
         </div>
@@ -495,11 +495,13 @@ export default function Home() {
                     PALITSKAVAYA
                   </h3>
                   <p className="text-xs min-[600px]:text-sm text-lumina-gray relative z-10">
-                    Demi Finalist
+                    Model
                     <br />
-                    Supermodel Belarus
+                    Choreographer
                     <br />
-                    Modeling Teacher
+                    Dancer
+                    <br />
+                    PhD In Art History
                   </p>
                 </div>
               </div>
@@ -594,7 +596,7 @@ export default function Home() {
                   NADZEYA PALITSKAVAYA
                 </h3>
                 <p className="text-lg text-lumina-dark font-bold relative z-10">
-                  Ballet Master • Choreographer • Model • Creative Visionary
+                  Model • Choreographer • Dancer • PhD in Art History
                 </p>
               </div>
 
@@ -816,68 +818,68 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Scrolling October 22nd Banner */}
+        {/* Scrolling Wednesdays at 4:30PM Banner */}
         <div className="bg-lumina-dark py-1.5 overflow-hidden relative z-50">
           <div className="animate-scroll whitespace-nowrap inline-flex">
             <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-              OCTOBER 22nd
+              Wednesdays at 4:30PM
             </span>
             <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-              OCTOBER 22nd
+              Wednesdays at 4:30PM
             </span>
             <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-              OCTOBER 22nd
+              Wednesdays at 4:30PM
             </span>
             <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-              OCTOBER 22nd
+              Wednesdays at 4:30PM
             </span>
             <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-              OCTOBER 22nd
+              Wednesdays at 4:30PM
             </span>
             <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-              OCTOBER 22nd
+              Wednesdays at 4:30PM
             </span>
             <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-              OCTOBER 22nd
+              Wednesdays at 4:30PM
             </span>
             <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-              OCTOBER 22nd
+              Wednesdays at 4:30PM
             </span>
             <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-              OCTOBER 22nd
+              Wednesdays at 4:30PM
             </span>
             <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-              OCTOBER 22nd
+              Wednesdays at 4:30PM
             </span>
             <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-              OCTOBER 22nd
+              Wednesdays at 4:30PM
             </span>
             <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-              OCTOBER 22nd
+              Wednesdays at 4:30PM
             </span>
             <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-              OCTOBER 22nd
+              Wednesdays at 4:30PM
             </span>
             <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-              OCTOBER 22nd
+              Wednesdays at 4:30PM
             </span>
             <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-              OCTOBER 22nd
+              Wednesdays at 4:30PM
             </span>
             <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-              OCTOBER 22nd
+              Wednesdays at 4:30PM
             </span>
             <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-              OCTOBER 22nd
+              Wednesdays at 4:30PM
             </span>
             <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-              OCTOBER 22nd
+              Wednesdays at 4:30PM
             </span>
             <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-              OCTOBER 22nd
+              Wednesdays at 4:30PM
             </span>
             <span className="text-[#ff9045] font-gelasio font-bold text-xl min-[600px]:text-2xl mx-8">
-              OCTOBER 22nd
+              Wednesdays at 4:30PM
             </span>
           </div>
         </div>
@@ -981,32 +983,19 @@ export default function Home() {
                 />
               </div>
 
-              {/* October 22nd text overlay with orange squiggles - Desktop only. */}
+              {/* Wednesdays at 4:30PM text overlay with orange squiggles - Desktop only. */}
               <div className="hidden desktop:block absolute desktop:bottom-[-220px] desktop:right-[10px] desktop:left-auto z-[35]">
                 {/* Orange squiggles background */}
                 <div
                   className="absolute -top-52 -bottom-24 -left-32 -right-32 desktop:-top-100 desktop:-left-100 desktop:-right-100 desktop:-bottom-100 -z-10"
                   style={{ transform: "translateX(-60px)" }}
-                >
-                  <Image
-                    src="/assets/orange_squiggles.svg"
-                    alt=""
-                    fill
-                    className="object-contain"
-                  />
-                </div>
-                {/* October text */}
-                <div className="relative z-10 border-2 border-white px-3 py-3 top-[-50px]">
-                  <p className="text-sm min-[600px]:text-lg desktop:text-2xl font-semibold desktop:font-bold">
-                    OCTOBER 22ND 4:30pm
-                  </p>
-                </div>
+                ></div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* October 22nd text overlay with orange squiggles - Mobile only */}
+        {/* Wednesdays at 4:30PM text overlay with orange squiggles - Mobile only */}
         <div className="desktop:hidden relative -mt-6 mb-4 ml-4">
           <div className="relative inline-block">
             {/* Orange squiggles background */}
@@ -1017,10 +1006,6 @@ export default function Home() {
                 fill
                 className="object-contain"
               />
-            </div>
-            {/* October text */}
-            <div className="relative z-10 border-2 border-white px-3 py-3">
-              <p className="text-sm font-bold">OCTOBER 22ND 4:30pm</p>
             </div>
           </div>
         </div>
@@ -1052,6 +1037,9 @@ export default function Home() {
               </svg>
             </a>
           </div>
+          <p className="font-readex font-semibold text-[15px] leading-[150%]  mt-2">
+            800 Seagate Dr, Unit 203, Naples, FL 34103
+          </p>
         </div>
       </footer>
     </div>
