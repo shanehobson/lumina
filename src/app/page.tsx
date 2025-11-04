@@ -996,7 +996,7 @@ export default function Home() {
         </section>
 
         {/* Wednesdays at 4:30PM text overlay with orange squiggles - Mobile only */}
-        <div className="desktop:hidden relative -mt-6 mb-4 ml-4">
+        <div className="desktop:hidden relative -mt-6 mb-10 ml-4">
           <div className="relative inline-block">
             {/* Orange squiggles background */}
             <div className="absolute -inset-x-16 -inset-y-12 -z-10">
